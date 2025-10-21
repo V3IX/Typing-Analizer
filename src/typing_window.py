@@ -1,6 +1,7 @@
 from word_loader import load_words, generate_random_text, detect_word_files
 from settings_window import SettingsWindow
 from finish_info import FinishInfo
+from user_window import UserWindow
 
 import tkinter as tk
 import database
@@ -247,29 +248,31 @@ class TypingWindow(tk.Frame):
 
         logger.info("Test results saved to database")
 
-    def replay(self):
-        """Replay the most recent test stored in the database."""
-        import database
+    def replay(self, data=None):
+        """Replay a specific test (or the most recent one if none given)."""
 
-        logger.info("Starting replay of the last test")
+        logger = logging.getLogger(__name__)
+        logger.info("Starting replay of test")
 
-        data = database.get_latest_test_result()
-        if not data:
-            logger.warning("No saved test found in database. Replay aborted.")
-            return
+        # Load test data
+        if data is None:
+            data = database.get_latest_test_result()
+            if not data:
+                logger.warning("No saved test found in database. Replay aborted.")
+                return
 
         self.replay_mode = True
         logger.debug("Ending current test (if any) before replay")
         self.end_test()
 
-        # restore text and replay data
+        # Restore text and replay data
         self.text = data["text"]
         self.user_input = data["user_input"]
         self.key_times = data["key_times"]
         logger.info("Loaded test from database: %d characters, %d key presses",
                     len(self.text), len(self.user_input))
 
-        # reset text display
+        # Reset text display
         self.text_widget.config(state=tk.NORMAL)
         self.text_widget.delete("1.0", tk.END)
         self.text_widget.insert("1.0", self.text)
@@ -284,7 +287,7 @@ class TypingWindow(tk.Frame):
 
         time.sleep(0.5)  # small pause before starting
 
-        # replay animation
+        # Replay animation
         def replay_step(i):
             if i < len(self.user_input):
                 char = self.user_input[i]
@@ -293,7 +296,7 @@ class TypingWindow(tk.Frame):
                 self.type(char)
                 self.after(int(delay * 1000), lambda: replay_step(i + 1))
             else:
-                # replay done
+                # Replay done
                 self.finished = True
                 logger.info("Replay finished. Total characters replayed: %d", len(self.user_input))
                 self.finish_test()

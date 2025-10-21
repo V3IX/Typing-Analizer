@@ -1,33 +1,531 @@
-2025-10-26 22:46:33,802 | INFO | Logging initialized. Log file: logs\typing_app.log
-2025-10-26 22:46:37,112 | INFO | Ending test
-2025-10-26 22:46:37,118 | DEBUG | WPM chart reset
-2025-10-26 22:46:37,119 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-26 22:46:37,119 | DEBUG | User input and key times cleared
-2025-10-26 22:46:37,119 | INFO | Generating new text for next test
-2025-10-26 22:46:37,121 | INFO | Test ready for user input
-2025-10-26 22:46:38,408 | INFO | Ending test
-2025-10-26 22:46:38,416 | DEBUG | WPM chart reset
-2025-10-26 22:46:38,416 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-26 22:46:38,416 | DEBUG | User input and key times cleared
-2025-10-26 22:46:38,416 | INFO | Generating new text for next test
-2025-10-26 22:46:38,451 | INFO | Test ready for user input
-2025-10-26 22:46:39,857 | DEBUG | Key pressed: 'c', delta=0.0000, index=0
-2025-10-26 22:46:39,858 | DEBUG | Typed correct letter 'c' at index=0
-2025-10-26 22:46:39,859 | DEBUG | Test started at 1761515199.858500
-2025-10-26 22:46:40,403 | DEBUG | Key pressed: 'l', delta=0.5457, index=1
-2025-10-26 22:46:40,404 | DEBUG | Typed correct letter 'l' at index=1
-2025-10-26 22:46:40,613 | DEBUG | Key pressed: 'i', delta=0.2101, index=2
-2025-10-26 22:46:40,614 | DEBUG | Typed correct letter 'i' at index=2
-2025-10-26 22:46:40,846 | DEBUG | Key pressed: 'c', delta=0.2326, index=3
-2025-10-26 22:46:40,847 | DEBUG | Typed correct letter 'c' at index=3
-2025-10-26 22:46:40,908 | DEBUG | Key pressed: 'k', delta=0.0617, index=4
-2025-10-26 22:46:40,908 | DEBUG | Typed correct letter 'k' at index=4
-2025-10-26 22:46:40,919 | INFO | Test finished automatically
-2025-10-26 22:46:40,919 | INFO | Test finished
-2025-10-26 22:46:40,920 | DEBUG | Elapsed time: 1.06 seconds
-2025-10-26 22:46:40,920 | DEBUG | Num chars: 5, Num words: 1.00
-2025-10-26 22:46:40,921 | DEBUG | Base WPM: 56.54, Accuracy: 100.00%
-2025-10-26 22:46:40,921 | DEBUG | Final WPM (monkeytype style): 56.54
-2025-10-26 22:46:40,921 | DEBUG | Errors: 0, Wrong streak: 0
-2025-10-26 22:46:40,922 | DEBUG | User input length: 5, Key times length: 5
-2025-10-26 22:46:45,698 | INFO | Test results saved to database
+2025-10-21 14:25:21,148 | INFO | Logging initialized. Log file: logs\typing_app.log
+2025-10-21 14:25:46,329 | INFO | Ending test
+2025-10-21 14:25:46,335 | DEBUG | WPM chart reset
+2025-10-21 14:25:46,335 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
+2025-10-21 14:25:46,336 | DEBUG | User input and key times cleared
+2025-10-21 14:25:46,336 | INFO | Generating new text for next test
+2025-10-21 14:25:46,337 | INFO | Test ready for user input
+2025-10-21 14:25:47,859 | DEBUG | Key pressed: 'p', delta=0.0000, index=0
+2025-10-21 14:25:47,860 | DEBUG | Typed correct letter 'p' at index=0
+2025-10-21 14:25:47,860 | DEBUG | Test started at 1761049547.860064
+2025-10-21 14:25:47,954 | DEBUG | Key pressed: 'a', delta=0.0949, index=1
+2025-10-21 14:25:48,253 | DEBUG | Typed correct letter 'a' at index=1
+2025-10-21 14:25:48,268 | DEBUG | Key pressed: 's', delta=0.3142, index=2
+2025-10-21 14:25:48,269 | DEBUG | Typed correct letter 's' at index=2
+2025-10-21 14:25:48,311 | DEBUG | Key pressed: 's', delta=0.0428, index=3
+2025-10-21 14:25:48,312 | DEBUG | Typed correct letter 's' at index=3
+2025-10-21 14:25:48,833 | DEBUG | Key pressed: 'e', delta=0.5222, index=4
+2025-10-21 14:25:48,834 | DEBUG | Typed correct letter 'e' at index=4
+2025-10-21 14:25:49,171 | DEBUG | Key pressed: 'd', delta=0.3378, index=5
+2025-10-21 14:25:49,172 | DEBUG | Typed correct letter 'd' at index=5
+2025-10-21 14:25:49,273 | DEBUG | Key pressed: ' ', delta=0.1019, index=6
+2025-10-21 14:25:49,273 | DEBUG | Typed correct letter ' ' at index=6
+2025-10-21 14:25:49,459 | DEBUG | Key pressed: 'a', delta=0.1861, index=7
+2025-10-21 14:25:49,460 | DEBUG | Typed correct letter 'a' at index=7
+2025-10-21 14:25:49,840 | DEBUG | Key pressed: 'd', delta=0.3815, index=8
+2025-10-21 14:25:49,841 | DEBUG | Typed correct letter 'd' at index=8
+2025-10-21 14:25:50,095 | DEBUG | Key pressed: 'v', delta=0.2550, index=9
+2025-10-21 14:25:50,096 | DEBUG | Typed correct letter 'v' at index=9
+2025-10-21 14:25:50,178 | DEBUG | Key pressed: 'a', delta=0.0827, index=10
+2025-10-21 14:25:50,179 | DEBUG | Typed correct letter 'a' at index=10
+2025-10-21 14:25:50,370 | DEBUG | Key pressed: 'n', delta=0.1920, index=11
+2025-10-21 14:25:50,371 | DEBUG | Typed correct letter 'n' at index=11
+2025-10-21 14:25:50,579 | DEBUG | Key pressed: 'c', delta=0.2085, index=12
+2025-10-21 14:25:50,579 | DEBUG | Typed correct letter 'c' at index=12
+2025-10-21 14:25:50,767 | DEBUG | Key pressed: 'e', delta=0.1882, index=13
+2025-10-21 14:25:50,768 | DEBUG | Typed correct letter 'e' at index=13
+2025-10-21 14:25:50,856 | DEBUG | Key pressed: ' ', delta=0.0891, index=14
+2025-10-21 14:25:50,857 | DEBUG | Typed correct letter ' ' at index=14
+2025-10-21 14:25:51,007 | DEBUG | Key pressed: 't', delta=0.1512, index=15
+2025-10-21 14:25:51,008 | DEBUG | Typed correct letter 't' at index=15
+2025-10-21 14:25:51,212 | DEBUG | Key pressed: 'r', delta=0.2050, index=16
+2025-10-21 14:25:51,213 | DEBUG | Typed correct letter 'r' at index=16
+2025-10-21 14:25:51,331 | DEBUG | Key pressed: 'a', delta=0.1192, index=17
+2025-10-21 14:25:51,332 | DEBUG | Typed correct letter 'a' at index=17
+2025-10-21 14:25:51,540 | DEBUG | Key pressed: 'd', delta=0.2087, index=18
+2025-10-21 14:25:51,541 | DEBUG | Typed correct letter 'd' at index=18
+2025-10-21 14:25:51,699 | DEBUG | Key pressed: 'e', delta=0.1591, index=19
+2025-10-21 14:25:51,700 | DEBUG | Typed correct letter 'e' at index=19
+2025-10-21 14:25:51,818 | DEBUG | Key pressed: 'm', delta=0.1188, index=20
+2025-10-21 14:25:51,819 | DEBUG | Typed correct letter 'm' at index=20
+2025-10-21 14:25:51,945 | DEBUG | Key pressed: 'a', delta=0.1273, index=21
+2025-10-21 14:25:51,946 | DEBUG | Typed correct letter 'a' at index=21
+2025-10-21 14:25:52,091 | DEBUG | Key pressed: 'r', delta=0.1459, index=22
+2025-10-21 14:25:52,092 | DEBUG | Typed correct letter 'r' at index=22
+2025-10-21 14:25:52,355 | DEBUG | Key pressed: 'k', delta=0.2640, index=23
+2025-10-21 14:25:52,356 | DEBUG | Typed correct letter 'k' at index=23
+2025-10-21 14:25:52,501 | DEBUG | Key pressed: 's', delta=0.1460, index=24
+2025-10-21 14:25:52,502 | DEBUG | Typed correct letter 's' at index=24
+2025-10-21 14:25:52,611 | DEBUG | Key pressed: ' ', delta=0.1094, index=25
+2025-10-21 14:25:52,611 | DEBUG | Typed correct letter ' ' at index=25
+2025-10-21 14:25:52,952 | DEBUG | Key pressed: 'e', delta=0.3413, index=26
+2025-10-21 14:25:52,952 | DEBUG | Typed WRONG letter 'e' at index=26, wrong=1
+2025-10-21 14:25:53,348 | DEBUG | Key pressed: '', delta=0.3961, index=27
+2025-10-21 14:25:53,348 | DEBUG | Backspace pressed, index=26
+2025-10-21 14:25:53,439 | DEBUG | Key pressed: 'w', delta=0.0912, index=26
+2025-10-21 14:25:53,440 | DEBUG | Typed correct letter 'w' at index=26
+2025-10-21 14:25:53,599 | DEBUG | Key pressed: 'e', delta=0.1598, index=27
+2025-10-21 14:25:53,599 | DEBUG | Typed correct letter 'e' at index=27
+2025-10-21 14:25:53,772 | DEBUG | Key pressed: 'e', delta=0.1730, index=28
+2025-10-21 14:25:53,773 | DEBUG | Typed correct letter 'e' at index=28
+2025-10-21 14:25:53,927 | DEBUG | Key pressed: 'k', delta=0.1553, index=29
+2025-10-21 14:25:53,928 | DEBUG | Typed correct letter 'k' at index=29
+2025-10-21 14:25:54,332 | DEBUG | Key pressed: ' ', delta=0.4049, index=30
+2025-10-21 14:25:54,333 | DEBUG | Typed correct letter ' ' at index=30
+2025-10-21 14:25:54,520 | DEBUG | Key pressed: 'k', delta=0.1881, index=31
+2025-10-21 14:25:54,521 | DEBUG | Typed correct letter 'k' at index=31
+2025-10-21 14:25:54,597 | DEBUG | Key pressed: 'e', delta=0.0762, index=32
+2025-10-21 14:25:54,597 | DEBUG | Typed correct letter 'e' at index=32
+2025-10-21 14:25:54,843 | DEBUG | Key pressed: 'y', delta=0.2463, index=33
+2025-10-21 14:25:54,843 | DEBUG | Typed correct letter 'y' at index=33
+2025-10-21 14:25:55,130 | DEBUG | Key pressed: 'w', delta=0.2874, index=34
+2025-10-21 14:25:55,131 | DEBUG | Typed correct letter 'w' at index=34
+2025-10-21 14:25:55,184 | DEBUG | Key pressed: 'o', delta=0.0536, index=35
+2025-10-21 14:25:55,184 | DEBUG | Typed correct letter 'o' at index=35
+2025-10-21 14:25:55,321 | DEBUG | Key pressed: 'r', delta=0.1370, index=36
+2025-10-21 14:25:55,321 | DEBUG | Typed correct letter 'r' at index=36
+2025-10-21 14:25:55,604 | DEBUG | Key pressed: 'd', delta=0.2834, index=37
+2025-10-21 14:25:55,605 | DEBUG | Typed correct letter 'd' at index=37
+2025-10-21 14:25:55,877 | DEBUG | Key pressed: 's', delta=0.2726, index=38
+2025-10-21 14:25:55,877 | DEBUG | Typed correct letter 's' at index=38
+2025-10-21 14:25:55,890 | INFO | Test finished automatically
+2025-10-21 14:25:55,890 | INFO | Test finished
+2025-10-21 14:25:55,890 | DEBUG | Elapsed time: 8.03 seconds
+2025-10-21 14:25:55,891 | DEBUG | Num chars: 39, Num words: 7.80
+2025-10-21 14:25:55,891 | DEBUG | Base WPM: 58.28, Accuracy: 97.44%
+2025-10-21 14:25:55,891 | DEBUG | Final WPM (monkeytype style): 56.78
+2025-10-21 14:25:55,891 | DEBUG | Errors: 1, Wrong streak: 1
+2025-10-21 14:25:55,891 | DEBUG | User input length: 41, Key times length: 41
+2025-10-21 14:25:56,476 | INFO | Test results saved to database
+2025-10-21 14:25:57,982 | DEBUG | Key pressed: '', delta=2.1051, index=39
+2025-10-21 14:25:57,983 | INFO | Ending test
+2025-10-21 14:25:57,992 | DEBUG | WPM chart reset
+2025-10-21 14:25:57,992 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
+2025-10-21 14:25:57,992 | DEBUG | User input and key times cleared
+2025-10-21 14:25:57,992 | INFO | Generating new text for next test
+2025-10-21 14:25:57,994 | INFO | Test ready for user input
+2025-10-21 14:25:58,907 | DEBUG | Key pressed: 'c', delta=0.0000, index=0
+2025-10-21 14:25:58,908 | DEBUG | Typed correct letter 'c' at index=0
+2025-10-21 14:25:58,908 | DEBUG | Test started at 1761049558.907896
+2025-10-21 14:25:58,970 | DEBUG | Key pressed: 'o', delta=0.0629, index=1
+2025-10-21 14:25:58,970 | DEBUG | Typed correct letter 'o' at index=1
+2025-10-21 14:25:59,170 | DEBUG | Key pressed: 'l', delta=0.2000, index=2
+2025-10-21 14:25:59,170 | DEBUG | Typed correct letter 'l' at index=2
+2025-10-21 14:25:59,316 | DEBUG | Key pressed: 'l', delta=0.1459, index=3
+2025-10-21 14:25:59,316 | DEBUG | Typed correct letter 'l' at index=3
+2025-10-21 14:25:59,398 | DEBUG | Key pressed: 'e', delta=0.0823, index=4
+2025-10-21 14:25:59,399 | DEBUG | Typed correct letter 'e' at index=4
+2025-10-21 14:25:59,644 | DEBUG | Key pressed: 'c', delta=0.2458, index=5
+2025-10-21 14:25:59,644 | DEBUG | Typed correct letter 'c' at index=5
+2025-10-21 14:25:59,954 | DEBUG | Key pressed: '', delta=0.3102, index=6
+2025-10-21 14:25:59,955 | DEBUG | Backspace pressed, index=5
+2025-10-21 14:26:00,437 | DEBUG | Key pressed: 'd', delta=0.4828, index=5
+2025-10-21 14:26:00,438 | DEBUG | Typed WRONG letter 'd' at index=5, wrong=1
+2025-10-21 14:26:00,894 | DEBUG | Key pressed: '', delta=0.4570, index=6
+2025-10-21 14:26:00,894 | DEBUG | Backspace pressed, index=5
+2025-10-21 14:26:01,020 | DEBUG | Key pressed: 'c', delta=0.1261, index=5
+2025-10-21 14:26:01,021 | DEBUG | Typed correct letter 'c' at index=5
+2025-10-21 14:26:01,266 | DEBUG | Key pressed: 't', delta=0.2463, index=6
+2025-10-21 14:26:01,267 | DEBUG | Typed correct letter 't' at index=6
+2025-10-21 14:26:01,659 | DEBUG | Key pressed: ' ', delta=0.3926, index=7
+2025-10-21 14:26:01,660 | DEBUG | Typed correct letter ' ' at index=7
+2025-10-21 14:26:01,845 | DEBUG | Key pressed: 'o', delta=0.1862, index=8
+2025-10-21 14:26:01,846 | DEBUG | Typed correct letter 'o' at index=8
+2025-10-21 14:26:02,119 | DEBUG | Key pressed: 'p', delta=0.2738, index=9
+2025-10-21 14:26:02,120 | DEBUG | Typed correct letter 'p' at index=9
+2025-10-21 14:26:02,199 | DEBUG | Key pressed: 'e', delta=0.0803, index=10
+2025-10-21 14:26:02,200 | DEBUG | Typed correct letter 'e' at index=10
+2025-10-21 14:26:02,282 | DEBUG | Key pressed: 'r', delta=0.0827, index=11
+2025-10-21 14:26:02,283 | DEBUG | Typed correct letter 'r' at index=11
+2025-10-21 14:26:02,477 | DEBUG | Key pressed: 'a', delta=0.1950, index=12
+2025-10-21 14:26:02,478 | DEBUG | Typed correct letter 'a' at index=12
+2025-10-21 14:26:02,614 | DEBUG | Key pressed: 't', delta=0.1371, index=13
+2025-10-21 14:26:02,615 | DEBUG | Typed correct letter 't' at index=13
+2025-10-21 14:26:02,682 | DEBUG | Key pressed: 'e', delta=0.0680, index=14
+2025-10-21 14:26:02,683 | DEBUG | Typed correct letter 'e' at index=14
+2025-10-21 14:26:02,841 | DEBUG | Key pressed: ' ', delta=0.1590, index=15
+2025-10-21 14:26:02,842 | DEBUG | Typed correct letter ' ' at index=15
+2025-10-21 14:26:03,206 | DEBUG | Key pressed: 'c', delta=0.3650, index=16
+2025-10-21 14:26:03,207 | DEBUG | Typed correct letter 'c' at index=16
+2025-10-21 14:26:03,292 | DEBUG | Key pressed: 'l', delta=0.0860, index=17
+2025-10-21 14:26:03,293 | DEBUG | Typed correct letter 'l' at index=17
+2025-10-21 14:26:03,452 | DEBUG | Key pressed: 'o', delta=0.1598, index=18
+2025-10-21 14:26:03,452 | DEBUG | Typed correct letter 'o' at index=18
+2025-10-21 14:26:03,771 | DEBUG | Key pressed: 's', delta=0.3195, index=19
+2025-10-21 14:26:03,772 | DEBUG | Typed correct letter 's' at index=19
+2025-10-21 14:26:03,875 | DEBUG | Key pressed: 'i', delta=0.1036, index=20
+2025-10-21 14:26:03,875 | DEBUG | Typed correct letter 'i' at index=20
+2025-10-21 14:26:03,971 | DEBUG | Key pressed: 'n', delta=0.0962, index=21
+2025-10-21 14:26:03,972 | DEBUG | Typed correct letter 'n' at index=21
+2025-10-21 14:26:04,098 | DEBUG | Key pressed: 'g', delta=0.1268, index=22
+2025-10-21 14:26:04,099 | DEBUG | Typed correct letter 'g' at index=22
+2025-10-21 14:26:04,217 | DEBUG | Key pressed: ' ', delta=0.1193, index=23
+2025-10-21 14:26:04,218 | DEBUG | Typed correct letter ' ' at index=23
+2025-10-21 14:26:04,631 | DEBUG | Key pressed: 'p', delta=0.4139, index=24
+2025-10-21 14:26:04,632 | DEBUG | Typed correct letter 'p' at index=24
+2025-10-21 14:26:04,740 | DEBUG | Key pressed: 'o', delta=0.1091, index=25
+2025-10-21 14:26:04,741 | DEBUG | Typed correct letter 'o' at index=25
+2025-10-21 14:26:05,022 | DEBUG | Key pressed: 'l', delta=0.2820, index=26
+2025-10-21 14:26:05,023 | DEBUG | Typed correct letter 'l' at index=26
+2025-10-21 14:26:05,210 | DEBUG | Key pressed: 'i', delta=0.1880, index=27
+2025-10-21 14:26:05,211 | DEBUG | Typed correct letter 'i' at index=27
+2025-10-21 14:26:05,478 | DEBUG | Key pressed: 't', delta=0.2680, index=28
+2025-10-21 14:26:05,479 | DEBUG | Typed correct letter 't' at index=28
+2025-10-21 14:26:05,587 | DEBUG | Key pressed: 'i', delta=0.1090, index=29
+2025-10-21 14:26:05,588 | DEBUG | Typed correct letter 'i' at index=29
+2025-10-21 14:26:06,028 | DEBUG | Key pressed: 's', delta=0.4409, index=30
+2025-10-21 14:26:06,029 | DEBUG | Typed WRONG letter 's' at index=30, wrong=2
+2025-10-21 14:26:06,233 | DEBUG | Key pressed: 'c', delta=0.2052, index=31
+2025-10-21 14:26:06,234 | DEBUG | Typed WRONG letter 'c' at index=31, wrong=3
+2025-10-21 14:26:06,324 | DEBUG | Key pressed: ' ', delta=0.0907, index=32
+2025-10-21 14:26:06,325 | DEBUG | Typed correct letter ' ' at index=32
+2025-10-21 14:26:06,639 | DEBUG | Key pressed: '', delta=0.3150, index=33
+2025-10-21 14:26:06,640 | DEBUG | Backspace pressed, index=32
+2025-10-21 14:26:06,776 | DEBUG | Key pressed: '', delta=0.1364, index=32
+2025-10-21 14:26:06,776 | DEBUG | Backspace pressed, index=31
+2025-10-21 14:26:06,902 | DEBUG | Key pressed: '', delta=0.1268, index=31
+2025-10-21 14:26:06,903 | DEBUG | Backspace pressed, index=30
+2025-10-21 14:26:07,112 | DEBUG | Key pressed: 'c', delta=0.2100, index=30
+2025-10-21 14:26:07,113 | DEBUG | Typed correct letter 'c' at index=30
+2025-10-21 14:26:07,231 | DEBUG | Key pressed: 's', delta=0.1186, index=31
+2025-10-21 14:26:07,232 | DEBUG | Typed correct letter 's' at index=31
+2025-10-21 14:26:07,494 | DEBUG | Key pressed: ' ', delta=0.2631, index=32
+2025-10-21 14:26:07,495 | DEBUG | Typed correct letter ' ' at index=32
+2025-10-21 14:26:07,722 | DEBUG | Key pressed: 'f', delta=0.2284, index=33
+2025-10-21 14:26:07,723 | DEBUG | Typed correct letter 'f' at index=33
+2025-10-21 14:26:07,809 | DEBUG | Key pressed: 'o', delta=0.0865, index=34
+2025-10-21 14:26:07,810 | DEBUG | Typed correct letter 'o' at index=34
+2025-10-21 14:26:08,069 | DEBUG | Key pressed: 'r', delta=0.2598, index=35
+2025-10-21 14:26:08,069 | DEBUG | Typed correct letter 'r' at index=35
+2025-10-21 14:26:08,483 | DEBUG | Key pressed: 'm', delta=0.4140, index=36
+2025-10-21 14:26:08,483 | DEBUG | Typed correct letter 'm' at index=36
+2025-10-21 14:26:08,696 | DEBUG | Key pressed: 'u', delta=0.2133, index=37
+2025-10-21 14:26:08,697 | DEBUG | Typed correct letter 'u' at index=37
+2025-10-21 14:26:08,892 | DEBUG | Key pressed: 'l', delta=0.1960, index=38
+2025-10-21 14:26:08,892 | DEBUG | Typed correct letter 'l' at index=38
+2025-10-21 14:26:08,978 | DEBUG | Key pressed: 'a', delta=0.0860, index=39
+2025-10-21 14:26:08,979 | DEBUG | Typed correct letter 'a' at index=39
+2025-10-21 14:26:08,992 | INFO | Test finished automatically
+2025-10-21 14:26:08,992 | INFO | Test finished
+2025-10-21 14:26:08,992 | DEBUG | Elapsed time: 10.08 seconds
+2025-10-21 14:26:08,992 | DEBUG | Num chars: 40, Num words: 8.00
+2025-10-21 14:26:08,993 | DEBUG | Base WPM: 47.60, Accuracy: 92.50%
+2025-10-21 14:26:08,993 | DEBUG | Final WPM (monkeytype style): 44.03
+2025-10-21 14:26:08,993 | DEBUG | Errors: 3, Wrong streak: 2
+2025-10-21 14:26:08,993 | DEBUG | User input length: 50, Key times length: 50
+2025-10-21 14:26:09,553 | INFO | Test results saved to database
+2025-10-21 14:26:17,267 | INFO | Starting replay of test
+2025-10-21 14:26:17,267 | DEBUG | Ending current test (if any) before replay
+2025-10-21 14:26:17,267 | INFO | Ending test
+2025-10-21 14:26:17,277 | DEBUG | WPM chart reset
+2025-10-21 14:26:17,277 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
+2025-10-21 14:26:17,277 | DEBUG | User input and key times cleared
+2025-10-21 14:26:17,278 | INFO | Test ready for user input
+2025-10-21 14:26:17,278 | INFO | Loaded test from database: 39 characters, 41 key presses
+2025-10-21 14:26:17,278 | DEBUG | Text widget reset for replay
+2025-10-21 14:26:17,778 | DEBUG | Replaying char 0: 'p' (delay: 0.000 s)
+2025-10-21 14:26:17,779 | DEBUG | Typed correct letter 'p' at index=0
+2025-10-21 14:26:17,780 | DEBUG | Test started at 1761049577.779538
+2025-10-21 14:26:17,799 | DEBUG | Replaying char 1: 'a' (delay: 0.095 s)
+2025-10-21 14:26:17,800 | DEBUG | Typed correct letter 'a' at index=1
+2025-10-21 14:26:17,907 | DEBUG | Replaying char 2: 's' (delay: 0.314 s)
+2025-10-21 14:26:17,908 | DEBUG | Typed correct letter 's' at index=2
+2025-10-21 14:26:18,233 | DEBUG | Replaying char 3: 's' (delay: 0.043 s)
+2025-10-21 14:26:18,233 | DEBUG | Typed correct letter 's' at index=3
+2025-10-21 14:26:18,286 | DEBUG | Replaying char 4: 'e' (delay: 0.522 s)
+2025-10-21 14:26:18,287 | DEBUG | Typed correct letter 'e' at index=4
+2025-10-21 14:26:18,823 | DEBUG | Replaying char 5: 'd' (delay: 0.338 s)
+2025-10-21 14:26:18,823 | DEBUG | Typed correct letter 'd' at index=5
+2025-10-21 14:26:19,174 | DEBUG | Replaying char 6: ' ' (delay: 0.102 s)
+2025-10-21 14:26:19,174 | DEBUG | Typed correct letter ' ' at index=6
+2025-10-21 14:26:19,290 | DEBUG | Replaying char 7: 'a' (delay: 0.186 s)
+2025-10-21 14:26:19,291 | DEBUG | Typed correct letter 'a' at index=7
+2025-10-21 14:26:19,492 | DEBUG | Replaying char 8: 'd' (delay: 0.381 s)
+2025-10-21 14:26:19,493 | DEBUG | Typed correct letter 'd' at index=8
+2025-10-21 14:26:19,918 | DEBUG | Replaying char 9: 'v' (delay: 0.255 s)
+2025-10-21 14:26:19,918 | DEBUG | Typed correct letter 'v' at index=9
+2025-10-21 14:26:20,185 | DEBUG | Replaying char 10: 'a' (delay: 0.083 s)
+2025-10-21 14:26:20,185 | DEBUG | Typed correct letter 'a' at index=10
+2025-10-21 14:26:20,280 | DEBUG | Replaying char 11: 'n' (delay: 0.192 s)
+2025-10-21 14:26:20,280 | DEBUG | Typed correct letter 'n' at index=11
+2025-10-21 14:26:20,484 | DEBUG | Replaying char 12: 'c' (delay: 0.209 s)
+2025-10-21 14:26:20,485 | DEBUG | Typed correct letter 'c' at index=12
+2025-10-21 14:26:20,706 | DEBUG | Replaying char 13: 'e' (delay: 0.188 s)
+2025-10-21 14:26:20,707 | DEBUG | Typed correct letter 'e' at index=13
+2025-10-21 14:26:20,907 | DEBUG | Replaying char 14: ' ' (delay: 0.089 s)
+2025-10-21 14:26:20,908 | DEBUG | Typed correct letter ' ' at index=14
+2025-10-21 14:26:21,009 | DEBUG | Replaying char 15: 't' (delay: 0.151 s)
+2025-10-21 14:26:21,009 | DEBUG | Typed correct letter 't' at index=15
+2025-10-21 14:26:21,172 | DEBUG | Replaying char 16: 'r' (delay: 0.205 s)
+2025-10-21 14:26:21,173 | DEBUG | Typed correct letter 'r' at index=16
+2025-10-21 14:26:21,389 | DEBUG | Replaying char 17: 'a' (delay: 0.119 s)
+2025-10-21 14:26:21,390 | DEBUG | Typed correct letter 'a' at index=17
+2025-10-21 14:26:21,521 | DEBUG | Replaying char 18: 'd' (delay: 0.209 s)
+2025-10-21 14:26:21,522 | DEBUG | Typed correct letter 'd' at index=18
+2025-10-21 14:26:21,759 | DEBUG | Replaying char 19: 'e' (delay: 0.159 s)
+2025-10-21 14:26:21,760 | DEBUG | Typed correct letter 'e' at index=19
+2025-10-21 14:26:21,938 | DEBUG | Replaying char 20: 'm' (delay: 0.119 s)
+2025-10-21 14:26:21,938 | DEBUG | Typed correct letter 'm' at index=20
+2025-10-21 14:26:22,068 | DEBUG | Replaying char 21: 'a' (delay: 0.127 s)
+2025-10-21 14:26:22,069 | DEBUG | Typed correct letter 'a' at index=21
+2025-10-21 14:26:22,209 | DEBUG | Replaying char 22: 'r' (delay: 0.146 s)
+2025-10-21 14:26:22,209 | DEBUG | Typed correct letter 'r' at index=22
+2025-10-21 14:26:22,367 | DEBUG | Replaying char 23: 'k' (delay: 0.264 s)
+2025-10-21 14:26:22,367 | DEBUG | Typed correct letter 'k' at index=23
+2025-10-21 14:26:22,643 | DEBUG | Replaying char 24: 's' (delay: 0.146 s)
+2025-10-21 14:26:22,643 | DEBUG | Typed correct letter 's' at index=24
+2025-10-21 14:26:22,803 | DEBUG | Replaying char 25: ' ' (delay: 0.109 s)
+2025-10-21 14:26:22,803 | DEBUG | Typed correct letter ' ' at index=25
+2025-10-21 14:26:22,927 | DEBUG | Replaying char 26: 'e' (delay: 0.341 s)
+2025-10-21 14:26:22,928 | DEBUG | Typed WRONG letter 'e' at index=26, wrong=1
+2025-10-21 14:26:23,281 | DEBUG | Replaying char 27: '' (delay: 0.396 s)
+2025-10-21 14:26:23,282 | DEBUG | Backspace pressed, index=26
+2025-10-21 14:26:23,690 | DEBUG | Replaying char 28: 'w' (delay: 0.091 s)
+2025-10-21 14:26:23,691 | DEBUG | Typed correct letter 'w' at index=26
+2025-10-21 14:26:23,796 | DEBUG | Replaying char 29: 'e' (delay: 0.160 s)
+2025-10-21 14:26:23,796 | DEBUG | Typed correct letter 'e' at index=27
+2025-10-21 14:26:23,970 | DEBUG | Replaying char 30: 'e' (delay: 0.173 s)
+2025-10-21 14:26:23,971 | DEBUG | Typed correct letter 'e' at index=28
+2025-10-21 14:26:24,156 | DEBUG | Replaying char 31: 'k' (delay: 0.155 s)
+2025-10-21 14:26:24,157 | DEBUG | Typed correct letter 'k' at index=29
+2025-10-21 14:26:24,325 | DEBUG | Replaying char 32: ' ' (delay: 0.405 s)
+2025-10-21 14:26:24,326 | DEBUG | Typed correct letter ' ' at index=30
+2025-10-21 14:26:24,742 | DEBUG | Replaying char 33: 'k' (delay: 0.188 s)
+2025-10-21 14:26:24,743 | DEBUG | Typed correct letter 'k' at index=31
+2025-10-21 14:26:24,943 | DEBUG | Replaying char 34: 'e' (delay: 0.076 s)
+2025-10-21 14:26:24,944 | DEBUG | Typed correct letter 'e' at index=32
+2025-10-21 14:26:25,034 | DEBUG | Replaying char 35: 'y' (delay: 0.246 s)
+2025-10-21 14:26:25,035 | DEBUG | Typed correct letter 'y' at index=33
+2025-10-21 14:26:25,294 | DEBUG | Replaying char 36: 'w' (delay: 0.287 s)
+2025-10-21 14:26:25,295 | DEBUG | Typed correct letter 'w' at index=34
+2025-10-21 14:26:25,595 | DEBUG | Replaying char 37: 'o' (delay: 0.054 s)
+2025-10-21 14:26:25,595 | DEBUG | Typed correct letter 'o' at index=35
+2025-10-21 14:26:25,662 | DEBUG | Replaying char 38: 'r' (delay: 0.137 s)
+2025-10-21 14:26:25,662 | DEBUG | Typed correct letter 'r' at index=36
+2025-10-21 14:26:25,810 | DEBUG | Replaying char 39: 'd' (delay: 0.283 s)
+2025-10-21 14:26:25,810 | DEBUG | Typed correct letter 'd' at index=37
+2025-10-21 14:26:26,106 | DEBUG | Replaying char 40: 's' (delay: 0.273 s)
+2025-10-21 14:26:26,107 | DEBUG | Typed correct letter 's' at index=38
+2025-10-21 14:26:26,120 | INFO | Test finished automatically
+2025-10-21 14:26:26,120 | INFO | Test finished
+2025-10-21 14:26:26,120 | DEBUG | Elapsed time: 8.34 seconds
+2025-10-21 14:26:26,120 | DEBUG | Num chars: 39, Num words: 7.80
+2025-10-21 14:26:26,120 | DEBUG | Base WPM: 56.11, Accuracy: 97.44%
+2025-10-21 14:26:26,121 | DEBUG | Final WPM (monkeytype style): 54.67
+2025-10-21 14:26:26,121 | DEBUG | Errors: 1, Wrong streak: 1
+2025-10-21 14:26:26,121 | DEBUG | User input length: 41, Key times length: 41
+2025-10-21 14:26:26,122 | INFO | Test results saved to database
+2025-10-21 14:26:26,394 | INFO | Replay finished. Total characters replayed: 41
+2025-10-21 14:26:26,394 | INFO | Test finished
+2025-10-21 14:26:26,394 | DEBUG | Elapsed time: 8.62 seconds
+2025-10-21 14:26:26,395 | DEBUG | Num chars: 39, Num words: 7.80
+2025-10-21 14:26:26,395 | DEBUG | Base WPM: 54.32, Accuracy: 97.44%
+2025-10-21 14:26:26,395 | DEBUG | Final WPM (monkeytype style): 52.93
+2025-10-21 14:26:26,395 | DEBUG | Errors: 1, Wrong streak: 1
+2025-10-21 14:26:26,396 | DEBUG | User input length: 41, Key times length: 41
+2025-10-21 14:26:26,396 | INFO | Test results saved to database
+2025-10-21 14:27:33,656 | INFO | Starting replay of test
+2025-10-21 14:27:33,658 | DEBUG | Ending current test (if any) before replay
+2025-10-21 14:27:33,658 | INFO | Ending test
+2025-10-21 14:27:33,666 | DEBUG | WPM chart reset
+2025-10-21 14:27:33,666 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
+2025-10-21 14:27:33,666 | DEBUG | User input and key times cleared
+2025-10-21 14:27:33,667 | INFO | Test ready for user input
+2025-10-21 14:27:33,668 | INFO | Loaded test from database: 40 characters, 50 key presses
+2025-10-21 14:27:33,668 | DEBUG | Text widget reset for replay
+2025-10-21 14:27:34,169 | DEBUG | Replaying char 0: 'c' (delay: 0.000 s)
+2025-10-21 14:27:34,170 | DEBUG | Typed correct letter 'c' at index=0
+2025-10-21 14:27:34,170 | DEBUG | Test started at 1761049654.169957
+2025-10-21 14:27:34,186 | DEBUG | Replaying char 1: 'o' (delay: 0.063 s)
+2025-10-21 14:27:34,186 | DEBUG | Typed correct letter 'o' at index=1
+2025-10-21 14:27:34,263 | DEBUG | Replaying char 2: 'l' (delay: 0.200 s)
+2025-10-21 14:27:34,263 | DEBUG | Typed correct letter 'l' at index=2
+2025-10-21 14:27:34,476 | DEBUG | Replaying char 3: 'l' (delay: 0.146 s)
+2025-10-21 14:27:34,476 | DEBUG | Typed correct letter 'l' at index=3
+2025-10-21 14:27:34,632 | DEBUG | Replaying char 4: 'e' (delay: 0.082 s)
+2025-10-21 14:27:34,633 | DEBUG | Typed correct letter 'e' at index=4
+2025-10-21 14:27:34,726 | DEBUG | Replaying char 5: 'c' (delay: 0.246 s)
+2025-10-21 14:27:34,726 | DEBUG | Typed correct letter 'c' at index=5
+2025-10-21 14:27:34,983 | DEBUG | Replaying char 6: '' (delay: 0.310 s)
+2025-10-21 14:27:34,984 | DEBUG | Backspace pressed, index=5
+2025-10-21 14:27:35,306 | DEBUG | Replaying char 7: 'd' (delay: 0.483 s)
+2025-10-21 14:27:35,307 | DEBUG | Typed WRONG letter 'd' at index=5, wrong=1
+2025-10-21 14:27:35,800 | DEBUG | Replaying char 8: '' (delay: 0.457 s)
+2025-10-21 14:27:35,801 | DEBUG | Backspace pressed, index=5
+2025-10-21 14:27:36,268 | DEBUG | Replaying char 9: 'c' (delay: 0.126 s)
+2025-10-21 14:27:36,269 | DEBUG | Typed correct letter 'c' at index=5
+2025-10-21 14:27:36,408 | DEBUG | Replaying char 10: 't' (delay: 0.246 s)
+2025-10-21 14:27:36,409 | DEBUG | Typed correct letter 't' at index=6
+2025-10-21 14:27:36,667 | DEBUG | Replaying char 11: ' ' (delay: 0.393 s)
+2025-10-21 14:27:36,668 | DEBUG | Typed correct letter ' ' at index=7
+2025-10-21 14:27:37,073 | DEBUG | Replaying char 12: 'o' (delay: 0.186 s)
+2025-10-21 14:27:37,073 | DEBUG | Typed correct letter 'o' at index=8
+2025-10-21 14:27:37,271 | DEBUG | Replaying char 13: 'p' (delay: 0.274 s)
+2025-10-21 14:27:37,272 | DEBUG | Typed correct letter 'p' at index=9
+2025-10-21 14:27:37,557 | DEBUG | Replaying char 14: 'e' (delay: 0.080 s)
+2025-10-21 14:27:37,557 | DEBUG | Typed correct letter 'e' at index=10
+2025-10-21 14:27:37,651 | DEBUG | Replaying char 15: 'r' (delay: 0.083 s)
+2025-10-21 14:27:37,651 | DEBUG | Typed correct letter 'r' at index=11
+2025-10-21 14:27:37,746 | DEBUG | Replaying char 16: 'a' (delay: 0.195 s)
+2025-10-21 14:27:37,746 | DEBUG | Typed correct letter 'a' at index=12
+2025-10-21 14:27:37,954 | DEBUG | Replaying char 17: 't' (delay: 0.137 s)
+2025-10-21 14:27:37,955 | DEBUG | Typed correct letter 't' at index=13
+2025-10-21 14:27:38,104 | DEBUG | Replaying char 18: 'e' (delay: 0.068 s)
+2025-10-21 14:27:38,105 | DEBUG | Typed correct letter 'e' at index=14
+2025-10-21 14:27:38,184 | DEBUG | Replaying char 19: ' ' (delay: 0.159 s)
+2025-10-21 14:27:38,185 | DEBUG | Typed correct letter ' ' at index=15
+2025-10-21 14:27:38,356 | DEBUG | Replaying char 20: 'c' (delay: 0.365 s)
+2025-10-21 14:27:38,357 | DEBUG | Typed correct letter 'c' at index=16
+2025-10-21 14:27:38,734 | DEBUG | Replaying char 21: 'l' (delay: 0.086 s)
+2025-10-21 14:27:38,735 | DEBUG | Typed correct letter 'l' at index=17
+2025-10-21 14:27:38,833 | DEBUG | Replaying char 22: 'o' (delay: 0.160 s)
+2025-10-21 14:27:38,834 | DEBUG | Typed correct letter 'o' at index=18
+2025-10-21 14:27:39,007 | DEBUG | Replaying char 23: 's' (delay: 0.319 s)
+2025-10-21 14:27:39,008 | DEBUG | Typed correct letter 's' at index=19
+2025-10-21 14:27:39,339 | DEBUG | Replaying char 24: 'i' (delay: 0.104 s)
+2025-10-21 14:27:39,339 | DEBUG | Typed correct letter 'i' at index=20
+2025-10-21 14:27:39,454 | DEBUG | Replaying char 25: 'n' (delay: 0.096 s)
+2025-10-21 14:27:39,455 | DEBUG | Typed correct letter 'n' at index=21
+2025-10-21 14:27:39,563 | DEBUG | Replaying char 26: 'g' (delay: 0.127 s)
+2025-10-21 14:27:39,564 | DEBUG | Typed correct letter 'g' at index=22
+2025-10-21 14:27:39,702 | DEBUG | Replaying char 27: ' ' (delay: 0.119 s)
+2025-10-21 14:27:39,703 | DEBUG | Typed correct letter ' ' at index=23
+2025-10-21 14:27:39,835 | DEBUG | Replaying char 28: 'p' (delay: 0.414 s)
+2025-10-21 14:27:39,836 | DEBUG | Typed correct letter 'p' at index=24
+2025-10-21 14:27:40,261 | DEBUG | Replaying char 29: 'o' (delay: 0.109 s)
+2025-10-21 14:27:40,261 | DEBUG | Typed correct letter 'o' at index=25
+2025-10-21 14:27:40,383 | DEBUG | Replaying char 30: 'l' (delay: 0.282 s)
+2025-10-21 14:27:40,383 | DEBUG | Typed correct letter 'l' at index=26
+2025-10-21 14:27:40,678 | DEBUG | Replaying char 31: 'i' (delay: 0.188 s)
+2025-10-21 14:27:40,678 | DEBUG | Typed correct letter 'i' at index=27
+2025-10-21 14:27:40,878 | DEBUG | Replaying char 32: 't' (delay: 0.268 s)
+2025-10-21 14:27:40,879 | DEBUG | Typed correct letter 't' at index=28
+2025-10-21 14:27:41,160 | DEBUG | Replaying char 33: 'i' (delay: 0.109 s)
+2025-10-21 14:27:41,160 | DEBUG | Typed correct letter 'i' at index=29
+2025-10-21 14:27:41,282 | DEBUG | Replaying char 34: 's' (delay: 0.441 s)
+2025-10-21 14:27:41,283 | DEBUG | Typed WRONG letter 's' at index=30, wrong=2
+2025-10-21 14:27:41,736 | DEBUG | Replaying char 35: 'c' (delay: 0.205 s)
+2025-10-21 14:27:41,736 | DEBUG | Typed WRONG letter 'c' at index=31, wrong=3
+2025-10-21 14:27:41,954 | DEBUG | Replaying char 36: ' ' (delay: 0.091 s)
+2025-10-21 14:27:41,954 | DEBUG | Typed correct letter ' ' at index=32
+2025-10-21 14:27:42,058 | DEBUG | Replaying char 37: '' (delay: 0.315 s)
+2025-10-21 14:27:42,059 | DEBUG | Backspace pressed, index=32
+2025-10-21 14:27:42,386 | DEBUG | Replaying char 38: '' (delay: 0.136 s)
+2025-10-21 14:27:42,387 | DEBUG | Backspace pressed, index=31
+2025-10-21 14:27:42,536 | DEBUG | Replaying char 39: '' (delay: 0.127 s)
+2025-10-21 14:27:42,536 | DEBUG | Backspace pressed, index=30
+2025-10-21 14:27:42,675 | DEBUG | Replaying char 40: 'c' (delay: 0.210 s)
+2025-10-21 14:27:42,676 | DEBUG | Typed correct letter 'c' at index=30
+2025-10-21 14:27:42,898 | DEBUG | Replaying char 41: 's' (delay: 0.119 s)
+2025-10-21 14:27:42,898 | DEBUG | Typed correct letter 's' at index=31
+2025-10-21 14:27:43,029 | DEBUG | Replaying char 42: ' ' (delay: 0.263 s)
+2025-10-21 14:27:43,029 | DEBUG | Typed correct letter ' ' at index=32
+2025-10-21 14:27:43,307 | DEBUG | Replaying char 43: 'f' (delay: 0.228 s)
+2025-10-21 14:27:43,307 | DEBUG | Typed correct letter 'f' at index=33
+2025-10-21 14:27:43,547 | DEBUG | Replaying char 44: 'o' (delay: 0.087 s)
+2025-10-21 14:27:43,548 | DEBUG | Typed correct letter 'o' at index=34
+2025-10-21 14:27:43,647 | DEBUG | Replaying char 45: 'r' (delay: 0.260 s)
+2025-10-21 14:27:43,647 | DEBUG | Typed correct letter 'r' at index=35
+2025-10-21 14:27:43,921 | DEBUG | Replaying char 46: 'm' (delay: 0.414 s)
+2025-10-21 14:27:43,921 | DEBUG | Typed correct letter 'm' at index=36
+2025-10-21 14:27:44,350 | DEBUG | Replaying char 47: 'u' (delay: 0.213 s)
+2025-10-21 14:27:44,350 | DEBUG | Typed correct letter 'u' at index=37
+2025-10-21 14:27:44,576 | DEBUG | Replaying char 48: 'l' (delay: 0.196 s)
+2025-10-21 14:27:44,577 | DEBUG | Typed correct letter 'l' at index=38
+2025-10-21 14:27:44,785 | DEBUG | Replaying char 49: 'a' (delay: 0.086 s)
+2025-10-21 14:27:44,785 | DEBUG | Typed correct letter 'a' at index=39
+2025-10-21 14:27:44,798 | INFO | Test finished automatically
+2025-10-21 14:27:44,798 | INFO | Test finished
+2025-10-21 14:27:44,799 | DEBUG | Elapsed time: 10.63 seconds
+2025-10-21 14:27:44,799 | DEBUG | Num chars: 40, Num words: 8.00
+2025-10-21 14:27:44,799 | DEBUG | Base WPM: 45.16, Accuracy: 92.50%
+2025-10-21 14:27:44,799 | DEBUG | Final WPM (monkeytype style): 41.77
+2025-10-21 14:27:44,799 | DEBUG | Errors: 3, Wrong streak: 2
+2025-10-21 14:27:44,800 | DEBUG | User input length: 50, Key times length: 50
+2025-10-21 14:27:44,800 | INFO | Test results saved to database
+2025-10-21 14:27:44,886 | INFO | Replay finished. Total characters replayed: 50
+2025-10-21 14:27:44,887 | INFO | Test finished
+2025-10-21 14:27:44,887 | DEBUG | Elapsed time: 10.72 seconds
+2025-10-21 14:27:44,887 | DEBUG | Num chars: 40, Num words: 8.00
+2025-10-21 14:27:44,887 | DEBUG | Base WPM: 44.79, Accuracy: 92.50%
+2025-10-21 14:27:44,887 | DEBUG | Final WPM (monkeytype style): 41.43
+2025-10-21 14:27:44,888 | DEBUG | Errors: 3, Wrong streak: 2
+2025-10-21 14:27:44,888 | DEBUG | User input length: 50, Key times length: 50
+2025-10-21 14:27:44,888 | INFO | Test results saved to database
+2025-10-21 14:27:45,972 | DEBUG | Key pressed: '', delta=0.0000, index=40
+2025-10-21 14:27:45,973 | INFO | Ending test
+2025-10-21 14:27:45,980 | DEBUG | WPM chart reset
+2025-10-21 14:27:45,980 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
+2025-10-21 14:27:45,980 | DEBUG | User input and key times cleared
+2025-10-21 14:27:45,981 | INFO | Generating new text for next test
+2025-10-21 14:27:45,982 | INFO | Test ready for user input
+2025-10-21 14:27:46,900 | DEBUG | Key pressed: 'd', delta=0.0000, index=0
+2025-10-21 14:27:46,901 | DEBUG | Typed correct letter 'd' at index=0
+2025-10-21 14:27:46,901 | DEBUG | Test started at 1761049666.900966
+2025-10-21 14:27:47,051 | DEBUG | Key pressed: 'e', delta=0.1513, index=1
+2025-10-21 14:27:47,052 | DEBUG | Typed correct letter 'e' at index=1
+2025-10-21 14:27:47,175 | DEBUG | Key pressed: 'p', delta=0.1237, index=2
+2025-10-21 14:27:47,175 | DEBUG | Typed correct letter 'p' at index=2
+2025-10-21 14:27:47,342 | DEBUG | Key pressed: 't', delta=0.1674, index=3
+2025-10-21 14:27:47,350 | DEBUG | Typed correct letter 't' at index=3
+2025-10-21 14:27:47,480 | DEBUG | Key pressed: 'h', delta=0.1374, index=4
+2025-10-21 14:27:47,480 | DEBUG | Typed correct letter 'h' at index=4
+2025-10-21 14:27:47,634 | DEBUG | Key pressed: ' ', delta=0.1546, index=5
+2025-10-21 14:27:47,635 | DEBUG | Typed correct letter ' ' at index=5
+2025-10-21 14:27:47,812 | DEBUG | Key pressed: 'w', delta=0.1780, index=6
+2025-10-21 14:27:47,813 | DEBUG | Typed correct letter 'w' at index=6
+2025-10-21 14:27:48,104 | DEBUG | Key pressed: 'e', delta=0.2918, index=7
+2025-10-21 14:27:48,105 | DEBUG | Typed correct letter 'e' at index=7
+2025-10-21 14:27:48,291 | DEBUG | Key pressed: 'e', delta=0.1869, index=8
+2025-10-21 14:27:48,291 | DEBUG | Typed correct letter 'e' at index=8
+2025-10-21 14:27:48,568 | DEBUG | Key pressed: 'k', delta=0.2770, index=9
+2025-10-21 14:27:48,568 | DEBUG | Typed correct letter 'k' at index=9
+2025-10-21 14:27:48,713 | DEBUG | Key pressed: ' ', delta=0.1450, index=10
+2025-10-21 14:27:48,714 | DEBUG | Typed correct letter ' ' at index=10
+2025-10-21 14:27:48,946 | DEBUG | Key pressed: 's', delta=0.2327, index=11
+2025-10-21 14:27:48,946 | DEBUG | Typed correct letter 's' at index=11
+2025-10-21 14:27:48,982 | DEBUG | Key pressed: 'h', delta=0.0360, index=12
+2025-10-21 14:27:48,982 | DEBUG | Typed correct letter 'h' at index=12
+2025-10-21 14:27:49,045 | DEBUG | Key pressed: 'o', delta=0.0633, index=13
+2025-10-21 14:27:49,046 | DEBUG | Typed correct letter 'o' at index=13
+2025-10-21 14:27:49,251 | DEBUG | Key pressed: 'w', delta=0.2063, index=14
+2025-10-21 14:27:49,252 | DEBUG | Typed correct letter 'w' at index=14
+2025-10-21 14:27:49,351 | DEBUG | Key pressed: ' ', delta=0.1001, index=15
+2025-10-21 14:27:49,352 | DEBUG | Typed correct letter ' ' at index=15
+2025-10-21 14:27:49,605 | DEBUG | Key pressed: 'f', delta=0.2535, index=16
+2025-10-21 14:27:49,606 | DEBUG | Typed correct letter 'f' at index=16
+2025-10-21 14:27:49,701 | DEBUG | Key pressed: 'i', delta=0.0960, index=17
+2025-10-21 14:27:49,701 | DEBUG | Typed correct letter 'i' at index=17
+2025-10-21 14:27:49,851 | DEBUG | Key pressed: 'n', delta=0.1500, index=18
+2025-10-21 14:27:49,851 | DEBUG | Typed correct letter 'n' at index=18
+2025-10-21 14:27:50,043 | DEBUG | Key pressed: 'l', delta=0.1922, index=19
+2025-10-21 14:27:50,044 | DEBUG | Typed correct letter 'l' at index=19
+2025-10-21 14:27:50,134 | DEBUG | Key pressed: 'a', delta=0.0907, index=20
+2025-10-21 14:27:50,134 | DEBUG | Typed correct letter 'a' at index=20
+2025-10-21 14:27:50,339 | DEBUG | Key pressed: 'n', delta=0.2052, index=21
+2025-10-21 14:27:50,340 | DEBUG | Typed correct letter 'n' at index=21
+2025-10-21 14:27:50,480 | DEBUG | Key pressed: 'd', delta=0.1411, index=22
+2025-10-21 14:27:50,481 | DEBUG | Typed correct letter 'd' at index=22
+2025-10-21 14:27:50,630 | DEBUG | Key pressed: ' ', delta=0.1498, index=23
+2025-10-21 14:27:50,630 | DEBUG | Typed correct letter ' ' at index=23
+2025-10-21 14:27:50,836 | DEBUG | Key pressed: 'o', delta=0.2061, index=24
+2025-10-21 14:27:50,837 | DEBUG | Typed correct letter 'o' at index=24
+2025-10-21 14:27:51,012 | DEBUG | Key pressed: 't', delta=0.1758, index=25
+2025-10-21 14:27:51,012 | DEBUG | Typed correct letter 't' at index=25
+2025-10-21 14:27:51,053 | DEBUG | Key pressed: 'h', delta=0.0409, index=26
+2025-10-21 14:27:51,053 | DEBUG | Typed correct letter 'h' at index=26
+2025-10-21 14:27:51,195 | DEBUG | Key pressed: 'e', delta=0.1420, index=27
+2025-10-21 14:27:51,195 | DEBUG | Typed correct letter 'e' at index=27
+2025-10-21 14:27:51,276 | DEBUG | Key pressed: 'r', delta=0.0811, index=28
+2025-10-21 14:27:51,276 | DEBUG | Typed correct letter 'r' at index=28
+2025-10-21 14:27:51,513 | DEBUG | Key pressed: 's', delta=0.2373, index=29
+2025-10-21 14:27:51,514 | DEBUG | Typed correct letter 's' at index=29
+2025-10-21 14:27:51,525 | INFO | Test finished automatically
+2025-10-21 14:27:51,525 | INFO | Test finished
+2025-10-21 14:27:51,526 | DEBUG | Elapsed time: 4.62 seconds
+2025-10-21 14:27:51,526 | DEBUG | Num chars: 30, Num words: 6.00
+2025-10-21 14:27:51,526 | DEBUG | Base WPM: 77.84, Accuracy: 100.00%
+2025-10-21 14:27:51,526 | DEBUG | Final WPM (monkeytype style): 77.84
+2025-10-21 14:27:51,526 | DEBUG | Errors: 0, Wrong streak: 0
+2025-10-21 14:27:51,527 | DEBUG | User input length: 30, Key times length: 30
+2025-10-21 14:27:52,002 | INFO | Test results saved to database

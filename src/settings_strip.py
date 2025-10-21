@@ -84,4 +84,4 @@ class SettingsStrip(tk.Frame):
         SettingsWindow(self.master, self.typing_frame)
 
     def open_user_window(self):
-        UserWindow(self.master)
+        UserWindow(master=self.typing_frame)
