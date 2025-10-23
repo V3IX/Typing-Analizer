@@ -1,23 +1,25 @@
 import tkinter as tk
 from word_loader import load_words, generate_random_text, detect_word_files
 from settings_window import SettingsWindow
+import time
 import os
 
-class TypingWindow:
-    def __init__(self, master):
-        self.master = master
-        self.master.title("Typing Test")
-        self.master.geometry("800x300")
-        self.master.configure(bg="#2e2e2e")
+# typing_window.py
+class TypingWindow(tk.Frame):
+    def __init__(self, master, **kwargs):
+        super().__init__(master, **kwargs)
+        self.configure(bg="#2e2e2e")
 
         self.red_mode = "typed"
         self.word_list_choice = ""
         self.index = 0
+        self.start_time = None
 
         # Text widget
-        self.text_widget = tk.Text(master, font=("Consolas", 24), bg="#2e2e2e",
-                                   height=2, width=50, bd=0, highlightthickness=0)
-        self.text_widget.pack(pady=100)
+        self.text_widget = tk.Text(self, font=("Consolas", 24), bg="#2e2e2e",
+                                   height=5, width=50, bd=0, highlightthickness=0,
+                                   wrap="word")
+        self.text_widget.pack(pady=20, fill="x")
 
         # Tags
         self.text_widget.tag_config("gray", foreground="gray")
@@ -25,13 +27,9 @@ class TypingWindow:
         self.text_widget.tag_config("red", foreground="red")
         self.text_widget.tag_configure("center", justify="center")
 
-        # Settings button
-        self.settings_button = tk.Button(master, text="⚙", command=self.open_settings,
-                                         font=("Arial", 12, "bold"), bg="#4e4e4e", fg="white", bd=0, relief="raised")
-        self.settings_button.place(relx=0.5, rely=0.05, anchor="n")
-
         # Bind typing
-        master.bind("<Key>", self.on_keypress)
+        self.text_widget.focus_set()
+        self.text_widget.bind("<Key>", self.on_keypress)
 
         # Detect word files
         self.word_files = detect_word_files()
@@ -39,26 +37,33 @@ class TypingWindow:
             self.word_list_choice = self.word_files[0]
 
         # Load initial text
-        self.load_random_text_for_typing()
+        self.generate_text()
 
     # --------------------- Settings ---------------------
-    def open_settings(self):
-        SettingsWindow(self.master, self)
-
     def set_red_mode(self, mode):
         self.red_mode = mode
 
     def set_word_list(self, choice):
         self.word_list_choice = choice
-        self.load_random_text_for_typing()
+        self.generate_text()
 
     # --------------------- Load & generate text ---------------------
-    def load_random_text_for_typing(self):
+    def generate_text(self, num_words=None):
+        """
+        Generate the typing text based on current word list and mode.
+        num_words: number of words to generate (falls back to current goal)
+        """
+        if num_words is None:
+            num_words = getattr(self, "words_goal", 50)  # default to 50 if not set
+
         file_path = os.path.join("data/words", self.word_list_choice)
         words = load_words(file_path)
-        self.text = generate_random_text(words, num_words=50)
+
+        # --- Generate text (currently random, can add more modes later) ---
+        self.text = generate_random_text(words, num_words=num_words)
         self.index = 0
 
+        # --- Update text widget ---
         self.text_widget.config(state=tk.NORMAL)
         self.text_widget.delete("1.0", tk.END)
         self.text_widget.insert("1.0", self.text)
@@ -70,6 +75,8 @@ class TypingWindow:
     def on_keypress(self, event):
         if len(event.char) != 1 and event.keysym != "BackSpace":
             return
+
+        current_time = time.time()
 
         self.text_widget.config(state=tk.NORMAL)
 
@@ -88,10 +95,21 @@ class TypingWindow:
                 if typed_char == expected_char:
                     self.text_widget.insert(f"1.{self.index}", typed_char)
                     self.text_widget.tag_add("white", f"1.{self.index}", f"1.{self.index+1}")
+                    
+                    self.time = current_time
                 else:
                     self.text_widget.insert(f"1.{self.index}", char_to_show)
                     self.text_widget.tag_add("red", f"1.{self.index}", f"1.{self.index+1}")
                 self.index += 1
 
+        if self.start_time is None:
+            self.start_time = current_time
+            self.time = current_time
+
         self.text_widget.tag_add("center", "1.0", "end")
         self.text_widget.config(state=tk.DISABLED)
+
+    def get_time_live(self):
+        if self.start_time is None:
+            return 0
+        return time.time() - self.start_time
