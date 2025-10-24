@@ -14,6 +14,10 @@ class TypingWindow(tk.Frame):
         self.word_list_choice = ""
         self.index = 0
         self.start_time = None
+        self.finished = False
+        self.typed_words = []
+
+        self.wrong = 0
 
         # Text widget
         self.text_widget = tk.Text(self, font=("Consolas", 24), bg="#2e2e2e",
@@ -73,6 +77,10 @@ class TypingWindow(tk.Frame):
 
     # --------------------- Typing logic ---------------------
     def on_keypress(self, event):
+
+        if self.finished:
+            return
+
         if len(event.char) != 1 and event.keysym != "BackSpace":
             return
 
@@ -100,6 +108,7 @@ class TypingWindow(tk.Frame):
                 else:
                     self.text_widget.insert(f"1.{self.index}", char_to_show)
                     self.text_widget.tag_add("red", f"1.{self.index}", f"1.{self.index+1}")
+                    self.wrong += 1
                 self.index += 1
 
         if self.start_time is None:
@@ -109,7 +118,27 @@ class TypingWindow(tk.Frame):
         self.text_widget.tag_add("center", "1.0", "end")
         self.text_widget.config(state=tk.DISABLED)
 
+        # Finish test
+        if self.index >= len(self.text):
+            self.finished = True
+            self.finish_test()
+
     def get_time_live(self):
         if self.start_time is None:
             return 0
         return time.time() - self.start_time
+    
+    def finish_test(self):
+        self.text_widget.config(state=tk.DISABLED)
+        if hasattr(self, "wpm_chart"):
+            self.wpm_chart.reset_chart()
+
+        self.index = 0
+        self.start_time = None
+        self.finished = False
+        self.typed_words = []
+
+        self.generate_text(num_words=self.words_goal)
+
+        self.text_widget.config(state=tk.NORMAL)
+        self.text_widget.focus_set()

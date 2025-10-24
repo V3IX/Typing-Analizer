@@ -53,35 +53,62 @@ class WPMChart(tk.Frame):
     def update_chart(self):
         typing_window = self.typing_window
 
-        # --- Only start after first character typed ---
-        if typing_window.index < 1:
-            self.after(500, self.update_chart)
-            return
+        # --- Initialize tracking attributes ---
+        if not hasattr(self, "last_index"):
+            self.last_index = typing_window.index
+        if not hasattr(self, "last_wrong"):
+            self.last_wrong = typing_window.wrong
+        if not hasattr(self, "error_marks"):
+            self.error_marks = []
+        if not hasattr(self, "error_recorded_for_index"):
+            self.error_recorded_for_index = False
 
-        # --- WPM calculation ---
-        elapsed_time = typing_window.get_time_live()
-        num_chars = typing_window.index
-        wpm = 0 if num_chars < 5 else (num_chars / 5) / (elapsed_time / 60)
+        # --- Only update/redraw if index changed ---
+        if typing_window.index != self.last_index:
+            self.last_index = typing_window.index
 
-        # --- Add new data ---
-        self.wpm_history.append(max(0, wpm))
-        self.x_history.append(elapsed_time)
+            # --- WPM calculation ---
+            if typing_window.index > 5:
+                elapsed_time = typing_window.get_time_live()
+                num_chars = typing_window.index
+                wpm = 0 if num_chars < 5 else (num_chars / 5) / (elapsed_time / 60)
 
-        # --- Clear and redraw chart ---
+                self.wpm_history.append(max(0, wpm))
+                self.x_history.append(elapsed_time)
+
+            # --- Detect new errors ---
+            # Only add a red line if this is the first error at the current index
+            if typing_window.wrong > self.last_wrong and not self.error_recorded_for_index:
+                elapsed_time = typing_window.get_time_live()
+                self.error_marks.append(elapsed_time)
+                self.error_recorded_for_index = True
+
+            # --- Reset error flag if user typed correctly (index moved without new wrong) ---
+            if typing_window.wrong == self.last_wrong:
+                self.error_recorded_for_index = False
+
+            # --- Update last_wrong ---
+            self.last_wrong = typing_window.wrong
+
+            # --- Clear and redraw chart ---
+            self.redraw_chart()
+
+        # Schedule next check
+        self.after(50, self.update_chart)
+
+    def redraw_chart(self):
         self.ax.cla()
         self.ax.set_facecolor("#2e2e2e")
         self.fig.patch.set_facecolor("#2e2e2e")
 
-        # --- Smooth WPM line using cubic spline ---
+        # --- Smooth WPM line ---
         if len(self.x_history) > 3:
             x = np.array(self.x_history)
             y = np.array(self.wpm_history)
-
             x_smooth = np.linspace(x.min(), x.max(), 300)
             spline = make_interp_spline(x, y, k=3)
             y_smooth = spline(x_smooth)
-
-            self.ax.plot(x_smooth, y_smooth, color="lime", linewidth=2, label="WPM")
+            self.ax.plot(x_smooth, y_smooth, color="lime", linewidth=2)
             self.ax.fill_between(x_smooth, y_smooth, 0, color="lime", alpha=0.1)
             self.ax.scatter(x, y, color="white", s=10, zorder=5, alpha=0.8, edgecolors="none")
         else:
@@ -89,26 +116,55 @@ class WPMChart(tk.Frame):
             self.ax.fill_between(self.x_history, self.wpm_history, 0, color="lime", alpha=0.1)
             self.ax.scatter(self.x_history, self.wpm_history, color="white", s=10, zorder=5, alpha=0.8, edgecolors="none")
 
+        # --- Draw red error lines ---
+        if hasattr(self, "error_marks"):
+            for mark in self.error_marks:
+                self.ax.axvline(x=mark, color="red", linestyle="--", linewidth=1, alpha=0.7)
+
         # --- Axis limits ---
-        self.ax.set_xlim(left=0, right=self.x_history[-1])
+        if self.x_history:
+            self.ax.set_xlim(left=self.x_history[0], right=self.x_history[-1])
         self.ax.set_ylim(bottom=0)
 
-        # --- X-axis style ---
+        # --- Axis styling ---
         self.ax.spines['bottom'].set_visible(True)
         self.ax.spines['bottom'].set_color('#555555')
         self.ax.spines['bottom'].set_linewidth(1)
         self.ax.get_xaxis().set_ticks([])
         self.ax.get_xaxis().set_ticklabels([])
 
-        # --- Left Y-axis ---
         self.ax.spines['left'].set_color('white')
         self.ax.spines['left'].set_linewidth(1)
         self.ax.spines['top'].set_visible(False)
         self.ax.tick_params(axis='y', colors='white', labelsize=10)
         self.ax.set_ylabel("WPM", color="white", fontsize=10)
 
-        # --- Layout ---
         self.fig.subplots_adjust(left=0.08, right=0.92, top=0.95, bottom=0.05)
-
         self.canvas.draw_idle()
-        self.after(500, self.update_chart)
+
+
+    def reset_chart(self):
+        # --- Reset performance data ---
+        self.x_history.clear()
+        self.wpm_history.clear()
+        self.start_time = time.time()
+
+        # --- Reset mistake tracking ---
+        self.error_marks = []
+        self.last_wrong = 0
+
+        # --- Clear plot and redraw an empty chart ---
+        self.ax.cla()
+        self.ax.set_facecolor("#2e2e2e")
+        self.fig.patch.set_facecolor("#2e2e2e")
+
+        self.ax.set_ylabel("WPM", color="white", fontsize=10)
+        self.ax.spines['left'].set_color('white')
+        self.ax.spines['bottom'].set_color('#555555')
+        self.ax.spines['bottom'].set_visible(True)
+        self.ax.tick_params(axis='y', colors='white', labelsize=10)
+        self.ax.get_xaxis().set_ticks([])
+        self.ax.get_xaxis().set_ticklabels([])
+
+        self.fig.subplots_adjust(left=0.08, right=0.92, top=0.95, bottom=0.05)
+        self.canvas.draw_idle()

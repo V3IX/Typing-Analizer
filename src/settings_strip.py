@@ -1,5 +1,6 @@
 import tkinter as tk
 from settings_window import SettingsWindow
+from typing_window import TypingWindow
 
 class SettingsStrip(tk.Frame):
     def __init__(self, master, typing_frame, **kwargs):
@@ -49,6 +50,7 @@ class SettingsStrip(tk.Frame):
 
         # Highlight active preset button, deselect custom
         self.highlight_button(button_value)
+        self.typing_frame.finish_test()
 
     # ---------------- Highlight preset button ----------------
     def highlight_button(self, value):

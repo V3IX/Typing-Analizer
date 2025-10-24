@@ -22,5 +22,6 @@ typing_frame.pack(fill="x", padx=20, pady=(0,10))
 # ---------------- WPM Chart ----------------
 wpm_chart = WPMChart(root, typing_frame)
 wpm_chart.pack(fill="both", padx=20, pady=(0,20))
+typing_frame.wpm_chart = wpm_chart
 
 root.mainloop()

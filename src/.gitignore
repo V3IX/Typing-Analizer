@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python package/build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Matplotlib / cache files
+*.pickle
+*.npz
+*.npy
+
+# Tkinter autosave / temporary files
+*.tmp
