@@ -50,7 +50,7 @@ class SettingsStrip(tk.Frame):
 
         # Highlight active preset button, deselect custom
         self.highlight_button(button_value)
-        self.typing_frame.finish_test()
+        self.typing_frame.end_test()
 
     # ---------------- Highlight preset button ----------------
     def highlight_button(self, value):

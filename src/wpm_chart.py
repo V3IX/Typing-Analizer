@@ -60,40 +60,51 @@ class WPMChart(tk.Frame):
             self.last_wrong = typing_window.wrong
         if not hasattr(self, "error_marks"):
             self.error_marks = []
+        if not hasattr(self, "correct_chars"):
+            self.correct_chars = 0
         if not hasattr(self, "error_recorded_for_index"):
             self.error_recorded_for_index = False
 
-        # --- Only update/redraw if index changed ---
-        if typing_window.index != self.last_index:
-            self.last_index = typing_window.index
+        # --- Calculate changes ---
+        typed_new = typing_window.index - self.last_index
+        new_errors = typing_window.wrong - self.last_wrong
+        elapsed_time = typing_window.get_time_live()
 
-            # --- WPM calculation ---
-            if typing_window.index > 5:
-                elapsed_time = typing_window.get_time_live()
-                num_chars = typing_window.index
-                wpm = 0 if num_chars < 5 else (num_chars / 5) / (elapsed_time / 60)
+        # --- Only update if a new character is typed ---
+        if typed_new != 0:
+            # --- Update correct_chars ---
+            if typed_new > 0:
+                correct_new = max(0, typed_new - max(0, new_errors))
+                self.correct_chars += correct_new
+            elif typed_new < 0:
+                # Backspace
+                self.correct_chars = max(0, self.correct_chars + typed_new)
 
-                self.wpm_history.append(max(0, wpm))
-                self.x_history.append(elapsed_time)
-
-            # --- Detect new errors ---
-            # Only add a red line if this is the first error at the current index
+            # --- Detect new errors (keep original logic) ---
             if typing_window.wrong > self.last_wrong and not self.error_recorded_for_index:
-                elapsed_time = typing_window.get_time_live()
                 self.error_marks.append(elapsed_time)
                 self.error_recorded_for_index = True
 
-            # --- Reset error flag if user typed correctly (index moved without new wrong) ---
             if typing_window.wrong == self.last_wrong:
                 self.error_recorded_for_index = False
 
-            # --- Update last_wrong ---
+            # --- Update last_wrong and last_index ---
             self.last_wrong = typing_window.wrong
+            self.last_index = typing_window.index
 
-            # --- Clear and redraw chart ---
+            # --- WPM calculation with accuracy ---
+            if typing_window.index > 5 and elapsed_time > 0 and not getattr(typing_window, "finished", False):
+                wpm_raw = (self.correct_chars / 5) / (elapsed_time / 60)
+                accuracy = self.correct_chars / max(1, typing_window.index)
+                wpm_effective = wpm_raw * accuracy
+
+                self.wpm_history.append(max(0, wpm_effective))
+                self.x_history.append(elapsed_time)
+
+            # --- Redraw chart ---
             self.redraw_chart()
 
-        # Schedule next check
+        # --- Schedule next check ---
         self.after(50, self.update_chart)
 
     def redraw_chart(self):
