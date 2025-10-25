@@ -88,12 +88,10 @@ class TypingWindow(tk.Frame):
         super().__init__(master, **kwargs)
         self.configure(bg="#2e2e2e")
 
-        self.red_mode = "typed"
         self.word_list_choice = ""
         self.index = 0
         self.start_time = None
         self.finished = False
-        self.typed_words = []
 
         self.wrong = 0
         self.wrong_streak = 0
@@ -124,9 +122,6 @@ class TypingWindow(tk.Frame):
         self.generate_text()
 
     # --------------------- Settings ---------------------
-    def set_red_mode(self, mode):
-        self.red_mode = mode
-
     def set_word_list(self, choice):
         self.word_list_choice = choice
         self.generate_text()
@@ -179,22 +174,20 @@ class TypingWindow(tk.Frame):
                 typed_char = event.char
                 expected_char = self.text[self.index]
                 self.text_widget.delete(f"1.{self.index}")
-                char_to_show = typed_char if typed_char == expected_char or self.red_mode == "typed" else expected_char
                 if typed_char == expected_char:
                     self.text_widget.insert(f"1.{self.index}", typed_char)
                     self.text_widget.tag_add("white", f"1.{self.index}", f"1.{self.index+1}")
-                    
-                    self.time = current_time
                     self.last_wrong = False
                 else:
-                    self.text_widget.insert(f"1.{self.index}", char_to_show)
+                    # show the *typed* wrong character in red
+                    self.text_widget.insert(f"1.{self.index}", typed_char)
                     self.text_widget.tag_add("red", f"1.{self.index}", f"1.{self.index+1}")
                     self.wrong += 1
 
                     if not self.last_wrong:
                         self.wrong_streak += 1
-
                     self.last_wrong = True
+
                 self.index += 1
 
         if self.start_time is None:
@@ -222,7 +215,6 @@ class TypingWindow(tk.Frame):
         self.index = 0
         self.start_time = None
         self.finished = False
-        self.typed_words = []
         self.wrong_streak = 0
         self.wrong = 0
 
