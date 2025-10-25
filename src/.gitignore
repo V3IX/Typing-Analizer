@@ -33,3 +33,10 @@ dist/
 
 # Tkinter autosave / temporary files
 *.tmp
+
+# Database files
+*.db
+*.sqlite3
+
+# Logging directory
+logs/

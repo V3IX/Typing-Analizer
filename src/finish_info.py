@@ -6,6 +6,7 @@ class FinishInfo(tk.Frame):
         super().__init__(master, bg="#2e2e2e")
         self.visible = False
         self.on_restart = None
+        self.on_replay = None  # New callback for replay
 
         # --- Style ---
         style = ttk.Style()
@@ -72,25 +73,35 @@ class FinishInfo(tk.Frame):
         )
         self.restart_button.pack(side="left", padx=10)
 
+        # --- Replay button ---
+        self.replay_button = ttk.Button(
+            self.button_frame, text="Replay Test", command=self._handle_replay
+        )
+        self.replay_button.pack(side="left", padx=10)
+
         # Bind Enter key
         master.bind("<Return>", self._handle_enter)
 
-        # self.hide()
-
+    # ------------------- Button handlers -------------------
     def _handle_restart(self):
         """Restart when button pressed."""
         if self.on_restart:
-            # self.hide()
             self._clear_display()
             self.on_restart()
+
+    def _handle_replay(self):
+        """Replay when replay button pressed."""
+        if self.on_replay:
+            self._clear_display()
+            self.on_replay()
 
     def _handle_enter(self, event):
         """Restart test when Enter is pressed."""
         if self.visible and self.on_restart:
-            # self.hide()
             self._clear_display()
             self.on_restart()
 
+    # ------------------- Display helpers -------------------
     def _clear_display(self):
         """Reset all labels and bars."""
         self.wpm_label.config(text="")
@@ -99,9 +110,10 @@ class FinishInfo(tk.Frame):
         self.wpm_bar["value"] = 0
         self.accuracy_bar["value"] = 0
 
-    def show(self, wpm, accuracy, errors, on_restart):
+    def show(self, wpm, accuracy, errors, on_restart=None, on_replay=None):
         """Display results and show the frame."""
         self.on_restart = on_restart
+        self.on_replay = on_replay  # assign replay callback
 
         self.wpm_label.config(text=f"{wpm:.1f} WPM")
         self.accuracy_label.config(text=f"Accuracy: {accuracy:.1f}%")

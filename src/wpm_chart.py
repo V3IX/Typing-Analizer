@@ -3,7 +3,10 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from scipy.interpolate import make_interp_spline
 import numpy as np
+import logging
 import time
+
+logger = logging.getLogger("typing_app")
 
 class WPMChart(tk.Frame):
     def __init__(self, master, typing_window, **kwargs):
@@ -80,10 +83,11 @@ class WPMChart(tk.Frame):
                 # Backspace
                 self.correct_chars = max(0, self.correct_chars + typed_new)
 
-            # --- Detect new errors (keep original logic) ---
+            # --- Detect new errors ---
             if typing_window.wrong > self.last_wrong and not self.error_recorded_for_index:
                 self.error_marks.append(elapsed_time)
                 self.error_recorded_for_index = True
+                logger.debug("New error recorded at %.2f s, index=%d", elapsed_time, typing_window.index)
 
             if typing_window.wrong == self.last_wrong:
                 self.error_recorded_for_index = False
@@ -100,12 +104,17 @@ class WPMChart(tk.Frame):
 
                 self.wpm_history.append(max(0, wpm_effective))
                 self.x_history.append(elapsed_time)
+                logger.debug(
+                    "WPM updated: %.2f, accuracy: %.2f%%, typed_chars=%d, elapsed=%.2fs",
+                    wpm_effective, accuracy * 100, typing_window.index, elapsed_time
+                )
 
             # --- Redraw chart ---
             self.redraw_chart()
 
         # --- Schedule next check ---
-        self.after(50, self.update_chart)
+        if self.winfo_exists():
+            self._after_id = self.after(50, self.update_chart)
 
     def redraw_chart(self):
         self.ax.cla()
@@ -153,8 +162,11 @@ class WPMChart(tk.Frame):
         self.fig.subplots_adjust(left=0.08, right=0.92, top=0.95, bottom=0.05)
         self.canvas.draw_idle()
 
-
     def reset_chart(self):
+        if hasattr(self, "_after_id"):
+            self.after_cancel(self._after_id)
+            del self._after_id
+
         # --- Reset performance data ---
         self.x_history.clear()
         self.wpm_history.clear()
