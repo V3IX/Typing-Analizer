@@ -2,10 +2,10 @@ import sqlite3
 import json
 import time
 
-DB_PATH = "typing_results.db"
+DB_PATH = "output/typing_results.db"
 
 def init_db():
-    """Initialize database and table."""
+    """Initialize database and clear all existing data."""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     cursor.execute("""
@@ -20,8 +20,11 @@ def init_db():
             key_times TEXT
         )
     """)
+    # Clear all rows
+    cursor.execute("DELETE FROM test_results")
     conn.commit()
     conn.close()
+
 
 def save_test_result(wpm, accuracy, num_words, expected_text, user_input, key_times):
     """Save test results into database."""
@@ -42,6 +45,7 @@ def save_test_result(wpm, accuracy, num_words, expected_text, user_input, key_ti
     ))
     conn.commit()
     conn.close()
+
 
 def get_latest_test_result():
     """Fetch the most recent test result from the database."""
@@ -65,3 +69,17 @@ def get_latest_test_result():
         "user_input": json.loads(user_input_json),
         "key_times": json.loads(key_times_json)
     }
+
+
+def get_all_test_results():
+    """Fetch all test results with only needed summary columns: timestamp, wpm, accuracy, num_words"""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT timestamp, wpm, accuracy, num_words
+        FROM test_results
+        ORDER BY timestamp DESC
+    """)
+    rows = cursor.fetchall()
+    conn.close()
+    return rows

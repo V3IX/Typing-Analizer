@@ -37,6 +37,7 @@ dist/
 # Database files
 *.db
 *.sqlite3
+output/
 
 # Logging directory
 logs/

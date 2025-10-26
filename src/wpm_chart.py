@@ -87,8 +87,7 @@ class WPMChart(tk.Frame):
             if typing_window.wrong > self.last_wrong and not self.error_recorded_for_index:
                 self.error_marks.append(elapsed_time)
                 self.error_recorded_for_index = True
-                logger.debug("New error recorded at %.2f s, index=%d", elapsed_time, typing_window.index)
-
+                
             if typing_window.wrong == self.last_wrong:
                 self.error_recorded_for_index = False
 
@@ -104,10 +103,6 @@ class WPMChart(tk.Frame):
 
                 self.wpm_history.append(max(0, wpm_effective))
                 self.x_history.append(elapsed_time)
-                logger.debug(
-                    "WPM updated: %.2f, accuracy: %.2f%%, typed_chars=%d, elapsed=%.2fs",
-                    wpm_effective, accuracy * 100, typing_window.index, elapsed_time
-                )
 
             # --- Redraw chart ---
             self.redraw_chart()

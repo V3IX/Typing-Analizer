@@ -14,6 +14,8 @@ class TypingWindow(tk.Frame):
     def __init__(self, master, click_sound, **kwargs):
         super().__init__(master, **kwargs)
         self.configure(bg="#2e2e2e")
+        self.finish_info = FinishInfo(master=self)
+        
         self.click_sound = click_sound
 
         self.word_list_choice = ""
@@ -26,41 +28,39 @@ class TypingWindow(tk.Frame):
         self.last_wrong = False
 
         self.user_input = []
-        self.user_input = []
+        self.key_times = []
         self.last_key_time = None
 
         self.replay_mode = False
 
-        # Text widget
-        self.text_widget = tk.Text(self, font=("Consolas", 24), bg="#2e2e2e",
-                                   height=5, width=50, bd=0, highlightthickness=0,
-                                   wrap="word")
+        # --- Text widget ---
+        self.text_widget = tk.Text(
+            self, font=("Consolas", 24), bg="#2e2e2e",
+            height=5, width=50, bd=0, highlightthickness=0,
+            wrap="word"
+        )
         self.text_widget.pack(pady=20, fill="x")
 
-        # Tags
         self.text_widget.tag_config("gray", foreground="gray")
         self.text_widget.tag_config("white", foreground="white")
         self.text_widget.tag_config("red", foreground="red")
         self.text_widget.tag_configure("center", justify="center")
 
-        # Bind typing
         self.text_widget.focus_set()
         self.text_widget.bind("<Key>", self.on_keypress)
 
-        # Detect word files
+        # --- Detect word files ---
         self.word_files = detect_word_files()
         if self.word_files:
             self.word_list_choice = self.word_files[0]
 
-        # Load initial text
+        # --- Load initial text ---
         self.generate_text()
 
-    # --------------------- Settings ---------------------
     def set_word_list(self, choice):
         self.word_list_choice = choice
         self.generate_text()
 
-    # --------------------- Load & generate text ---------------------
     def generate_text(self, num_words=None):
         """
         Generate the typing text based on current word list and mode.
@@ -84,7 +84,6 @@ class TypingWindow(tk.Frame):
         self.text_widget.tag_add("center", "1.0", "end")
         self.text_widget.config(state=tk.DISABLED)
 
-    # --------------------- Typing logic ---------------------
     def on_keypress(self, event):
         if len(event.char) == 1 or event.keysym == "BackSpace":
             letter = "\b" if event.keysym == "BackSpace" else event.char
@@ -165,7 +164,7 @@ class TypingWindow(tk.Frame):
             self.wpm_chart.update_chart()
 
         # Finish test automatically
-        if self.index >= len(self.text):
+        if self.index >= len(self.text) and self.last_wrong == False:
             self.finished = True
             logger.info("Test finished automatically")
             self.finish_test()
@@ -295,9 +294,9 @@ class TypingWindow(tk.Frame):
                 self.after(int(delay * 1000), lambda: replay_step(i + 1))
             else:
                 # replay done
-                self.replay_mode = False
                 self.finished = True
                 logger.info("Replay finished. Total characters replayed: %d", len(self.user_input))
                 self.finish_test()
+                self.replay_mode = False
 
         replay_step(0)

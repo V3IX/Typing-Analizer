@@ -1,6 +1,8 @@
 import tkinter as tk
 from settings_window import SettingsWindow
 from typing_window import TypingWindow
+from user_window import UserWindow
+
 
 class SettingsStrip(tk.Frame):
     def __init__(self, master, typing_frame, **kwargs):
@@ -35,12 +37,24 @@ class SettingsStrip(tk.Frame):
         # Highlight default button (50)
         self.highlight_button(50)
 
-        # ---------------- Right: Settings Button ----------------
-        settings_btn = tk.Button(
-            self, text="⚙", font=("Arial", 12, "bold"), bg="#4e4e4e", fg="white", bd=0,
-            relief="raised", command=self.open_settings
+        # ---------------- Right: Settings and User Button ----------------
+        right_frame = tk.Frame(self, bg="#3a3a3a")
+        right_frame.pack(side="right", padx=10)
+
+        user_btn = tk.Button(
+            right_frame, text="👤", font=("Arial", 12, "bold"),
+            bg="#4e4e4e", fg="white", bd=0, relief="raised",
+            command=self.open_user_window   # 👈 new method
         )
-        settings_btn.pack(side="right", padx=10)
+        user_btn.pack(side="left", padx=(0, 5))
+
+        settings_btn = tk.Button(
+            right_frame, text="⚙", font=("Arial", 12, "bold"),
+            bg="#4e4e4e", fg="white", bd=0, relief="raised",
+            command=self.open_settings
+        )
+        settings_btn.pack(side="left")
+
 
     # ---------------- Update word count ----------------
     def update_words(self, value, button_value):
@@ -68,3 +82,6 @@ class SettingsStrip(tk.Frame):
     # ---------------- Open Settings ----------------
     def open_settings(self):
         SettingsWindow(self.master, self.typing_frame)
+
+    def open_user_window(self):
+        UserWindow(self.master)

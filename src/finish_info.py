@@ -7,6 +7,7 @@ class FinishInfo(tk.Frame):
         self.visible = False
         self.on_restart = None
         self.on_replay = None  # New callback for replay
+        self.replay = None
 
         # --- Style ---
         style = ttk.Style()
@@ -90,9 +91,10 @@ class FinishInfo(tk.Frame):
             self.on_restart()
 
     def _handle_replay(self):
-        """Replay when replay button pressed."""
+        if self.replay:
+            return
         if self.on_replay:
-            self._clear_display()
+            self.replay = True
             self.on_replay()
 
     def _handle_enter(self, event):
@@ -113,7 +115,8 @@ class FinishInfo(tk.Frame):
     def show(self, wpm, accuracy, errors, on_restart=None, on_replay=None):
         """Display results and show the frame."""
         self.on_restart = on_restart
-        self.on_replay = on_replay  # assign replay callback
+        self.on_replay = on_replay
+        self.replay = False
 
         self.wpm_label.config(text=f"{wpm:.1f} WPM")
         self.accuracy_label.config(text=f"Accuracy: {accuracy:.1f}%")
