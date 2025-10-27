@@ -2,7 +2,8 @@ import tkinter as tk
 from tkinter import ttk
 from datetime import datetime
 from database import get_all_test_results
-
+from collections import defaultdict
+from database import generate_full_digraph_table_recent
 
 class UserWindow(tk.Toplevel):
     def __init__(self, master=None):
@@ -44,6 +45,22 @@ class UserWindow(tk.Toplevel):
         for col in columns:
             self.tree.heading(col, text=col)
             self.tree.column(col, anchor="center", width=120)
+
+        # Table Tab
+        self.analysis_frame = tk.Frame(notebook, bg="#1e1e1e")
+        notebook.add(self.analysis_frame, text="⏱ Analysis")
+
+        # Treeview for analysis
+        columns = ("Letter/Combo", "Avg Time (ms)")
+        self.analysis_tree = ttk.Treeview(self.analysis_frame, columns=columns, show="headings")
+        self.analysis_tree.pack(expand=True, fill="both", padx=10, pady=10)
+
+        for col in columns:
+            self.analysis_tree.heading(col, text=col)
+            self.analysis_tree.column(col, anchor="center", width=120)
+
+        # Load analysis data
+        self.load_analysis_table()
 
         # Pagination controls (below Treeview)
         nav_frame = tk.Frame(self.history_frame, bg="#1e1e1e")
@@ -153,3 +170,48 @@ class UserWindow(tk.Toplevel):
             self.master.replay(data)
         else:
             print("⚠️ Master window has no replay() method.")
+
+    def load_analysis_table(self):
+        # Clear existing items
+        for item in self.analysis_tree.get_children():
+            self.analysis_tree.delete(item)
+
+        # Get full table
+        table, chars = generate_full_digraph_table_recent()
+
+        # Configure columns (first column is row labels)
+        self.analysis_tree["columns"] = ["Char"] + chars
+        for col in self.analysis_tree["columns"]:
+            self.analysis_tree.heading(col, text=col)
+            self.analysis_tree.column(col, width=50, anchor="center")
+
+        # Flatten all non-None values to find min/max for coloring
+        values_list = [ms for row in table.values() for ms in row.values() if ms is not None]
+        min_time = min(values_list) if values_list else 0
+        max_time = max(values_list) if values_list else 1
+
+        def color_for_value(value):
+            if value is None:
+                return "#aaaaaa"  # gray for empty
+            # interpolate green (fast) → red (slow)
+            ratio = (value - min_time) / (max_time - min_time + 1e-6)
+            r = int(150 + 105 * ratio)  # 150–255
+            g = int(255 - 105 * ratio)  # 255–150
+            b = 0
+            return f"#{r:02x}{g:02x}{b:02x}"
+
+        # Fill rows
+        for row_char in chars:
+            values = [row_char]
+            tags = []
+            for col_char in chars:
+                ms = table[row_char][col_char]
+                text = f"{ms:.1f}" if ms is not None else "-"
+                values.append(text)
+
+                # Create a unique tag for this cell
+                tag = f"{row_char}_{col_char}"
+                tags.append(tag)
+                self.analysis_tree.tag_configure(tag, foreground=color_for_value(ms))
+
+            self.analysis_tree.insert("", "end", values=values, tags=tags)

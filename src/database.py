@@ -1,6 +1,7 @@
 import sqlite3
 import json
 import time
+from collections import defaultdict
 
 DB_PATH = "output/typing_results.db"
 
@@ -106,3 +107,69 @@ def get_test_by_id(test_id):
         "user_input": json.loads(user_input_json),
         "key_times": json.loads(key_times_json)
     }
+
+def generate_full_digraph_table_recent(n=None):
+    """
+    Builds a digraph timing table based on the 2 most recent times (not tests).
+    Returns:
+        table: dict[row_char][col_char] = avg of 2 most recent times (ms)
+        chars: sorted list of unique characters
+    """
+    import string
+    tests = get_all_full_tests()
+    transitions = defaultdict(list)
+
+    order_counter = 0  # To keep order of appearance
+    for test in tests:
+        chars = test["user_input"]
+        times = test["key_times"]
+        for i in range(len(chars) - 1):
+            pair = chars[i] + chars[i + 1]
+            # Store (order index, time in ms)
+            transitions[pair].append((order_counter, times[i + 1] * 1000))
+            order_counter += 1
+
+    # Keep only 2 most recent times per digraph
+    trimmed = {}
+    for pair, entries in transitions.items():
+        # sort by order descending (most recent last)
+        recent_entries = sorted(entries, key=lambda x: x[0], reverse=True)[:2]
+        recent_times = [t for _, t in recent_entries]
+        trimmed[pair] = sum(recent_times) / len(recent_times)
+
+    # Collect all characters seen
+    all_chars = set(string.ascii_lowercase)
+    for pair in trimmed.keys():
+        all_chars.update(pair)
+
+    # Build table
+    table = {}
+    for row_char in all_chars:
+        table[row_char] = {}
+        for col_char in all_chars:
+            pair = row_char + col_char
+            table[row_char][col_char] = trimmed.get(pair, None)
+
+    return table, sorted(all_chars)
+
+
+def get_all_full_tests():
+    """
+    Fetch all tests with user_input and key_times.
+    Returns a list of dictionaries:
+    [{"user_input": [...], "key_times": [...]}, ...]
+    """
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT user_input, key_times
+        FROM test_results
+        ORDER BY timestamp ASC
+    """)
+    rows = cursor.fetchall()
+    conn.close()
+
+    return [
+        {"user_input": json.loads(u), "key_times": json.loads(t)}
+        for u, t in rows
+    ]
