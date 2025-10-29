@@ -247,6 +247,7 @@ class TypingWindow(tk.Frame):
             )
 
         logger.info("Test results saved to database")
+        print(database.get_all_test_results())
 
     def replay(self, data=None):
         """Replay a specific test (or the most recent one if none given)."""

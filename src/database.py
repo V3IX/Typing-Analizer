@@ -22,7 +22,7 @@ def init_db():
         )
     """)
     # Clear all rows
-    cursor.execute("DELETE FROM test_results")
+    # cursor.execute("DELETE FROM test_results")
     conn.commit()
     conn.close()
 
