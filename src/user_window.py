@@ -59,6 +59,28 @@ class UserWindow(tk.Toplevel):
             self.analysis_tree.heading(col, text=col)
             self.analysis_tree.column(col, anchor="center", width=120)
 
+        # Table Tab
+        self.analysis_frame = tk.Frame(notebook, bg="#1e1e1e")
+        notebook.add(self.analysis_frame, text="⏱ Analysis")
+
+        # Treeview for analysis
+        columns = ("Letter/Combo", "Avg Time (ms)")
+        self.analysis_tree = ttk.Treeview(self.analysis_frame, columns=columns, show="headings")
+        self.analysis_tree.pack(expand=True, fill="both", padx=10, pady=10)
+
+        for col in columns:
+            self.analysis_tree.heading(col, text=col)
+            self.analysis_tree.column(col, anchor="center", width=120)
+
+        # Load analysis data
+        self.load_analysis_table()
+
+        # ✅ Stats Tab (new)
+        from stats_window import StatsWindow
+        self.stats_frame = tk.Frame(notebook, bg="#1e1e1e")
+        notebook.add(self.stats_frame, text="📊 Stats")
+        StatsWindow(self.stats_frame)
+
         # Load analysis data
         self.load_analysis_table()
 

@@ -6,7 +6,6 @@ class SettingsWindow:
         self.master = master
         self.typing_window = typing_window
         self.word_files = detect_word_files()
-        self.red_var = tk.StringVar(value=self.typing_window.red_mode)
         self.word_var = tk.StringVar(value=self.typing_window.word_list_choice)
         self.open_settings()
 
@@ -26,19 +25,14 @@ class SettingsWindow:
         y = main_y + (main_height // 2) - (250 // 2)
         settings_win.geometry(f"350x250+{x}+{y}")
 
-        # Red letters
-        tk.Label(settings_win, text="Red letters show:", bg="#3e3e3e", fg="white").pack(pady=5)
-        tk.Radiobutton(settings_win, text="What I typed", variable=self.red_var, value="typed",
-                       bg="#3e3e3e", fg="white", selectcolor="#2e2e2e",
-                       command=lambda: self.typing_window.set_red_mode(self.red_var.get())).pack()
-        tk.Radiobutton(settings_win, text="What it should be", variable=self.red_var, value="expected",
-                       bg="#3e3e3e", fg="white", selectcolor="#2e2e2e",
-                       command=lambda: self.typing_window.set_red_mode(self.red_var.get())).pack()
-
         # Word list dropdown
         tk.Label(settings_win, text="Word list:", bg="#3e3e3e", fg="white").pack(pady=5)
-        dropdown = tk.OptionMenu(settings_win, self.word_var, *self.word_files,
-                                 command=lambda _: self.typing_window.set_word_list(self.word_var.get()))
+        dropdown = tk.OptionMenu(
+            settings_win,
+            self.word_var,
+            *self.word_files,
+            command=lambda _: self.typing_window.set_word_list(self.word_var.get())
+        )
         dropdown.config(bg="#4e4e4e", fg="white", highlightthickness=0)
         dropdown["menu"].config(bg="#4e4e4e", fg="white")
         dropdown.pack(pady=5)

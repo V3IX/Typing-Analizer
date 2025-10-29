@@ -186,3 +186,9 @@ class WPMChart(tk.Frame):
 
         self.fig.subplots_adjust(left=0.08, right=0.92, top=0.95, bottom=0.05)
         self.canvas.draw_idle()
+
+    def toggle(self, enable: bool):
+        if enable:
+            self.show()
+        else:
+            self.hide()
