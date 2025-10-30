@@ -23,6 +23,7 @@ class TypingWindow(tk.Frame):
         self.index = 0
         self.start_time = None
         self.finished = False
+        self.words_goal = 50
 
         self.wrong = 0
         self.wrong_streak = 0
@@ -130,6 +131,9 @@ class TypingWindow(tk.Frame):
                 self.text_widget.insert(f"1.{self.index}", self.text[self.index])
                 self.text_widget.tag_add("gray", f"1.{self.index}", f"1.{self.index+1}")
                 logger.debug("Backspace pressed, index=%d", self.index)
+                if self.last_wrong:
+                    # Remove last wrong count if we backspace
+                    self.wrong_streak = max(0, self.wrong_streak - 1)
         else:
             if self.index < len(self.text):
                 expected_char = self.text[self.index]
@@ -140,7 +144,6 @@ class TypingWindow(tk.Frame):
                     self.text_widget.insert(f"1.{self.index}", letter)
                     self.text_widget.tag_add("white", f"1.{self.index}", f"1.{self.index+1}")
                     self.last_wrong = False
-                    logger.debug("Typed correct letter '%s' at index=%d", letter, self.index)
                 else:
                     self.text_widget.insert(f"1.{self.index}", letter)
                     self.text_widget.tag_add("red", f"1.{self.index}", f"1.{self.index+1}")
@@ -148,24 +151,39 @@ class TypingWindow(tk.Frame):
                     if not self.last_wrong:
                         self.wrong_streak += 1
                     self.last_wrong = True
-                    logger.debug("Typed WRONG letter '%s' at index=%d, wrong=%d", letter, self.index, self.wrong)
-
                 self.index += 1
 
         if self.start_time is None:
             self.start_time = current_time
-            self.time = current_time
             logger.debug("Test started at %f", self.start_time)
 
         self.text_widget.tag_add("center", "1.0", "end")
         self.text_widget.config(state=tk.DISABLED)
 
-        # Update WPM chart if exists
+        # --- Live WPM & Accuracy calculation ---
+        elapsed_time = current_time - self.start_time
+        num_chars_typed = self.index
+        num_words_typed = num_chars_typed / 5 if elapsed_time > 0 else 0
+        accuracy = max(0, 1 - self.wrong / max(num_chars_typed, 1))
+        wpm = (num_words_typed / (elapsed_time / 60)) * accuracy if elapsed_time > 0 else 0
+
+        # --- Update FinishInfo dynamically ---
+        if getattr(self, "finish_info_mode", "always") == "always":
+            if hasattr(self, "finish_info"):
+                self.finish_info.show(
+                    wpm=wpm,
+                    accuracy=accuracy * 100,
+                    errors=self.wrong_streak,
+                    on_restart=self.end_test,
+                    on_replay=self.replay
+                )
+
+        # --- Update WPM chart if exists ---
         if hasattr(self, "wpm_chart"):
             self.wpm_chart.update_chart()
 
         # Finish test automatically
-        if self.index >= len(self.text) and self.last_wrong == False:
+        if self.index >= len(self.text) and not self.last_wrong:
             self.finished = True
             logger.info("Test finished automatically")
             self.finish_test()
@@ -204,6 +222,10 @@ class TypingWindow(tk.Frame):
             self.wpm_chart.hide()
             logger.debug("WPM chart hidden due to mode 'after'")
 
+        if getattr(self, "finish_info_mode") == "after" and hasattr(self, "finish_info"):
+            self.finish_info.hide()
+            logger.debug("Finish info hidden due to mode 'after'")
+
         self.text_widget.config(state=tk.NORMAL)
         self.text_widget.focus_set()
         self.finish_info._clear_display()
@@ -233,7 +255,7 @@ class TypingWindow(tk.Frame):
         if hasattr(self, "finish_info"):
             self.finish_info.show(
                 wpm=wpm,
-                accuracy=accuracy * 100,  # convert to percentage
+                accuracy=accuracy * 100,
                 errors=self.wrong_streak,
                 on_restart=self.end_test,
                 on_replay=self.replay
@@ -242,6 +264,16 @@ class TypingWindow(tk.Frame):
         if getattr(self, "wpm_chart_mode") == "after" and hasattr(self, "wpm_chart"):
             self.wpm_chart.show()
             logger.debug("WPM chart shown due to mode 'after'")
+
+        if getattr(self, "finish_info_mode") == "after" and hasattr(self, "finish_info"):
+            self.finish_info.show(
+                wpm=wpm,
+                accuracy=accuracy * 100,
+                errors=self.wrong_streak,
+                on_restart=self.end_test,
+                on_replay=self.replay
+            )
+            logger.debug("Finish info shown due to mode 'after'")
 
         if not getattr(self, "replay_mode", False):
             # --- Save results to database ---

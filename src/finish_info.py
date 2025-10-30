@@ -74,7 +74,7 @@ class FinishInfo(tk.Frame):
             self.on_replay()
 
     def _handle_enter(self, event):
-        if self.visible and self.on_restart:
+        if self.on_restart:
             self._clear_display()
             self.on_restart()
 

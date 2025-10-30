@@ -1,497 +1,330 @@
-2025-10-30 16:15:21,581 | INFO | Logging initialized. Log file: logs\typing_app.log
-2025-10-30 16:15:35,911 | INFO | Ending test
-2025-10-30 16:15:35,919 | DEBUG | WPM chart reset
-2025-10-30 16:15:35,919 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 16:15:35,920 | DEBUG | User input and key times cleared
-2025-10-30 16:15:35,920 | INFO | Generating new text for next test
-2025-10-30 16:15:35,924 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 16:15:35,925 | INFO | Test ready for user input
-2025-10-30 16:15:37,052 | DEBUG | Key pressed: 'w', delta=0.0000, index=0
-2025-10-30 16:15:37,053 | DEBUG | Typed correct letter 'w' at index=0
-2025-10-30 16:15:37,053 | DEBUG | Test started at 1761837337.053262
-2025-10-30 16:15:37,126 | DEBUG | Key pressed: 'i', delta=0.0734, index=1
-2025-10-30 16:15:37,143 | DEBUG | Typed correct letter 'i' at index=1
-2025-10-30 16:15:37,322 | DEBUG | Key pressed: 's', delta=0.1959, index=2
-2025-10-30 16:15:37,322 | DEBUG | Typed correct letter 's' at index=2
-2025-10-30 16:15:37,458 | DEBUG | Key pressed: 'e', delta=0.1359, index=3
-2025-10-30 16:15:37,458 | DEBUG | Typed correct letter 'e' at index=3
-2025-10-30 16:15:37,472 | INFO | Test finished automatically
-2025-10-30 16:15:37,473 | INFO | Test finished
-2025-10-30 16:15:37,473 | DEBUG | Elapsed time: 0.42 seconds
-2025-10-30 16:15:37,473 | DEBUG | Num chars: 4, Num words: 0.80
-2025-10-30 16:15:37,473 | DEBUG | Base WPM: 114.34, Accuracy: 100.00%
-2025-10-30 16:15:37,474 | DEBUG | Final WPM (monkeytype style): 114.34
-2025-10-30 16:15:37,474 | DEBUG | Errors: 0, Wrong streak: 0
-2025-10-30 16:15:37,474 | DEBUG | User input length: 4, Key times length: 4
-2025-10-30 16:15:37,475 | DEBUG | WPM chart shown due to mode 'after'
-2025-10-30 16:15:47,146 | DEBUG | Key pressed: '', delta=9.6880, index=4
-2025-10-30 16:15:47,147 | INFO | Ending test
-2025-10-30 16:15:47,157 | DEBUG | WPM chart reset
-2025-10-30 16:15:47,157 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 16:15:47,158 | DEBUG | User input and key times cleared
-2025-10-30 16:15:47,158 | INFO | Generating new text for next test
-2025-10-30 16:15:47,160 | INFO | Test ready for user input
-2025-10-30 16:15:48,029 | DEBUG | Key pressed: 'r', delta=0.0000, index=0
-2025-10-30 16:15:48,029 | DEBUG | Typed correct letter 'r' at index=0
-2025-10-30 16:15:48,029 | DEBUG | Test started at 1761837348.029327
-2025-10-30 16:15:48,093 | DEBUG | Key pressed: 'e', delta=0.0640, index=1
-2025-10-30 16:15:48,093 | DEBUG | Typed correct letter 'e' at index=1
-2025-10-30 16:15:48,375 | DEBUG | Key pressed: 'q', delta=0.2821, index=2
-2025-10-30 16:15:48,375 | DEBUG | Typed correct letter 'q' at index=2
-2025-10-30 16:15:48,485 | DEBUG | Key pressed: 'u', delta=0.1101, index=3
-2025-10-30 16:15:48,485 | DEBUG | Typed correct letter 'u' at index=3
-2025-10-30 16:15:48,626 | DEBUG | Key pressed: 'e', delta=0.1410, index=4
-2025-10-30 16:15:48,626 | DEBUG | Typed WRONG letter 'e' at index=4, wrong=1
-2025-10-30 16:15:48,811 | DEBUG | Key pressed: 'r', delta=0.1858, index=5
-2025-10-30 16:15:48,812 | DEBUG | Typed correct letter 'r' at index=5
-2025-10-30 16:15:49,140 | DEBUG | Key pressed: '', delta=0.3282, index=6
-2025-10-30 16:15:49,140 | DEBUG | Backspace pressed, index=5
-2025-10-30 16:15:49,294 | DEBUG | Key pressed: '', delta=0.1547, index=5
-2025-10-30 16:15:49,295 | DEBUG | Backspace pressed, index=4
-2025-10-30 16:15:49,469 | DEBUG | Key pressed: 'i', delta=0.1741, index=4
-2025-10-30 16:15:49,469 | DEBUG | Typed correct letter 'i' at index=4
-2025-10-30 16:15:49,572 | DEBUG | Key pressed: 'e', delta=0.1039, index=5
-2025-10-30 16:15:49,573 | DEBUG | Typed WRONG letter 'e' at index=5, wrong=2
-2025-10-30 16:15:49,774 | DEBUG | Key pressed: 'r', delta=0.2011, index=6
-2025-10-30 16:15:49,774 | DEBUG | Typed WRONG letter 'r' at index=6, wrong=3
-2025-10-30 16:15:49,910 | DEBUG | Key pressed: 'e', delta=0.1360, index=7
-2025-10-30 16:15:49,910 | DEBUG | Typed WRONG letter 'e' at index=7, wrong=4
-2025-10-30 16:15:50,256 | DEBUG | Key pressed: '', delta=0.3461, index=8
-2025-10-30 16:15:50,256 | DEBUG | Backspace pressed, index=7
-2025-10-30 16:15:50,415 | DEBUG | Key pressed: '', delta=0.1590, index=7
-2025-10-30 16:15:50,415 | DEBUG | Backspace pressed, index=6
-2025-10-30 16:15:50,570 | DEBUG | Key pressed: '', delta=0.1549, index=6
-2025-10-30 16:15:50,570 | DEBUG | Backspace pressed, index=5
-2025-10-30 16:15:50,701 | DEBUG | Key pressed: 'e', delta=0.1319, index=5
-2025-10-30 16:15:50,702 | DEBUG | Typed WRONG letter 'e' at index=5, wrong=5
-2025-10-30 16:15:51,216 | DEBUG | Key pressed: '', delta=0.5143, index=6
-2025-10-30 16:15:51,216 | DEBUG | Backspace pressed, index=5
-2025-10-30 16:15:51,371 | DEBUG | Key pressed: 'r', delta=0.1551, index=5
-2025-10-30 16:15:51,372 | DEBUG | Typed correct letter 'r' at index=5
-2025-10-30 16:15:51,434 | DEBUG | Key pressed: 'e', delta=0.0636, index=6
-2025-10-30 16:15:51,435 | DEBUG | Typed correct letter 'e' at index=6
-2025-10-30 16:15:51,685 | DEBUG | Key pressed: 's', delta=0.2501, index=7
-2025-10-30 16:15:51,685 | DEBUG | Typed correct letter 's' at index=7
-2025-10-30 16:15:51,701 | INFO | Test finished automatically
-2025-10-30 16:15:51,702 | INFO | Test finished
-2025-10-30 16:15:51,702 | DEBUG | Elapsed time: 3.67 seconds
-2025-10-30 16:15:51,702 | DEBUG | Num chars: 8, Num words: 1.60
-2025-10-30 16:15:51,702 | DEBUG | Base WPM: 26.14, Accuracy: 37.50%
-2025-10-30 16:15:51,703 | DEBUG | Final WPM (monkeytype style): 9.80
-2025-10-30 16:15:51,703 | DEBUG | Errors: 5, Wrong streak: 2
-2025-10-30 16:15:51,703 | DEBUG | User input length: 20, Key times length: 20
-2025-10-30 16:15:52,407 | DEBUG | Key pressed: '', delta=0.7226, index=8
-2025-10-30 16:15:52,408 | INFO | Ending test
-2025-10-30 16:15:52,419 | DEBUG | WPM chart reset
-2025-10-30 16:15:52,419 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 16:15:52,419 | DEBUG | User input and key times cleared
-2025-10-30 16:15:52,419 | INFO | Generating new text for next test
-2025-10-30 16:15:52,421 | INFO | Test ready for user input
-2025-10-30 16:15:53,370 | DEBUG | Key pressed: 'i', delta=0.0000, index=0
-2025-10-30 16:15:53,370 | DEBUG | Typed correct letter 'i' at index=0
-2025-10-30 16:15:53,370 | DEBUG | Test started at 1761837353.370305
-2025-10-30 16:15:53,492 | DEBUG | Key pressed: 'm', delta=0.1228, index=1
-2025-10-30 16:15:53,493 | DEBUG | Typed correct letter 'm' at index=1
-2025-10-30 16:15:53,738 | DEBUG | Key pressed: 'p', delta=0.2451, index=2
-2025-10-30 16:15:53,738 | DEBUG | Typed correct letter 'p' at index=2
-2025-10-30 16:15:54,038 | DEBUG | Key pressed: 'l', delta=0.3009, index=3
-2025-10-30 16:15:54,039 | DEBUG | Typed correct letter 'l' at index=3
-2025-10-30 16:15:54,148 | DEBUG | Key pressed: 'e', delta=0.1092, index=4
-2025-10-30 16:15:54,148 | DEBUG | Typed correct letter 'e' at index=4
-2025-10-30 16:15:54,272 | DEBUG | Key pressed: 'm', delta=0.1239, index=5
-2025-10-30 16:15:54,272 | DEBUG | Typed correct letter 'm' at index=5
-2025-10-30 16:15:54,384 | DEBUG | Key pressed: 'e', delta=0.1129, index=6
-2025-10-30 16:15:54,385 | DEBUG | Typed correct letter 'e' at index=6
-2025-10-30 16:15:54,557 | DEBUG | Key pressed: 'n', delta=0.1731, index=7
-2025-10-30 16:15:54,558 | DEBUG | Typed correct letter 'n' at index=7
-2025-10-30 16:15:54,740 | DEBUG | Key pressed: 't', delta=0.1821, index=8
-2025-10-30 16:15:54,740 | DEBUG | Typed correct letter 't' at index=8
-2025-10-30 16:15:54,867 | DEBUG | Key pressed: 'e', delta=0.1272, index=9
-2025-10-30 16:15:54,867 | DEBUG | Typed correct letter 'e' at index=9
-2025-10-30 16:15:55,095 | DEBUG | Key pressed: 's', delta=0.2281, index=10
-2025-10-30 16:15:55,095 | DEBUG | Typed WRONG letter 's' at index=10, wrong=1
-2025-10-30 16:15:55,723 | DEBUG | Key pressed: '', delta=0.6278, index=11
-2025-10-30 16:15:55,723 | DEBUG | Backspace pressed, index=10
-2025-10-30 16:15:55,815 | DEBUG | Key pressed: 'd', delta=0.0921, index=10
-2025-10-30 16:15:55,815 | DEBUG | Typed correct letter 'd' at index=10
-2025-10-30 16:15:55,832 | INFO | Test finished automatically
-2025-10-30 16:15:55,833 | INFO | Test finished
-2025-10-30 16:15:55,833 | DEBUG | Elapsed time: 2.46 seconds
-2025-10-30 16:15:55,833 | DEBUG | Num chars: 11, Num words: 2.20
-2025-10-30 16:15:55,834 | DEBUG | Base WPM: 53.59, Accuracy: 90.91%
-2025-10-30 16:15:55,834 | DEBUG | Final WPM (monkeytype style): 48.72
-2025-10-30 16:15:55,834 | DEBUG | Errors: 1, Wrong streak: 1
-2025-10-30 16:15:55,834 | DEBUG | User input length: 13, Key times length: 13
-2025-10-30 16:15:59,598 | DEBUG | Key pressed: '', delta=3.7832, index=11
-2025-10-30 16:15:59,600 | INFO | Ending test
-2025-10-30 16:15:59,608 | DEBUG | WPM chart reset
-2025-10-30 16:15:59,609 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 16:15:59,609 | DEBUG | User input and key times cleared
-2025-10-30 16:15:59,609 | INFO | Generating new text for next test
-2025-10-30 16:15:59,611 | INFO | Test ready for user input
-2025-10-30 16:16:00,608 | DEBUG | Key pressed: 'c', delta=0.0000, index=0
-2025-10-30 16:16:00,609 | DEBUG | Typed correct letter 'c' at index=0
-2025-10-30 16:16:00,610 | DEBUG | Test started at 1761837360.609246
-2025-10-30 16:16:00,800 | DEBUG | Key pressed: 'p', delta=0.1912, index=1
-2025-10-30 16:16:00,800 | DEBUG | Typed correct letter 'p' at index=1
-2025-10-30 16:16:00,813 | INFO | Test finished automatically
-2025-10-30 16:16:00,814 | INFO | Test finished
-2025-10-30 16:16:00,814 | DEBUG | Elapsed time: 0.20 seconds
-2025-10-30 16:16:00,814 | DEBUG | Num chars: 2, Num words: 0.40
-2025-10-30 16:16:00,814 | DEBUG | Base WPM: 117.10, Accuracy: 100.00%
-2025-10-30 16:16:00,814 | DEBUG | Final WPM (monkeytype style): 117.10
-2025-10-30 16:16:00,815 | DEBUG | Errors: 0, Wrong streak: 0
-2025-10-30 16:16:00,815 | DEBUG | User input length: 2, Key times length: 2
-2025-10-30 16:16:05,119 | DEBUG | Key pressed: '', delta=4.3199, index=2
-2025-10-30 16:16:05,121 | INFO | Ending test
-2025-10-30 16:16:05,129 | DEBUG | WPM chart reset
-2025-10-30 16:16:05,129 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 16:16:05,129 | DEBUG | User input and key times cleared
-2025-10-30 16:16:05,130 | INFO | Generating new text for next test
-2025-10-30 16:16:05,132 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 16:16:05,132 | INFO | Test ready for user input
-2025-10-30 16:16:05,976 | DEBUG | Key pressed: 'u', delta=0.0000, index=0
-2025-10-30 16:16:05,977 | DEBUG | Typed correct letter 'u' at index=0
-2025-10-30 16:16:05,977 | DEBUG | Test started at 1761837365.976736
-2025-10-30 16:16:06,167 | DEBUG | Key pressed: 'p', delta=0.1907, index=1
-2025-10-30 16:16:06,167 | DEBUG | Typed correct letter 'p' at index=1
-2025-10-30 16:16:06,395 | DEBUG | Key pressed: 'd', delta=0.2281, index=2
-2025-10-30 16:16:06,395 | DEBUG | Typed correct letter 'd' at index=2
-2025-10-30 16:16:06,499 | DEBUG | Key pressed: 'a', delta=0.1038, index=3
-2025-10-30 16:16:06,499 | DEBUG | Typed correct letter 'a' at index=3
-2025-10-30 16:16:06,717 | DEBUG | Key pressed: 't', delta=0.2190, index=4
-2025-10-30 16:16:06,718 | DEBUG | Typed correct letter 't' at index=4
-2025-10-30 16:16:06,781 | DEBUG | Key pressed: 'e', delta=0.0632, index=5
-2025-10-30 16:16:06,781 | DEBUG | Typed correct letter 'e' at index=5
-2025-10-30 16:16:07,100 | DEBUG | Key pressed: 's', delta=0.3189, index=6
-2025-10-30 16:16:07,100 | DEBUG | Typed correct letter 's' at index=6
-2025-10-30 16:16:07,115 | INFO | Test finished automatically
-2025-10-30 16:16:07,115 | INFO | Test finished
-2025-10-30 16:16:07,116 | DEBUG | Elapsed time: 1.14 seconds
-2025-10-30 16:16:07,116 | DEBUG | Num chars: 7, Num words: 1.40
-2025-10-30 16:16:07,116 | DEBUG | Base WPM: 73.74, Accuracy: 100.00%
-2025-10-30 16:16:07,116 | DEBUG | Final WPM (monkeytype style): 73.74
-2025-10-30 16:16:07,117 | DEBUG | Errors: 0, Wrong streak: 0
-2025-10-30 16:16:07,117 | DEBUG | User input length: 7, Key times length: 7
-2025-10-30 16:16:07,118 | DEBUG | WPM chart shown due to mode 'after'
-2025-10-30 16:16:08,680 | DEBUG | Key pressed: '', delta=1.5801, index=7
-2025-10-30 16:16:08,681 | INFO | Ending test
-2025-10-30 16:16:08,700 | DEBUG | WPM chart reset
-2025-10-30 16:16:08,701 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 16:16:08,701 | DEBUG | User input and key times cleared
-2025-10-30 16:16:08,701 | INFO | Generating new text for next test
-2025-10-30 16:16:08,704 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 16:16:08,705 | INFO | Test ready for user input
-2025-10-30 16:16:09,504 | DEBUG | Key pressed: 'p', delta=0.0000, index=0
-2025-10-30 16:16:09,505 | DEBUG | Typed correct letter 'p' at index=0
-2025-10-30 16:16:09,505 | DEBUG | Test started at 1761837369.504863
-2025-10-30 16:16:09,609 | DEBUG | Key pressed: 'e', delta=0.1054, index=1
-2025-10-30 16:16:09,611 | DEBUG | Typed correct letter 'e' at index=1
-2025-10-30 16:16:09,791 | DEBUG | Key pressed: 'f', delta=0.1818, index=2
-2025-10-30 16:16:09,792 | DEBUG | Typed WRONG letter 'f' at index=2, wrong=1
-2025-10-30 16:16:10,359 | DEBUG | Key pressed: '', delta=0.5677, index=3
-2025-10-30 16:16:10,359 | DEBUG | Backspace pressed, index=2
-2025-10-30 16:16:10,673 | DEBUG | Key pressed: 'r', delta=0.3140, index=2
-2025-10-30 16:16:10,673 | DEBUG | Typed correct letter 'r' at index=2
-2025-10-30 16:16:10,897 | DEBUG | Key pressed: 'f', delta=0.2241, index=3
-2025-10-30 16:16:10,898 | DEBUG | Typed correct letter 'f' at index=3
-2025-10-30 16:16:11,006 | DEBUG | Key pressed: 'o', delta=0.1089, index=4
-2025-10-30 16:16:11,006 | DEBUG | Typed correct letter 'o' at index=4
-2025-10-30 16:16:11,160 | DEBUG | Key pressed: 'r', delta=0.1542, index=5
-2025-10-30 16:16:11,161 | DEBUG | Typed correct letter 'r' at index=5
-2025-10-30 16:16:11,310 | DEBUG | Key pressed: 'm', delta=0.1500, index=6
-2025-10-30 16:16:11,311 | DEBUG | Typed correct letter 'm' at index=6
-2025-10-30 16:16:11,479 | DEBUG | Key pressed: 'a', delta=0.1689, index=7
-2025-10-30 16:16:11,481 | DEBUG | Typed correct letter 'a' at index=7
-2025-10-30 16:16:11,788 | DEBUG | Key pressed: 'n', delta=0.3088, index=8
-2025-10-30 16:16:11,788 | DEBUG | Typed correct letter 'n' at index=8
-2025-10-30 16:16:11,952 | DEBUG | Key pressed: 'c', delta=0.1641, index=9
-2025-10-30 16:16:11,952 | DEBUG | Typed correct letter 'c' at index=9
-2025-10-30 16:16:12,153 | DEBUG | Key pressed: 'e', delta=0.2009, index=10
-2025-10-30 16:16:12,153 | DEBUG | Typed correct letter 'e' at index=10
-2025-10-30 16:16:12,179 | INFO | Test finished automatically
-2025-10-30 16:16:12,180 | INFO | Test finished
-2025-10-30 16:16:12,180 | DEBUG | Elapsed time: 2.68 seconds
-2025-10-30 16:16:12,181 | DEBUG | Num chars: 11, Num words: 2.20
-2025-10-30 16:16:12,181 | DEBUG | Base WPM: 49.34, Accuracy: 90.91%
-2025-10-30 16:16:12,181 | DEBUG | Final WPM (monkeytype style): 44.85
-2025-10-30 16:16:12,182 | DEBUG | Errors: 1, Wrong streak: 1
-2025-10-30 16:16:12,182 | DEBUG | User input length: 13, Key times length: 13
-2025-10-30 16:16:12,183 | DEBUG | WPM chart shown due to mode 'after'
-2025-10-30 16:16:13,568 | DEBUG | Key pressed: '', delta=1.4152, index=11
-2025-10-30 16:16:13,569 | INFO | Ending test
-2025-10-30 16:16:13,579 | DEBUG | WPM chart reset
-2025-10-30 16:16:13,579 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 16:16:13,579 | DEBUG | User input and key times cleared
-2025-10-30 16:16:13,580 | INFO | Generating new text for next test
-2025-10-30 16:16:13,583 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 16:16:13,583 | INFO | Test ready for user input
-2025-10-30 16:16:14,360 | DEBUG | Key pressed: 'c', delta=0.0000, index=0
-2025-10-30 16:16:14,360 | DEBUG | Typed correct letter 'c' at index=0
-2025-10-30 16:16:14,361 | DEBUG | Test started at 1761837374.360524
-2025-10-30 16:16:14,710 | DEBUG | Key pressed: 'i', delta=0.3508, index=1
-2025-10-30 16:16:14,711 | DEBUG | Typed correct letter 'i' at index=1
-2025-10-30 16:16:14,975 | DEBUG | Key pressed: 't', delta=0.2642, index=2
-2025-10-30 16:16:14,975 | DEBUG | Typed correct letter 't' at index=2
-2025-10-30 16:16:15,089 | DEBUG | Key pressed: 'y', delta=0.1139, index=3
-2025-10-30 16:16:15,089 | DEBUG | Typed correct letter 'y' at index=3
-2025-10-30 16:16:15,476 | DEBUG | Key pressed: 's', delta=0.3870, index=4
-2025-10-30 16:16:15,476 | DEBUG | Typed correct letter 's' at index=4
-2025-10-30 16:16:15,643 | DEBUG | Key pressed: 'e', delta=0.1680, index=5
-2025-10-30 16:16:15,644 | DEBUG | Typed correct letter 'e' at index=5
-2025-10-30 16:16:15,794 | DEBUG | Key pressed: 'a', delta=0.1510, index=6
-2025-10-30 16:16:15,795 | DEBUG | Typed correct letter 'a' at index=6
-2025-10-30 16:16:15,986 | DEBUG | Key pressed: 'r', delta=0.1912, index=7
-2025-10-30 16:16:15,986 | DEBUG | Typed correct letter 'r' at index=7
-2025-10-30 16:16:16,250 | DEBUG | Key pressed: 'c', delta=0.2643, index=8
-2025-10-30 16:16:16,250 | DEBUG | Typed correct letter 'c' at index=8
-2025-10-30 16:16:16,340 | DEBUG | Key pressed: 'h', delta=0.0905, index=9
-2025-10-30 16:16:16,341 | DEBUG | Typed correct letter 'h' at index=9
-2025-10-30 16:16:16,356 | INFO | Test finished automatically
-2025-10-30 16:16:16,356 | INFO | Test finished
-2025-10-30 16:16:16,356 | DEBUG | Elapsed time: 2.00 seconds
-2025-10-30 16:16:16,356 | DEBUG | Num chars: 10, Num words: 2.00
-2025-10-30 16:16:16,356 | DEBUG | Base WPM: 60.13, Accuracy: 100.00%
-2025-10-30 16:16:16,357 | DEBUG | Final WPM (monkeytype style): 60.13
-2025-10-30 16:16:16,357 | DEBUG | Errors: 0, Wrong streak: 0
-2025-10-30 16:16:16,357 | DEBUG | User input length: 10, Key times length: 10
-2025-10-30 16:16:16,357 | DEBUG | WPM chart shown due to mode 'after'
-2025-10-30 16:16:17,165 | DEBUG | Key pressed: '', delta=0.8241, index=10
-2025-10-30 16:16:17,166 | INFO | Ending test
-2025-10-30 16:16:17,179 | DEBUG | WPM chart reset
-2025-10-30 16:16:17,179 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 16:16:17,180 | DEBUG | User input and key times cleared
-2025-10-30 16:16:17,180 | INFO | Generating new text for next test
-2025-10-30 16:16:17,182 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 16:16:17,183 | INFO | Test ready for user input
-2025-10-30 16:16:17,930 | DEBUG | Key pressed: 'k', delta=0.0000, index=0
-2025-10-30 16:16:17,930 | DEBUG | Typed correct letter 'k' at index=0
-2025-10-30 16:16:17,931 | DEBUG | Test started at 1761837377.930390
-2025-10-30 16:16:18,040 | DEBUG | Key pressed: 'e', delta=0.1103, index=1
-2025-10-30 16:16:18,040 | DEBUG | Typed correct letter 'e' at index=1
-2025-10-30 16:16:18,366 | DEBUG | Key pressed: 'l', delta=0.3266, index=2
-2025-10-30 16:16:18,367 | DEBUG | Typed WRONG letter 'l' at index=2, wrong=1
-2025-10-30 16:16:18,667 | DEBUG | Key pressed: '', delta=0.3010, index=3
-2025-10-30 16:16:18,668 | DEBUG | Backspace pressed, index=2
-2025-10-30 16:16:18,972 | DEBUG | Key pressed: 'n', delta=0.3050, index=2
-2025-10-30 16:16:18,973 | DEBUG | Typed correct letter 'n' at index=2
-2025-10-30 16:16:18,992 | INFO | Test finished automatically
-2025-10-30 16:16:18,992 | INFO | Test finished
-2025-10-30 16:16:18,993 | DEBUG | Elapsed time: 1.06 seconds
-2025-10-30 16:16:18,993 | DEBUG | Num chars: 3, Num words: 0.60
-2025-10-30 16:16:18,993 | DEBUG | Base WPM: 33.88, Accuracy: 66.67%
-2025-10-30 16:16:18,993 | DEBUG | Final WPM (monkeytype style): 22.59
-2025-10-30 16:16:18,993 | DEBUG | Errors: 1, Wrong streak: 1
-2025-10-30 16:16:18,994 | DEBUG | User input length: 5, Key times length: 5
-2025-10-30 16:16:18,994 | DEBUG | WPM chart shown due to mode 'after'
-2025-10-30 16:16:20,083 | DEBUG | Key pressed: '', delta=1.1101, index=3
-2025-10-30 16:16:20,085 | INFO | Ending test
-2025-10-30 16:16:20,096 | DEBUG | WPM chart reset
-2025-10-30 16:16:20,097 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 16:16:20,097 | DEBUG | User input and key times cleared
-2025-10-30 16:16:20,097 | INFO | Generating new text for next test
-2025-10-30 16:16:20,100 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 16:16:20,101 | INFO | Test ready for user input
-2025-10-30 16:16:20,934 | DEBUG | Key pressed: 'r', delta=0.0000, index=0
-2025-10-30 16:16:20,934 | DEBUG | Typed correct letter 'r' at index=0
-2025-10-30 16:16:20,934 | DEBUG | Test started at 1761837380.934320
-2025-10-30 16:16:21,007 | DEBUG | Key pressed: 'e', delta=0.0739, index=1
-2025-10-30 16:16:21,008 | DEBUG | Typed WRONG letter 'e' at index=1, wrong=1
-2025-10-30 16:16:21,713 | DEBUG | Key pressed: '', delta=0.7061, index=2
-2025-10-30 16:16:21,714 | DEBUG | Backspace pressed, index=1
-2025-10-30 16:16:22,218 | DEBUG | Key pressed: 'o', delta=0.5041, index=1
-2025-10-30 16:16:22,218 | DEBUG | Typed correct letter 'o' at index=1
-2025-10-30 16:16:22,546 | DEBUG | Key pressed: 'y', delta=0.3282, index=2
-2025-10-30 16:16:22,546 | DEBUG | Typed correct letter 'y' at index=2
-2025-10-30 16:16:22,696 | DEBUG | Key pressed: 'a', delta=0.1508, index=3
-2025-10-30 16:16:22,697 | DEBUG | Typed correct letter 'a' at index=3
-2025-10-30 16:16:22,787 | DEBUG | Key pressed: 'l', delta=0.0909, index=4
-2025-10-30 16:16:22,788 | DEBUG | Typed correct letter 'l' at index=4
-2025-10-30 16:16:22,805 | INFO | Test finished automatically
-2025-10-30 16:16:22,805 | INFO | Test finished
-2025-10-30 16:16:22,805 | DEBUG | Elapsed time: 1.87 seconds
-2025-10-30 16:16:22,805 | DEBUG | Num chars: 5, Num words: 1.00
-2025-10-30 16:16:22,806 | DEBUG | Base WPM: 32.07, Accuracy: 80.00%
-2025-10-30 16:16:22,806 | DEBUG | Final WPM (monkeytype style): 25.65
-2025-10-30 16:16:22,806 | DEBUG | Errors: 1, Wrong streak: 1
-2025-10-30 16:16:22,806 | DEBUG | User input length: 7, Key times length: 7
-2025-10-30 16:16:22,807 | DEBUG | WPM chart shown due to mode 'after'
-2025-10-30 16:16:24,395 | DEBUG | Key pressed: '', delta=1.6080, index=5
-2025-10-30 16:16:24,397 | INFO | Ending test
-2025-10-30 16:16:24,408 | DEBUG | WPM chart reset
-2025-10-30 16:16:24,408 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 16:16:24,408 | DEBUG | User input and key times cleared
-2025-10-30 16:16:24,408 | INFO | Generating new text for next test
-2025-10-30 16:16:24,410 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 16:16:24,411 | INFO | Test ready for user input
-2025-10-30 16:16:26,552 | INFO | Ending test
-2025-10-30 16:16:26,563 | DEBUG | WPM chart reset
-2025-10-30 16:16:26,563 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 16:16:26,563 | DEBUG | User input and key times cleared
-2025-10-30 16:16:26,564 | INFO | Generating new text for next test
-2025-10-30 16:16:26,565 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 16:16:26,566 | INFO | Test ready for user input
-2025-10-30 16:16:27,649 | DEBUG | Key pressed: 'g', delta=0.0000, index=0
-2025-10-30 16:16:27,649 | DEBUG | Typed correct letter 'g' at index=0
-2025-10-30 16:16:27,649 | DEBUG | Test started at 1761837387.649313
-2025-10-30 16:16:27,877 | DEBUG | Key pressed: 'r', delta=0.2280, index=1
-2025-10-30 16:16:27,877 | DEBUG | Typed correct letter 'r' at index=1
-2025-10-30 16:16:27,924 | DEBUG | Key pressed: 'e', delta=0.0476, index=2
-2025-10-30 16:16:27,925 | DEBUG | Typed correct letter 'e' at index=2
-2025-10-30 16:16:28,122 | DEBUG | Key pressed: 'a', delta=0.1983, index=3
-2025-10-30 16:16:28,123 | DEBUG | Typed correct letter 'a' at index=3
-2025-10-30 16:16:28,182 | DEBUG | Key pressed: 't', delta=0.0591, index=4
-2025-10-30 16:16:28,182 | DEBUG | Typed correct letter 't' at index=4
-2025-10-30 16:16:28,283 | DEBUG | Key pressed: 'e', delta=0.1011, index=5
-2025-10-30 16:16:28,283 | DEBUG | Typed correct letter 'e' at index=5
-2025-10-30 16:16:28,533 | DEBUG | Key pressed: 's', delta=0.2499, index=6
-2025-10-30 16:16:28,533 | DEBUG | Typed correct letter 's' at index=6
-2025-10-30 16:16:28,755 | DEBUG | Key pressed: 't', delta=0.2229, index=7
-2025-10-30 16:16:28,756 | DEBUG | Typed correct letter 't' at index=7
-2025-10-30 16:16:28,893 | DEBUG | Key pressed: ' ', delta=0.1371, index=8
-2025-10-30 16:16:28,893 | DEBUG | Typed correct letter ' ' at index=8
-2025-10-30 16:16:29,080 | DEBUG | Key pressed: 'e', delta=0.1871, index=9
-2025-10-30 16:16:29,080 | DEBUG | Typed WRONG letter 'e' at index=9, wrong=1
-2025-10-30 16:16:29,263 | DEBUG | Key pressed: 'm', delta=0.1831, index=10
-2025-10-30 16:16:29,264 | DEBUG | Typed WRONG letter 'm' at index=10, wrong=2
-2025-10-30 16:16:29,525 | DEBUG | Key pressed: '', delta=0.2627, index=11
-2025-10-30 16:16:29,526 | DEBUG | Backspace pressed, index=10
-2025-10-30 16:16:29,658 | DEBUG | Key pressed: '', delta=0.1322, index=10
-2025-10-30 16:16:29,658 | DEBUG | Backspace pressed, index=9
-2025-10-30 16:16:29,762 | DEBUG | Key pressed: 't', delta=0.1048, index=9
-2025-10-30 16:16:29,763 | DEBUG | Typed correct letter 't' at index=9
-2025-10-30 16:16:29,881 | DEBUG | Key pressed: 'm', delta=0.1182, index=10
-2025-10-30 16:16:29,881 | DEBUG | Typed WRONG letter 'm' at index=10, wrong=3
-2025-10-30 16:16:30,085 | DEBUG | Key pressed: 'e', delta=0.2048, index=11
-2025-10-30 16:16:30,086 | DEBUG | Typed WRONG letter 'e' at index=11, wrong=4
-2025-10-30 16:16:30,404 | DEBUG | Key pressed: '', delta=0.3190, index=12
-2025-10-30 16:16:30,405 | DEBUG | Backspace pressed, index=11
-2025-10-30 16:16:30,537 | DEBUG | Key pressed: '', delta=0.1323, index=11
-2025-10-30 16:16:30,537 | DEBUG | Backspace pressed, index=10
-2025-10-30 16:16:30,636 | DEBUG | Key pressed: 'e', delta=0.0996, index=10
-2025-10-30 16:16:30,637 | DEBUG | Typed correct letter 'e' at index=10
-2025-10-30 16:16:30,946 | DEBUG | Key pressed: 'm', delta=0.3101, index=11
-2025-10-30 16:16:30,947 | DEBUG | Typed correct letter 'm' at index=11
-2025-10-30 16:16:31,157 | DEBUG | Key pressed: 'p', delta=0.2100, index=12
-2025-10-30 16:16:31,157 | DEBUG | Typed correct letter 'p' at index=12
-2025-10-30 16:16:31,362 | DEBUG | Key pressed: 'l', delta=0.2050, index=13
-2025-10-30 16:16:31,362 | DEBUG | Typed correct letter 'l' at index=13
-2025-10-30 16:16:31,757 | DEBUG | Key pressed: 'a', delta=0.3959, index=14
-2025-10-30 16:16:31,758 | DEBUG | Typed correct letter 'a' at index=14
-2025-10-30 16:16:31,922 | DEBUG | Key pressed: 't', delta=0.1645, index=15
-2025-10-30 16:16:31,922 | DEBUG | Typed correct letter 't' at index=15
-2025-10-30 16:16:31,989 | DEBUG | Key pressed: 'e', delta=0.0673, index=16
-2025-10-30 16:16:31,990 | DEBUG | Typed correct letter 'e' at index=16
-2025-10-30 16:16:32,010 | INFO | Test finished automatically
-2025-10-30 16:16:32,010 | INFO | Test finished
-2025-10-30 16:16:32,011 | DEBUG | Elapsed time: 4.36 seconds
-2025-10-30 16:16:32,011 | DEBUG | Num chars: 17, Num words: 3.40
-2025-10-30 16:16:32,011 | DEBUG | Base WPM: 46.77, Accuracy: 76.47%
-2025-10-30 16:16:32,011 | DEBUG | Final WPM (monkeytype style): 35.77
-2025-10-30 16:16:32,011 | DEBUG | Errors: 4, Wrong streak: 2
-2025-10-30 16:16:32,012 | DEBUG | User input length: 25, Key times length: 25
-2025-10-30 16:16:32,012 | DEBUG | WPM chart shown due to mode 'after'
-2025-10-30 16:16:33,356 | DEBUG | Key pressed: '', delta=1.3672, index=17
-2025-10-30 16:16:33,358 | INFO | Ending test
-2025-10-30 16:16:33,368 | DEBUG | WPM chart reset
-2025-10-30 16:16:33,369 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 16:16:33,369 | DEBUG | User input and key times cleared
-2025-10-30 16:16:33,369 | INFO | Generating new text for next test
-2025-10-30 16:16:33,372 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 16:16:33,373 | INFO | Test ready for user input
-2025-10-30 16:16:34,886 | DEBUG | Key pressed: 'e', delta=0.0000, index=0
-2025-10-30 16:16:34,887 | DEBUG | Typed correct letter 'e' at index=0
-2025-10-30 16:16:34,887 | DEBUG | Test started at 1761837394.887223
-2025-10-30 16:16:35,132 | DEBUG | Key pressed: 'a', delta=0.2460, index=1
-2025-10-30 16:16:35,133 | DEBUG | Typed correct letter 'a' at index=1
-2025-10-30 16:16:35,611 | DEBUG | Key pressed: 's', delta=0.4790, index=2
-2025-10-30 16:16:35,612 | DEBUG | Typed correct letter 's' at index=2
-2025-10-30 16:16:35,857 | DEBUG | Key pressed: 't', delta=0.2461, index=3
-2025-10-30 16:16:35,858 | DEBUG | Typed correct letter 't' at index=3
-2025-10-30 16:16:35,990 | DEBUG | Key pressed: ' ', delta=0.1321, index=4
-2025-10-30 16:16:35,990 | DEBUG | Typed correct letter ' ' at index=4
-2025-10-30 16:16:36,130 | DEBUG | Key pressed: 'f', delta=0.1407, index=5
-2025-10-30 16:16:36,131 | DEBUG | Typed correct letter 'f' at index=5
-2025-10-30 16:16:36,303 | DEBUG | Key pressed: 'e', delta=0.1731, index=6
-2025-10-30 16:16:36,304 | DEBUG | Typed correct letter 'e' at index=6
-2025-10-30 16:16:36,467 | DEBUG | Key pressed: 'e', delta=0.1640, index=7
-2025-10-30 16:16:36,468 | DEBUG | Typed correct letter 'e' at index=7
-2025-10-30 16:16:36,555 | DEBUG | Key pressed: 'l', delta=0.0873, index=8
-2025-10-30 16:16:36,555 | DEBUG | Typed correct letter 'l' at index=8
-2025-10-30 16:16:36,569 | INFO | Test finished automatically
-2025-10-30 16:16:36,570 | INFO | Test finished
-2025-10-30 16:16:36,570 | DEBUG | Elapsed time: 1.68 seconds
-2025-10-30 16:16:36,570 | DEBUG | Num chars: 9, Num words: 1.80
-2025-10-30 16:16:36,570 | DEBUG | Base WPM: 64.17, Accuracy: 100.00%
-2025-10-30 16:16:36,570 | DEBUG | Final WPM (monkeytype style): 64.17
-2025-10-30 16:16:36,571 | DEBUG | Errors: 0, Wrong streak: 0
-2025-10-30 16:16:36,571 | DEBUG | User input length: 9, Key times length: 9
-2025-10-30 16:16:36,571 | DEBUG | WPM chart shown due to mode 'after'
-2025-10-30 16:16:37,520 | DEBUG | Key pressed: '', delta=0.9657, index=9
-2025-10-30 16:16:37,521 | INFO | Ending test
-2025-10-30 16:16:37,529 | DEBUG | WPM chart reset
-2025-10-30 16:16:37,530 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 16:16:37,530 | DEBUG | User input and key times cleared
-2025-10-30 16:16:37,530 | INFO | Generating new text for next test
-2025-10-30 16:16:37,532 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 16:16:37,532 | INFO | Test ready for user input
-2025-10-30 16:16:38,191 | DEBUG | Key pressed: 'm', delta=0.0000, index=0
-2025-10-30 16:16:38,191 | DEBUG | Typed correct letter 'm' at index=0
-2025-10-30 16:16:38,191 | DEBUG | Test started at 1761837398.191343
-2025-10-30 16:16:38,298 | DEBUG | Key pressed: 'i', delta=0.1070, index=1
-2025-10-30 16:16:38,298 | DEBUG | Typed correct letter 'i' at index=1
-2025-10-30 16:16:38,665 | DEBUG | Key pressed: 'n', delta=0.3671, index=2
-2025-10-30 16:16:38,665 | DEBUG | Typed correct letter 'n' at index=2
-2025-10-30 16:16:38,760 | DEBUG | Key pressed: 'i', delta=0.0952, index=3
-2025-10-30 16:16:38,760 | DEBUG | Typed correct letter 'i' at index=3
-2025-10-30 16:16:38,966 | DEBUG | Key pressed: 's', delta=0.2057, index=4
-2025-10-30 16:16:38,966 | DEBUG | Typed correct letter 's' at index=4
-2025-10-30 16:16:39,107 | DEBUG | Key pressed: 't', delta=0.1411, index=5
-2025-10-30 16:16:39,107 | DEBUG | Typed correct letter 't' at index=5
-2025-10-30 16:16:39,456 | DEBUG | Key pressed: 'r', delta=0.3497, index=6
-2025-10-30 16:16:39,457 | DEBUG | Typed correct letter 'r' at index=6
-2025-10-30 16:16:39,584 | DEBUG | Key pressed: 'y', delta=0.1280, index=7
-2025-10-30 16:16:39,585 | DEBUG | Typed correct letter 'y' at index=7
-2025-10-30 16:16:40,582 | DEBUG | Key pressed: ' ', delta=0.9981, index=8
-2025-10-30 16:16:40,583 | DEBUG | Typed correct letter ' ' at index=8
-2025-10-30 16:16:40,815 | DEBUG | Key pressed: 'p', delta=0.2321, index=9
-2025-10-30 16:16:40,815 | DEBUG | Typed correct letter 'p' at index=9
-2025-10-30 16:16:40,915 | DEBUG | Key pressed: 'r', delta=0.1003, index=10
-2025-10-30 16:16:40,915 | DEBUG | Typed correct letter 'r' at index=10
-2025-10-30 16:16:41,037 | DEBUG | Key pressed: 'o', delta=0.1226, index=11
-2025-10-30 16:16:41,038 | DEBUG | Typed correct letter 'o' at index=11
-2025-10-30 16:16:41,421 | DEBUG | Key pressed: 'v', delta=0.3832, index=12
-2025-10-30 16:16:41,421 | DEBUG | Typed correct letter 'v' at index=12
-2025-10-30 16:16:41,529 | DEBUG | Key pressed: 'i', delta=0.1088, index=13
-2025-10-30 16:16:41,530 | DEBUG | Typed correct letter 'i' at index=13
-2025-10-30 16:16:41,736 | DEBUG | Key pressed: 'd', delta=0.2064, index=14
-2025-10-30 16:16:41,736 | DEBUG | Typed WRONG letter 'd' at index=14, wrong=1
-2025-10-30 16:16:42,200 | DEBUG | Key pressed: '', delta=0.4638, index=15
-2025-10-30 16:16:42,200 | DEBUG | Backspace pressed, index=14
-2025-10-30 16:16:42,319 | DEBUG | Key pressed: 's', delta=0.1189, index=14
-2025-10-30 16:16:42,319 | DEBUG | Typed correct letter 's' at index=14
-2025-10-30 16:16:42,417 | DEBUG | Key pressed: 'i', delta=0.0989, index=15
-2025-10-30 16:16:42,418 | DEBUG | Typed correct letter 'i' at index=15
-2025-10-30 16:16:42,550 | DEBUG | Key pressed: 'o', delta=0.1321, index=16
-2025-10-30 16:16:42,550 | DEBUG | Typed correct letter 'o' at index=16
-2025-10-30 16:16:42,645 | DEBUG | Key pressed: 'n', delta=0.0959, index=17
-2025-10-30 16:16:42,646 | DEBUG | Typed correct letter 'n' at index=17
-2025-10-30 16:16:42,863 | DEBUG | Key pressed: 's', delta=0.2180, index=18
-2025-10-30 16:16:42,864 | DEBUG | Typed correct letter 's' at index=18
-2025-10-30 16:16:42,886 | INFO | Test finished automatically
-2025-10-30 16:16:42,886 | INFO | Test finished
-2025-10-30 16:16:42,887 | DEBUG | Elapsed time: 4.70 seconds
-2025-10-30 16:16:42,887 | DEBUG | Num chars: 19, Num words: 3.80
-2025-10-30 16:16:42,887 | DEBUG | Base WPM: 48.56, Accuracy: 94.74%
-2025-10-30 16:16:42,887 | DEBUG | Final WPM (monkeytype style): 46.00
-2025-10-30 16:16:42,887 | DEBUG | Errors: 1, Wrong streak: 1
-2025-10-30 16:16:42,888 | DEBUG | User input length: 21, Key times length: 21
-2025-10-30 16:16:42,888 | DEBUG | WPM chart shown due to mode 'after'
-2025-10-30 16:16:44,039 | DEBUG | Key pressed: '', delta=1.1752, index=19
-2025-10-30 16:16:44,040 | INFO | Ending test
-2025-10-30 16:16:44,049 | DEBUG | WPM chart reset
-2025-10-30 16:16:44,049 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 16:16:44,050 | DEBUG | User input and key times cleared
-2025-10-30 16:16:44,050 | INFO | Generating new text for next test
-2025-10-30 16:16:44,052 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 16:16:44,052 | INFO | Test ready for user input
+2025-10-30 22:20:19,908 | INFO | Logging initialized. Log file: logs\typing_app.log
+2025-10-30 22:20:27,777 | INFO | Ending test
+2025-10-30 22:20:27,783 | DEBUG | WPM chart reset
+2025-10-30 22:20:27,783 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
+2025-10-30 22:20:27,784 | DEBUG | User input and key times cleared
+2025-10-30 22:20:27,784 | INFO | Generating new text for next test
+2025-10-30 22:20:27,786 | DEBUG | WPM chart hidden due to mode 'after'
+2025-10-30 22:20:27,786 | DEBUG | Finish info hidden due to mode 'after'
+2025-10-30 22:20:27,787 | INFO | Test ready for user input
+2025-10-30 22:20:28,892 | DEBUG | Key pressed: 's', delta=0.0000, index=0
+2025-10-30 22:20:28,893 | DEBUG | Test started at 1761859228.893058
+2025-10-30 22:20:28,998 | DEBUG | Key pressed: 'o', delta=0.1058, index=1
+2025-10-30 22:20:29,185 | DEBUG | Key pressed: 'l', delta=0.1873, index=2
+2025-10-30 22:20:29,345 | DEBUG | Key pressed: 'u', delta=0.1600, index=3
+2025-10-30 22:20:29,677 | DEBUG | Key pressed: 't', delta=0.3321, index=4
+2025-10-30 22:20:29,790 | DEBUG | Key pressed: 'i', delta=0.1130, index=5
+2025-10-30 22:20:29,873 | DEBUG | Key pressed: 'o', delta=0.0826, index=6
+2025-10-30 22:20:29,991 | DEBUG | Key pressed: 'n', delta=0.1179, index=7
+2025-10-30 22:20:30,114 | DEBUG | Key pressed: 's', delta=0.1231, index=8
+2025-10-30 22:20:30,214 | DEBUG | Key pressed: ' ', delta=0.1003, index=9
+2025-10-30 22:20:30,528 | DEBUG | Key pressed: 'w', delta=0.3135, index=10
+2025-10-30 22:20:30,615 | DEBUG | Key pressed: 'i', delta=0.0871, index=11
+2025-10-30 22:20:30,823 | DEBUG | Key pressed: 's', delta=0.2081, index=12
+2025-10-30 22:20:30,965 | DEBUG | Key pressed: 'e', delta=0.1421, index=13
+2025-10-30 22:20:31,057 | DEBUG | Key pressed: ' ', delta=0.0915, index=14
+2025-10-30 22:20:31,266 | DEBUG | Key pressed: 'g', delta=0.2091, index=15
+2025-10-30 22:20:31,356 | DEBUG | Key pressed: 'e', delta=0.0906, index=16
+2025-10-30 22:20:31,589 | DEBUG | Key pressed: 'n', delta=0.2325, index=17
+2025-10-30 22:20:32,072 | DEBUG | Key pressed: 'u', delta=0.4833, index=18
+2025-10-30 22:20:32,481 | DEBUG | Key pressed: 'i', delta=0.4087, index=19
+2025-10-30 22:20:32,831 | DEBUG | Key pressed: 'n', delta=0.3500, index=20
+2025-10-30 22:20:32,932 | DEBUG | Key pressed: 'e', delta=0.1014, index=21
+2025-10-30 22:20:33,017 | DEBUG | Key pressed: ' ', delta=0.0853, index=22
+2025-10-30 22:20:33,247 | DEBUG | Key pressed: 'j', delta=0.2293, index=23
+2025-10-30 22:20:33,350 | DEBUG | Key pressed: 'o', delta=0.1033, index=24
+2025-10-30 22:20:33,626 | DEBUG | Key pressed: 'b', delta=0.2760, index=25
+2025-10-30 22:20:33,774 | DEBUG | Key pressed: ' ', delta=0.1481, index=26
+2025-10-30 22:20:34,034 | DEBUG | Key pressed: 'n', delta=0.2598, index=27
+2025-10-30 22:20:34,615 | DEBUG | Key pressed: 'j', delta=0.5811, index=28
+2025-10-30 22:20:34,629 | INFO | Test finished automatically
+2025-10-30 22:20:34,629 | INFO | Test finished
+2025-10-30 22:20:34,630 | DEBUG | Elapsed time: 5.74 seconds
+2025-10-30 22:20:34,630 | DEBUG | Num chars: 29, Num words: 5.80
+2025-10-30 22:20:34,630 | DEBUG | Base WPM: 60.66, Accuracy: 100.00%
+2025-10-30 22:20:34,630 | DEBUG | Final WPM (monkeytype style): 60.66
+2025-10-30 22:20:34,630 | DEBUG | Errors: 0, Wrong streak: 0
+2025-10-30 22:20:34,631 | DEBUG | User input length: 29, Key times length: 29
+2025-10-30 22:20:34,631 | DEBUG | WPM chart shown due to mode 'after'
+2025-10-30 22:20:34,632 | DEBUG | Finish info shown due to mode 'after'
+2025-10-30 22:20:36,155 | DEBUG | Key pressed: '', delta=1.5397, index=29
+2025-10-30 22:20:36,157 | INFO | Ending test
+2025-10-30 22:20:36,164 | DEBUG | WPM chart reset
+2025-10-30 22:20:36,164 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
+2025-10-30 22:20:36,165 | DEBUG | User input and key times cleared
+2025-10-30 22:20:36,165 | INFO | Generating new text for next test
+2025-10-30 22:20:36,167 | DEBUG | WPM chart hidden due to mode 'after'
+2025-10-30 22:20:36,167 | DEBUG | Finish info hidden due to mode 'after'
+2025-10-30 22:20:36,167 | INFO | Test ready for user input
+2025-10-30 22:20:37,001 | DEBUG | Key pressed: 'f', delta=0.0000, index=0
+2025-10-30 22:20:37,002 | DEBUG | Test started at 1761859237.002156
+2025-10-30 22:20:37,247 | DEBUG | Key pressed: 'l', delta=0.2462, index=1
+2025-10-30 22:20:37,375 | DEBUG | Key pressed: 'a', delta=0.1279, index=2
+2025-10-30 22:20:37,601 | DEBUG | Key pressed: 's', delta=0.2259, index=3
+2025-10-30 22:20:37,747 | DEBUG | Key pressed: 'h', delta=0.1461, index=4
+2025-10-30 22:20:37,893 | DEBUG | Key pressed: ' ', delta=0.1456, index=5
+2025-10-30 22:20:38,102 | DEBUG | Key pressed: 'w', delta=0.2093, index=6
+2025-10-30 22:20:38,167 | DEBUG | Key pressed: 'i', delta=0.0649, index=7
+2025-10-30 22:20:38,348 | DEBUG | Key pressed: 'd', delta=0.1807, index=8
+2025-10-30 22:20:38,535 | DEBUG | Key pressed: 'e', delta=0.1877, index=9
+2025-10-30 22:20:38,617 | DEBUG | Key pressed: ' ', delta=0.0818, index=10
+2025-10-30 22:20:38,812 | DEBUG | Key pressed: 'p', delta=0.1948, index=11
+2025-10-30 22:20:38,881 | DEBUG | Key pressed: 'a', delta=0.0689, index=12
+2025-10-30 22:20:39,035 | DEBUG | Key pressed: 'r', delta=0.1539, index=13
+2025-10-30 22:20:39,195 | DEBUG | Key pressed: 'a', delta=0.1604, index=14
+2025-10-30 22:20:39,782 | DEBUG | Key pressed: 'i', delta=0.5866, index=15
+2025-10-30 22:20:40,138 | DEBUG | Key pressed: '', delta=0.3559, index=16
+2025-10-30 22:20:40,138 | DEBUG | Backspace pressed, index=15
+2025-10-30 22:20:40,265 | DEBUG | Key pressed: 'd', delta=0.1273, index=15
+2025-10-30 22:20:40,328 | DEBUG | Key pressed: 'i', delta=0.0628, index=16
+2025-10-30 22:20:40,492 | DEBUG | Key pressed: 's', delta=0.1643, index=17
+2025-10-30 22:20:40,719 | DEBUG | Key pressed: 'c', delta=0.2268, index=18
+2025-10-30 22:20:40,897 | DEBUG | Key pressed: ' ', delta=0.1780, index=19
+2025-10-30 22:20:41,235 | DEBUG | Key pressed: '', delta=0.3384, index=20
+2025-10-30 22:20:41,236 | DEBUG | Backspace pressed, index=19
+2025-10-30 22:20:41,366 | DEBUG | Key pressed: '', delta=0.1308, index=19
+2025-10-30 22:20:41,367 | DEBUG | Backspace pressed, index=18
+2025-10-30 22:20:41,543 | DEBUG | Key pressed: 'e', delta=0.1773, index=18
+2025-10-30 22:20:41,644 | DEBUG | Key pressed: ' ', delta=0.1011, index=19
+2025-10-30 22:20:41,894 | DEBUG | Key pressed: 'p', delta=0.2495, index=20
+2025-10-30 22:20:41,968 | DEBUG | Key pressed: 'o', delta=0.0743, index=21
+2025-10-30 22:20:42,190 | DEBUG | Key pressed: 's', delta=0.2220, index=22
+2025-10-30 22:20:42,374 | DEBUG | Key pressed: 's', delta=0.1841, index=23
+2025-10-30 22:20:42,636 | DEBUG | Key pressed: '', delta=0.2623, index=24
+2025-10-30 22:20:42,637 | DEBUG | Backspace pressed, index=23
+2025-10-30 22:20:42,778 | DEBUG | Key pressed: '', delta=0.1411, index=23
+2025-10-30 22:20:42,778 | DEBUG | Backspace pressed, index=22
+2025-10-30 22:20:43,018 | DEBUG | Key pressed: 'l', delta=0.2408, index=22
+2025-10-30 22:20:43,183 | DEBUG | Key pressed: 'l', delta=0.1649, index=23
+2025-10-30 22:20:43,355 | DEBUG | Key pressed: 's', delta=0.1720, index=24
+2025-10-30 22:20:43,479 | DEBUG | Key pressed: ' ', delta=0.1237, index=25
+2025-10-30 22:20:43,769 | DEBUG | Key pressed: 's', delta=0.2899, index=26
+2025-10-30 22:20:43,851 | DEBUG | Key pressed: 'o', delta=0.0819, index=27
+2025-10-30 22:20:44,006 | DEBUG | Key pressed: 'm', delta=0.1550, index=28
+2025-10-30 22:20:44,366 | DEBUG | Key pressed: 'w', delta=0.3603, index=29
+2025-10-30 22:20:44,746 | DEBUG | Key pressed: 'h', delta=0.3796, index=30
+2025-10-30 22:20:44,949 | DEBUG | Key pressed: '', delta=0.2033, index=31
+2025-10-30 22:20:44,949 | DEBUG | Backspace pressed, index=30
+2025-10-30 22:20:45,077 | DEBUG | Key pressed: '', delta=0.1285, index=30
+2025-10-30 22:20:45,078 | DEBUG | Backspace pressed, index=29
+2025-10-30 22:20:45,226 | DEBUG | Key pressed: 'e', delta=0.1483, index=29
+2025-10-30 22:20:45,360 | DEBUG | Key pressed: 'h', delta=0.1337, index=30
+2025-10-30 22:20:45,481 | DEBUG | Key pressed: 'e', delta=0.1214, index=31
+2025-10-30 22:20:45,572 | DEBUG | Key pressed: 'r', delta=0.0909, index=32
+2025-10-30 22:20:45,718 | DEBUG | Key pressed: 'e', delta=0.1460, index=33
+2025-10-30 22:20:45,863 | DEBUG | Key pressed: '', delta=0.1451, index=34
+2025-10-30 22:20:45,864 | DEBUG | Backspace pressed, index=33
+2025-10-30 22:20:46,036 | DEBUG | Key pressed: '', delta=0.1729, index=33
+2025-10-30 22:20:46,036 | DEBUG | Backspace pressed, index=32
+2025-10-30 22:20:46,173 | DEBUG | Key pressed: '', delta=0.1370, index=32
+2025-10-30 22:20:46,173 | DEBUG | Backspace pressed, index=31
+2025-10-30 22:20:46,305 | DEBUG | Key pressed: '', delta=0.1321, index=31
+2025-10-30 22:20:46,305 | DEBUG | Backspace pressed, index=30
+2025-10-30 22:20:46,692 | DEBUG | Key pressed: 'w', delta=0.3872, index=30
+2025-10-30 22:20:46,807 | DEBUG | Key pressed: 'h', delta=0.1146, index=31
+2025-10-30 22:20:46,938 | DEBUG | Key pressed: 'e', delta=0.1309, index=32
+2025-10-30 22:20:47,006 | DEBUG | Key pressed: 'r', delta=0.0686, index=33
+2025-10-30 22:20:47,147 | DEBUG | Key pressed: 'e', delta=0.1410, index=34
+2025-10-30 22:20:47,161 | INFO | Test finished automatically
+2025-10-30 22:20:47,162 | INFO | Test finished
+2025-10-30 22:20:47,162 | DEBUG | Elapsed time: 10.16 seconds
+2025-10-30 22:20:47,162 | DEBUG | Num chars: 35, Num words: 7.00
+2025-10-30 22:20:47,162 | DEBUG | Base WPM: 41.34, Accuracy: 71.43%
+2025-10-30 22:20:47,162 | DEBUG | Final WPM (monkeytype style): 29.53
+2025-10-30 22:20:47,163 | DEBUG | Errors: 10, Wrong streak: 0
+2025-10-30 22:20:47,163 | DEBUG | User input length: 57, Key times length: 57
+2025-10-30 22:20:47,163 | DEBUG | WPM chart shown due to mode 'after'
+2025-10-30 22:20:47,164 | DEBUG | Finish info shown due to mode 'after'
+2025-10-30 22:20:48,521 | DEBUG | Key pressed: '', delta=1.3738, index=35
+2025-10-30 22:20:48,524 | INFO | Ending test
+2025-10-30 22:20:48,532 | DEBUG | WPM chart reset
+2025-10-30 22:20:48,533 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
+2025-10-30 22:20:48,533 | DEBUG | User input and key times cleared
+2025-10-30 22:20:48,533 | INFO | Generating new text for next test
+2025-10-30 22:20:48,536 | DEBUG | WPM chart hidden due to mode 'after'
+2025-10-30 22:20:48,536 | DEBUG | Finish info hidden due to mode 'after'
+2025-10-30 22:20:48,536 | INFO | Test ready for user input
+2025-10-30 22:20:49,482 | DEBUG | Key pressed: 'l', delta=0.0000, index=0
+2025-10-30 22:20:49,482 | DEBUG | Test started at 1761859249.482643
+2025-10-30 22:20:49,660 | DEBUG | Key pressed: 'o', delta=0.1781, index=1
+2025-10-30 22:20:49,809 | DEBUG | Key pressed: 'a', delta=0.1493, index=2
+2025-10-30 22:20:50,015 | DEBUG | Key pressed: 'n', delta=0.2061, index=3
+2025-10-30 22:20:50,175 | DEBUG | Key pressed: ' ', delta=0.1596, index=4
+2025-10-30 22:20:50,442 | DEBUG | Key pressed: 'v', delta=0.2674, index=5
+2025-10-30 22:20:50,588 | DEBUG | Key pressed: 'a', delta=0.1456, index=6
+2025-10-30 22:20:50,749 | DEBUG | Key pressed: 'r', delta=0.1613, index=7
+2025-10-30 22:20:50,889 | DEBUG | Key pressed: 'i', delta=0.1400, index=8
+2025-10-30 22:20:51,226 | DEBUG | Key pressed: 'a', delta=0.3373, index=9
+2025-10-30 22:20:51,842 | DEBUG | Key pressed: 'b', delta=0.6153, index=10
+2025-10-30 22:20:52,046 | DEBUG | Key pressed: 'l', delta=0.2044, index=11
+2025-10-30 22:20:52,142 | DEBUG | Key pressed: 'e', delta=0.0959, index=12
+2025-10-30 22:20:52,378 | DEBUG | Key pressed: 's', delta=0.2362, index=13
+2025-10-30 22:20:52,470 | DEBUG | Key pressed: ' ', delta=0.0915, index=14
+2025-10-30 22:20:52,816 | DEBUG | Key pressed: 'e', delta=0.3465, index=15
+2025-10-30 22:20:53,313 | DEBUG | Key pressed: '', delta=0.4967, index=16
+2025-10-30 22:20:53,313 | DEBUG | Backspace pressed, index=15
+2025-10-30 22:20:53,586 | DEBUG | Key pressed: 'd', delta=0.2730, index=15
+2025-10-30 22:20:53,746 | DEBUG | Key pressed: 'e', delta=0.1604, index=16
+2025-10-30 22:20:53,851 | DEBUG | Key pressed: 'n', delta=0.1048, index=17
+2025-10-30 22:20:54,137 | DEBUG | Key pressed: 'm', delta=0.2859, index=18
+2025-10-30 22:20:54,228 | DEBUG | Key pressed: 'a', delta=0.0909, index=19
+2025-10-30 22:20:54,374 | DEBUG | Key pressed: 'r', delta=0.1461, index=20
+2025-10-30 22:20:54,866 | DEBUG | Key pressed: 'k', delta=0.4920, index=21
+2025-10-30 22:20:54,998 | DEBUG | Key pressed: ' ', delta=0.1317, index=22
+2025-10-30 22:20:55,385 | DEBUG | Key pressed: 't', delta=0.3873, index=23
+2025-10-30 22:20:55,486 | DEBUG | Key pressed: 'o', delta=0.1009, index=24
+2025-10-30 22:20:55,618 | DEBUG | Key pressed: 'n', delta=0.1319, index=25
+2025-10-30 22:20:56,347 | DEBUG | Key pressed: 'i', delta=0.7292, index=26
+2025-10-30 22:20:56,625 | DEBUG | Key pressed: 'g', delta=0.2780, index=27
+2025-10-30 22:20:56,707 | DEBUG | Key pressed: 'h', delta=0.0824, index=28
+2025-10-30 22:20:56,825 | DEBUG | Key pressed: 't', delta=0.1175, index=29
+2025-10-30 22:20:57,139 | DEBUG | Key pressed: ' ', delta=0.3142, index=30
+2025-10-30 22:20:57,349 | DEBUG | Key pressed: 's', delta=0.2100, index=31
+2025-10-30 22:20:57,554 | DEBUG | Key pressed: 'i', delta=0.2056, index=32
+2025-10-30 22:20:57,568 | INFO | Test finished automatically
+2025-10-30 22:20:57,568 | INFO | Test finished
+2025-10-30 22:20:57,568 | DEBUG | Elapsed time: 8.09 seconds
+2025-10-30 22:20:57,568 | DEBUG | Num chars: 33, Num words: 6.60
+2025-10-30 22:20:57,569 | DEBUG | Base WPM: 48.97, Accuracy: 96.97%
+2025-10-30 22:20:57,569 | DEBUG | Final WPM (monkeytype style): 47.49
+2025-10-30 22:20:57,569 | DEBUG | Errors: 1, Wrong streak: 0
+2025-10-30 22:20:57,569 | DEBUG | User input length: 35, Key times length: 35
+2025-10-30 22:20:57,570 | DEBUG | WPM chart shown due to mode 'after'
+2025-10-30 22:20:57,571 | DEBUG | Finish info shown due to mode 'after'
+2025-10-30 22:20:58,361 | DEBUG | Key pressed: '', delta=0.8065, index=33
+2025-10-30 22:20:58,363 | INFO | Ending test
+2025-10-30 22:20:58,370 | DEBUG | WPM chart reset
+2025-10-30 22:20:58,371 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
+2025-10-30 22:20:58,371 | DEBUG | User input and key times cleared
+2025-10-30 22:20:58,371 | INFO | Generating new text for next test
+2025-10-30 22:20:58,373 | DEBUG | WPM chart hidden due to mode 'after'
+2025-10-30 22:20:58,374 | DEBUG | Finish info hidden due to mode 'after'
+2025-10-30 22:20:58,374 | INFO | Test ready for user input
+2025-10-30 22:20:59,115 | DEBUG | Key pressed: 'd', delta=0.0000, index=0
+2025-10-30 22:20:59,116 | DEBUG | Test started at 1761859259.115857
+2025-10-30 22:20:59,192 | DEBUG | Key pressed: 'i', delta=0.0771, index=1
+2025-10-30 22:20:59,379 | DEBUG | Key pressed: 'r', delta=0.1868, index=2
+2025-10-30 22:20:59,452 | DEBUG | Key pressed: 'e', delta=0.0732, index=3
+2025-10-30 22:20:59,866 | DEBUG | Key pressed: 'c', delta=0.4137, index=4
+2025-10-30 22:21:00,130 | DEBUG | Key pressed: 't', delta=0.2643, index=5
+2025-10-30 22:21:00,244 | DEBUG | Key pressed: 'o', delta=0.1139, index=6
+2025-10-30 22:21:00,357 | DEBUG | Key pressed: 'r', delta=0.1128, index=7
+2025-10-30 22:21:00,494 | DEBUG | Key pressed: ' ', delta=0.1377, index=8
+2025-10-30 22:21:00,713 | DEBUG | Key pressed: 'b', delta=0.2184, index=9
+2025-10-30 22:21:00,785 | DEBUG | Key pressed: 'a', delta=0.0720, index=10
+2025-10-30 22:21:01,004 | DEBUG | Key pressed: 'r', delta=0.2189, index=11
+2025-10-30 22:21:01,354 | DEBUG | Key pressed: 'b', delta=0.3500, index=12
+2025-10-30 22:21:01,454 | DEBUG | Key pressed: 'a', delta=0.1000, index=13
+2025-10-30 22:21:01,682 | DEBUG | Key pressed: 'r', delta=0.2285, index=14
+2025-10-30 22:21:01,805 | DEBUG | Key pressed: 'a', delta=0.1225, index=15
+2025-10-30 22:21:01,960 | DEBUG | Key pressed: ' ', delta=0.1550, index=16
+2025-10-30 22:21:02,192 | DEBUG | Key pressed: 'r', delta=0.2321, index=17
+2025-10-30 22:21:02,256 | DEBUG | Key pressed: 'e', delta=0.0639, index=18
+2025-10-30 22:21:02,497 | DEBUG | Key pressed: 's', delta=0.2416, index=19
+2025-10-30 22:21:02,597 | DEBUG | Key pressed: 'u', delta=0.0994, index=20
+2025-10-30 22:21:02,789 | DEBUG | Key pressed: 'l', delta=0.1921, index=21
+2025-10-30 22:21:02,962 | DEBUG | Key pressed: 'i', delta=0.1733, index=22
+2025-10-30 22:21:03,089 | DEBUG | Key pressed: 'n', delta=0.1267, index=23
+2025-10-30 22:21:03,208 | DEBUG | Key pressed: 'g', delta=0.1188, index=24
+2025-10-30 22:21:03,331 | DEBUG | Key pressed: ' ', delta=0.1232, index=25
+2025-10-30 22:21:03,499 | DEBUG | Key pressed: '', delta=0.1677, index=26
+2025-10-30 22:21:03,499 | DEBUG | Backspace pressed, index=25
+2025-10-30 22:21:03,655 | DEBUG | Key pressed: '', delta=0.1565, index=25
+2025-10-30 22:21:03,656 | DEBUG | Backspace pressed, index=24
+2025-10-30 22:21:03,804 | DEBUG | Key pressed: '', delta=0.1491, index=24
+2025-10-30 22:21:03,805 | DEBUG | Backspace pressed, index=23
+2025-10-30 22:21:03,950 | DEBUG | Key pressed: '', delta=0.1457, index=23
+2025-10-30 22:21:03,950 | DEBUG | Backspace pressed, index=22
+2025-10-30 22:21:04,141 | DEBUG | Key pressed: 't', delta=0.1909, index=22
+2025-10-30 22:21:04,200 | DEBUG | Key pressed: 'i', delta=0.0591, index=23
+2025-10-30 22:21:04,297 | DEBUG | Key pressed: 'n', delta=0.0967, index=24
+2025-10-30 22:21:04,451 | DEBUG | Key pressed: 'g', delta=0.1548, index=25
+2025-10-30 22:21:04,526 | DEBUG | Key pressed: ' ', delta=0.0745, index=26
+2025-10-30 22:21:04,769 | DEBUG | Key pressed: 'c', delta=0.2429, index=27
+2025-10-30 22:21:04,843 | DEBUG | Key pressed: 'o', delta=0.0740, index=28
+2025-10-30 22:21:04,929 | DEBUG | Key pressed: 'm', delta=0.0860, index=29
+2025-10-30 22:21:05,120 | DEBUG | Key pressed: 'p', delta=0.1912, index=30
+2025-10-30 22:21:05,220 | DEBUG | Key pressed: 'a', delta=0.0999, index=31
+2025-10-30 22:21:05,526 | DEBUG | Key pressed: 'c', delta=0.3062, index=32
+2025-10-30 22:21:05,709 | DEBUG | Key pressed: 't', delta=0.1827, index=33
+2025-10-30 22:21:05,818 | DEBUG | Key pressed: ' ', delta=0.1096, index=34
+2025-10-30 22:21:05,944 | DEBUG | Key pressed: 'a', delta=0.1257, index=35
+2025-10-30 22:21:06,169 | DEBUG | Key pressed: 'c', delta=0.2251, index=36
+2025-10-30 22:21:06,341 | DEBUG | Key pressed: 't', delta=0.1720, index=37
+2025-10-30 22:21:06,441 | DEBUG | Key pressed: 'i', delta=0.1000, index=38
+2025-10-30 22:21:06,625 | DEBUG | Key pressed: 'v', delta=0.1835, index=39
+2025-10-30 22:21:06,760 | DEBUG | Key pressed: 'e', delta=0.1352, index=40
+2025-10-30 22:21:06,774 | INFO | Test finished automatically
+2025-10-30 22:21:06,774 | INFO | Test finished
+2025-10-30 22:21:06,774 | DEBUG | Elapsed time: 7.66 seconds
+2025-10-30 22:21:06,774 | DEBUG | Num chars: 41, Num words: 8.20
+2025-10-30 22:21:06,775 | DEBUG | Base WPM: 64.24, Accuracy: 90.24%
+2025-10-30 22:21:06,775 | DEBUG | Final WPM (monkeytype style): 57.97
+2025-10-30 22:21:06,775 | DEBUG | Errors: 4, Wrong streak: 0
+2025-10-30 22:21:06,775 | DEBUG | User input length: 49, Key times length: 49
+2025-10-30 22:21:06,776 | DEBUG | WPM chart shown due to mode 'after'
+2025-10-30 22:21:06,776 | DEBUG | Finish info shown due to mode 'after'
+2025-10-30 22:21:07,511 | DEBUG | Key pressed: '', delta=0.7511, index=41
+2025-10-30 22:21:07,512 | INFO | Ending test
+2025-10-30 22:21:07,521 | DEBUG | WPM chart reset
+2025-10-30 22:21:07,522 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
+2025-10-30 22:21:07,522 | DEBUG | User input and key times cleared
+2025-10-30 22:21:07,522 | INFO | Generating new text for next test
+2025-10-30 22:21:07,525 | DEBUG | WPM chart hidden due to mode 'after'
+2025-10-30 22:21:07,525 | DEBUG | Finish info hidden due to mode 'after'
+2025-10-30 22:21:07,526 | INFO | Test ready for user input
+2025-10-30 22:21:08,355 | DEBUG | Key pressed: 'm', delta=0.0000, index=0
+2025-10-30 22:21:08,355 | DEBUG | Test started at 1761859268.355496
+2025-10-30 22:21:08,459 | DEBUG | Key pressed: 'o', delta=0.1043, index=1
+2025-10-30 22:21:09,001 | DEBUG | Key pressed: 'b', delta=0.5424, index=2
+2025-10-30 22:21:09,169 | DEBUG | Key pressed: 'l', delta=0.1679, index=3
+2025-10-30 22:21:09,356 | DEBUG | Key pressed: 'i', delta=0.1873, index=4
+2025-10-30 22:21:09,739 | DEBUG | Key pressed: '', delta=0.3824, index=5
+2025-10-30 22:21:09,739 | DEBUG | Backspace pressed, index=4
+2025-10-30 22:21:09,866 | DEBUG | Key pressed: '', delta=0.1274, index=4
+2025-10-30 22:21:09,867 | DEBUG | Backspace pressed, index=3
+2025-10-30 22:21:10,513 | DEBUG | Key pressed: 'i', delta=0.6468, index=3
+2025-10-30 22:21:10,686 | DEBUG | Key pressed: 'l', delta=0.1733, index=4
+2025-10-30 22:21:10,781 | DEBUG | Key pressed: 'e', delta=0.0947, index=5
+2025-10-30 22:21:10,865 | DEBUG | Key pressed: ' ', delta=0.0838, index=6
+2025-10-30 22:21:11,041 | DEBUG | Key pressed: 's', delta=0.1766, index=7
+2025-10-30 22:21:11,123 | DEBUG | Key pressed: 'e', delta=0.0817, index=8
+2025-10-30 22:21:11,283 | DEBUG | Key pressed: 'l', delta=0.1604, index=9
+2025-10-30 22:21:11,401 | DEBUG | Key pressed: 'e', delta=0.1174, index=10
+2025-10-30 22:21:11,660 | DEBUG | Key pressed: 'c', delta=0.2590, index=11
+2025-10-30 22:21:11,857 | DEBUG | Key pressed: 't', delta=0.1972, index=12
+2025-10-30 22:21:11,929 | DEBUG | Key pressed: 'i', delta=0.0716, index=13
+2025-10-30 22:21:11,993 | DEBUG | Key pressed: 'o', delta=0.0642, index=14
+2025-10-30 22:21:12,097 | DEBUG | Key pressed: 'n', delta=0.1039, index=15
+2025-10-30 22:21:12,220 | DEBUG | Key pressed: ' ', delta=0.1233, index=16
+2025-10-30 22:21:12,654 | DEBUG | Key pressed: 't', delta=0.4341, index=17
+2025-10-30 22:21:12,731 | DEBUG | Key pressed: 'h', delta=0.0770, index=18
+2025-10-30 22:21:12,926 | DEBUG | Key pressed: ' ', delta=0.1945, index=19
+2025-10-30 22:21:13,050 | DEBUG | Key pressed: 'a', delta=0.1241, index=20
+2025-10-30 22:21:13,140 | DEBUG | Key pressed: 'b', delta=0.0902, index=21
+2025-10-30 22:21:13,359 | DEBUG | Key pressed: 's', delta=0.2188, index=22
+2025-10-30 22:21:13,569 | DEBUG | Key pressed: 'e', delta=0.2107, index=23
+2025-10-30 22:21:13,719 | DEBUG | Key pressed: 'n', delta=0.1499, index=24
+2025-10-30 22:21:13,964 | DEBUG | Key pressed: 'c', delta=0.2447, index=25
+2025-10-30 22:21:14,146 | DEBUG | Key pressed: 'e', delta=0.1817, index=26
+2025-10-30 22:21:14,269 | DEBUG | Key pressed: ' ', delta=0.1230, index=27
+2025-10-30 22:21:14,411 | DEBUG | Key pressed: 'h', delta=0.1424, index=28
+2025-10-30 22:21:14,525 | DEBUG | Key pressed: 'e', delta=0.1136, index=29
+2025-10-30 22:21:14,643 | DEBUG | Key pressed: 'a', delta=0.1180, index=30
+2025-10-30 22:21:14,893 | DEBUG | Key pressed: 'd', delta=0.2501, index=31
+2025-10-30 22:21:14,971 | DEBUG | Key pressed: 'l', delta=0.0779, index=32
+2025-10-30 22:21:15,132 | DEBUG | Key pressed: 'i', delta=0.1611, index=33
+2025-10-30 22:21:15,303 | DEBUG | Key pressed: 'n', delta=0.1712, index=34
+2025-10-30 22:21:15,426 | DEBUG | Key pressed: 'e', delta=0.1233, index=35
+2025-10-30 22:21:15,733 | DEBUG | Key pressed: 's', delta=0.3066, index=36
+2025-10-30 22:21:15,745 | INFO | Test finished automatically
+2025-10-30 22:21:15,746 | INFO | Test finished
+2025-10-30 22:21:15,746 | DEBUG | Elapsed time: 7.39 seconds
+2025-10-30 22:21:15,746 | DEBUG | Num chars: 37, Num words: 7.40
+2025-10-30 22:21:15,746 | DEBUG | Base WPM: 60.08, Accuracy: 94.59%
+2025-10-30 22:21:15,746 | DEBUG | Final WPM (monkeytype style): 56.83
+2025-10-30 22:21:15,747 | DEBUG | Errors: 2, Wrong streak: 0
+2025-10-30 22:21:15,747 | DEBUG | User input length: 41, Key times length: 41
+2025-10-30 22:21:15,747 | DEBUG | WPM chart shown due to mode 'after'
+2025-10-30 22:21:15,748 | DEBUG | Finish info shown due to mode 'after'
+2025-10-30 22:21:16,179 | DEBUG | Key pressed: 's', delta=0.4457, index=37
