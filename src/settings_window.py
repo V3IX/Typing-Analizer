@@ -7,6 +7,8 @@ class SettingsWindow:
         self.typing_window = typing_window
         self.word_files = detect_word_files()
         self.word_var = tk.StringVar(value=self.typing_window.word_list_choice)
+        self.show_chart_var = tk.BooleanVar(value=self.typing_window.wpm_chart.wpm_chart_visible)
+
         self.open_settings()
 
     def open_settings(self):
@@ -25,7 +27,7 @@ class SettingsWindow:
         y = main_y + (main_height // 2) - (250 // 2)
         settings_win.geometry(f"350x250+{x}+{y}")
 
-        # Word list dropdown
+        # --- Word list dropdown ---
         tk.Label(settings_win, text="Word list:", bg="#3e3e3e", fg="white").pack(pady=5)
         dropdown = tk.OptionMenu(
             settings_win,
@@ -36,3 +38,20 @@ class SettingsWindow:
         dropdown.config(bg="#4e4e4e", fg="white", highlightthickness=0)
         dropdown["menu"].config(bg="#4e4e4e", fg="white")
         dropdown.pack(pady=5)
+
+        # --- WPM Chart toggle (PUT THIS HERE) ---
+        tk.Label(settings_win, text="Show WPM Chart:", bg="#3e3e3e", fg="white").pack(pady=(20, 5))
+        tk.Checkbutton(
+            settings_win,
+            text="Visible",
+            variable=self.show_chart_var,
+            bg="#3e3e3e",
+            fg="white",
+            selectcolor="#2e2e2e",
+            command=self.toggle_chart
+        ).pack()
+
+    def toggle_chart(self):
+        value = self.show_chart_var.get()
+        self.typing_window.wpm_chart_visible = value
+        self.typing_window.wpm_chart.toggle_chart(value)

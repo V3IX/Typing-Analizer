@@ -173,3 +173,14 @@ def get_all_full_tests():
         {"user_input": json.loads(u), "key_times": json.loads(t)}
         for u, t in rows
     ]
+
+def get_info(self):
+    """Fetch basic info about the database."""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("SELECT COUNT(*) FROM test_results")
+    count = cursor.fetchone()[0]
+    conn.close()
+    return {
+        "total_tests": count
+    }

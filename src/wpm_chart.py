@@ -18,6 +18,8 @@ class WPMChart(tk.Frame):
         self.wpm_history = []
         self.start_time = time.time()
 
+        self.wpm_chart_visible = True
+
         # ---------------- Matplotlib Figure ----------------
         self.fig, self.ax = plt.subplots(figsize=(8, 2))
         self.fig.patch.set_facecolor("#2e2e2e")  # figure background
@@ -187,8 +189,22 @@ class WPMChart(tk.Frame):
         self.fig.subplots_adjust(left=0.08, right=0.92, top=0.95, bottom=0.05)
         self.canvas.draw_idle()
 
-    def toggle(self, enable: bool):
+    def toggle_chart(self, enable: bool):
+        self.wpm_chart_visible = enable
         if enable:
-            self.show()
+            self.pack(fill="x", padx=10, pady=5, before=self.typing_window.finish_info)
         else:
-            self.hide()
+            self.pack_forget()
+
+    def show(self):
+        """Display the chart and start updating."""
+        self.pack(fill="x", padx=10, pady=5)
+        if not hasattr(self, "_after_id"):
+            self.update_chart()
+
+    def hide(self):
+        """Hide the chart and stop updating."""
+        self.pack_forget()
+        if hasattr(self, "_after_id"):
+            self.after_cancel(self._after_id)
+            del self._after_id
