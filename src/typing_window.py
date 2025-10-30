@@ -200,6 +200,10 @@ class TypingWindow(tk.Frame):
             logger.info("Generating new text for next test")
             self.generate_text(num_words=self.words_goal)
 
+        if getattr(self, "wpm_chart_mode") == "after" and hasattr(self, "wpm_chart"):
+            self.wpm_chart.hide()
+            logger.debug("WPM chart hidden due to mode 'after'")
+
         self.text_widget.config(state=tk.NORMAL)
         self.text_widget.focus_set()
         self.finish_info._clear_display()
@@ -235,6 +239,10 @@ class TypingWindow(tk.Frame):
                 on_replay=self.replay
             )
 
+        if getattr(self, "wpm_chart_mode") == "after" and hasattr(self, "wpm_chart"):
+            self.wpm_chart.show()
+            logger.debug("WPM chart shown due to mode 'after'")
+
         if not getattr(self, "replay_mode", False):
             # --- Save results to database ---
             database.save_test_result(
@@ -245,9 +253,6 @@ class TypingWindow(tk.Frame):
                 user_input=self.user_input,
                 key_times=self.key_times
             )
-
-        logger.info("Test results saved to database")
-        print(database.get_all_test_results())
 
     def replay(self, data=None):
         """Replay a specific test (or the most recent one if none given)."""

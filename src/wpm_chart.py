@@ -18,7 +18,7 @@ class WPMChart(tk.Frame):
         self.wpm_history = []
         self.start_time = time.time()
 
-        self.wpm_chart_visible = True
+        self.wpm_chart_mode = "always"
 
         # ---------------- Matplotlib Figure ----------------
         self.fig, self.ax = plt.subplots(figsize=(8, 2))
@@ -189,16 +189,20 @@ class WPMChart(tk.Frame):
         self.fig.subplots_adjust(left=0.08, right=0.92, top=0.95, bottom=0.05)
         self.canvas.draw_idle()
 
-    def toggle_chart(self, enable: bool):
-        self.wpm_chart_visible = enable
-        if enable:
-            self.pack(fill="x", padx=10, pady=5, before=self.typing_window.finish_info)
-        else:
-            self.pack_forget()
+    def set_mode(self, mode):
+        if mode == "always":
+            self.show()
+        elif mode == "hidden":
+            self.hide()
 
     def show(self):
         """Display the chart and start updating."""
-        self.pack(fill="x", padx=10, pady=5)
+        # Ensure it always appears above FinishInfo
+        if hasattr(self.typing_window, "finish_info"):
+            self.pack(fill="x", padx=10, pady=5, before=self.typing_window.finish_info)
+        else:
+            self.pack(fill="x", padx=10, pady=5)
+
         if not hasattr(self, "_after_id"):
             self.update_chart()
 

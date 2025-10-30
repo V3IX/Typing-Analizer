@@ -5,9 +5,14 @@ class SettingsWindow:
     def __init__(self, master, typing_window):
         self.master = master
         self.typing_window = typing_window
+        self.wpm_chart = typing_window.wpm_chart
+        self.finish_info = typing_window.finish_info
+
         self.word_files = detect_word_files()
         self.word_var = tk.StringVar(value=self.typing_window.word_list_choice)
-        self.show_chart_var = tk.BooleanVar(value=self.typing_window.wpm_chart.wpm_chart_visible)
+
+        self.show_chart_var = tk.StringVar(value=self.wpm_chart.wpm_chart_mode)
+        self.show_finish_var = tk.StringVar(value=self.finish_info.finish_info_mode)
 
         self.open_settings()
 
@@ -16,7 +21,7 @@ class SettingsWindow:
         settings_win.title("Settings")
         settings_win.geometry("350x250")
         settings_win.configure(bg="#3e3e3e")
-        settings_win.resizable(False, False)
+        settings_win.resizable(True, True)
 
         # Center window
         main_x = self.master.winfo_x()
@@ -40,18 +45,41 @@ class SettingsWindow:
         dropdown.pack(pady=5)
 
         # --- WPM Chart toggle (PUT THIS HERE) ---
-        tk.Label(settings_win, text="Show WPM Chart:", bg="#3e3e3e", fg="white").pack(pady=(20, 5))
-        tk.Checkbutton(
-            settings_win,
-            text="Visible",
-            variable=self.show_chart_var,
-            bg="#3e3e3e",
-            fg="white",
-            selectcolor="#2e2e2e",
-            command=self.toggle_chart
-        ).pack()
+        tk.Label(settings_win, text="WPM Chart Mode:", bg="#3e3e3e", fg="white").pack(pady=(20, 5))
+        chart_modes = [("Always Visible", "always"), ("Visible After Test", "after"), ("Hidden", "hidden")]
+        for text, mode in chart_modes:
+            tk.Radiobutton(
+                settings_win,
+                text=text,
+                variable=self.show_chart_var,
+                value=mode,
+                bg="#3e3e3e",
+                fg="white",
+                selectcolor="#2e2e2e",
+                command=self.toggle_chart
+            ).pack(anchor="w", padx=60)
+
+        # --- Finish Info toggle ---
+        tk.Label(settings_win, text="Finish Info Mode:", bg="#3e3e3e", fg="white").pack(pady=(20, 5))
+        finish_modes = [("Always Visible", "always"), ("Visible After Test", "after"), ("Hidden", "hidden")]
+        for text, mode in finish_modes:
+            tk.Radiobutton(
+                settings_win,
+                text=text,
+                variable=self.show_finish_var,
+                value=mode,
+                bg="#3e3e3e",
+                fg="white",
+                selectcolor="#2e2e2e",
+                command=self.toggle_finish_info
+            ).pack(anchor="w", padx=60)
 
     def toggle_chart(self):
-        value = self.show_chart_var.get()
-        self.typing_window.wpm_chart_visible = value
-        self.typing_window.wpm_chart.toggle_chart(value)
+        mode = self.show_chart_var.get()
+        self.typing_window.wpm_chart_mode = mode
+        self.typing_window.wpm_chart.set_mode(mode)
+
+    def toggle_finish_info(self):
+        mode = self.show_finish_var.get()
+        self.typing_window.finish_info_mode = mode
+        self.typing_window.finish_info.set_mode(mode)

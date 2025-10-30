@@ -6,8 +6,11 @@ class FinishInfo(tk.Frame):
         super().__init__(master, bg="#2e2e2e")
         self.visible = False
         self.on_restart = None
-        self.on_replay = None  # New callback for replay
+        self.on_replay = None
         self.replay = None
+
+        self.finish_info_mode = "always"
+        self.results_ready = False  # track whether there’s something to show
 
         # --- Style ---
         style = ttk.Style()
@@ -22,16 +25,10 @@ class FinishInfo(tk.Frame):
             thickness=10,
         )
 
-        # --- Stat labels ---
-        self.wpm_label = tk.Label(
-            self, text="", font=("Consolas", 24, "bold"), fg="white", bg="#2e2e2e"
-        )
-        self.accuracy_label = tk.Label(
-            self, text="", font=("Consolas", 18), fg="#cccccc", bg="#2e2e2e"
-        )
-        self.errors_label = tk.Label(
-            self, text="", font=("Consolas", 16), fg="#999999", bg="#2e2e2e"
-        )
+        # --- Labels ---
+        self.wpm_label = tk.Label(self, text="", font=("Consolas", 24, "bold"), fg="white", bg="#2e2e2e")
+        self.accuracy_label = tk.Label(self, text="", font=("Consolas", 18), fg="#cccccc", bg="#2e2e2e")
+        self.errors_label = tk.Label(self, text="", font=("Consolas", 16), fg="#999999", bg="#2e2e2e")
 
         self.wpm_label.pack(pady=(10, 2))
         self.accuracy_label.pack(pady=2)
@@ -41,51 +38,30 @@ class FinishInfo(tk.Frame):
         self.progress_frame = tk.Frame(self, bg="#2e2e2e")
         self.progress_frame.pack(pady=(10, 0))
 
-        tk.Label(
-            self.progress_frame, text="WPM", fg="#aaaaaa", bg="#2e2e2e", font=("Consolas", 12)
-        ).pack(pady=(5, 0))
-        self.wpm_bar = ttk.Progressbar(
-            self.progress_frame,
-            length=300,
-            mode="determinate",
-            maximum=200,
-            style="Modern.Horizontal.TProgressbar",
-        )
+        tk.Label(self.progress_frame, text="WPM", fg="#aaaaaa", bg="#2e2e2e", font=("Consolas", 12)).pack(pady=(5, 0))
+        self.wpm_bar = ttk.Progressbar(self.progress_frame, length=300, mode="determinate", maximum=200,
+                                       style="Modern.Horizontal.TProgressbar")
         self.wpm_bar.pack(pady=(0, 5))
 
-        tk.Label(
-            self.progress_frame, text="Accuracy", fg="#aaaaaa", bg="#2e2e2e", font=("Consolas", 12)
-        ).pack(pady=(5, 0))
-        self.accuracy_bar = ttk.Progressbar(
-            self.progress_frame,
-            length=300,
-            mode="determinate",
-            maximum=30,  # represents 70–100%
-            style="Modern.Horizontal.TProgressbar",
-        )
+        tk.Label(self.progress_frame, text="Accuracy", fg="#aaaaaa", bg="#2e2e2e", font=("Consolas", 12)).pack(pady=(5, 0))
+        self.accuracy_bar = ttk.Progressbar(self.progress_frame, length=300, mode="determinate", maximum=30,
+                                            style="Modern.Horizontal.TProgressbar")
         self.accuracy_bar.pack(pady=(0, 10))
 
         # --- Buttons ---
         self.button_frame = tk.Frame(self, bg="#2e2e2e")
         self.button_frame.pack(pady=10)
 
-        self.restart_button = ttk.Button(
-            self.button_frame, text="Restart Test", command=self._handle_restart
-        )
+        self.restart_button = ttk.Button(self.button_frame, text="Restart Test", command=self._handle_restart)
         self.restart_button.pack(side="left", padx=10)
 
-        # --- Replay button ---
-        self.replay_button = ttk.Button(
-            self.button_frame, text="Replay Test", command=self._handle_replay
-        )
+        self.replay_button = ttk.Button(self.button_frame, text="Replay Test", command=self._handle_replay)
         self.replay_button.pack(side="left", padx=10)
 
-        # Bind Enter key
         master.bind("<Return>", self._handle_enter)
 
     # ------------------- Button handlers -------------------
     def _handle_restart(self):
-        """Restart when button pressed."""
         if self.on_restart:
             self._clear_display()
             self.on_restart()
@@ -98,42 +74,62 @@ class FinishInfo(tk.Frame):
             self.on_replay()
 
     def _handle_enter(self, event):
-        """Restart test when Enter is pressed."""
         if self.visible and self.on_restart:
             self._clear_display()
             self.on_restart()
 
-    # ------------------- Display helpers -------------------
+    # ------------------- Core logic -------------------
     def _clear_display(self):
-        """Reset all labels and bars."""
         self.wpm_label.config(text="")
         self.accuracy_label.config(text="")
         self.errors_label.config(text="")
         self.wpm_bar["value"] = 0
         self.accuracy_bar["value"] = 0
+        self.results_ready = False
+        self._update_visibility()
 
-    def show(self, wpm, accuracy, errors, on_restart=None, on_replay=None):
-        """Display results and show the frame."""
-        self.on_restart = on_restart
-        self.on_replay = on_replay
-        self.replay = False
+    def show(self, wpm=None, accuracy=None, errors=None, on_restart=None, on_replay=None):
+        """Update and optionally show results depending on mode."""
+        if wpm is not None:
+            self.on_restart = on_restart
+            self.on_replay = on_replay
+            self.replay = False
+            self.results_ready = True
 
-        self.wpm_label.config(text=f"{wpm:.1f} WPM")
-        self.accuracy_label.config(text=f"Accuracy: {accuracy:.1f}%")
-        self.errors_label.config(text=f"Errors: {errors}")
+            # Update stats
+            self.wpm_label.config(text=f"{wpm:.1f} WPM")
+            self.accuracy_label.config(text=f"Accuracy: {accuracy:.1f}%")
+            self.errors_label.config(text=f"Errors: {errors}")
 
-        # Update progress bars
-        self.wpm_bar["value"] = min(wpm, 200)
+            # Update bars
+            self.wpm_bar["value"] = min(wpm, 200)
+            scaled_accuracy = max(0, min(accuracy - 70, 30))
+            self.accuracy_bar["value"] = scaled_accuracy
 
-        # Accuracy bar represents 70–100% range
-        scaled_accuracy = max(0, min(accuracy - 70, 30))
-        self.accuracy_bar["value"] = scaled_accuracy
-
-        self.visible = True
-        self.pack(fill="x", padx=20, pady=(0, 20))
+        self._update_visibility()
 
     def hide(self):
-        """Hide the finish info frame."""
-        if self.visible:
-            self.pack_forget()
-            self.visible = False
+        """Force hide, regardless of mode."""
+        self.pack_forget()
+        self.visible = False
+
+    def set_mode(self, mode):
+        """Change visibility behavior."""
+        self.finish_info_mode = mode
+        self._update_visibility()
+
+    def _update_visibility(self):
+        """Smart logic to decide whether to show or hide."""
+        if self.finish_info_mode == "hidden":
+            self.hide()
+        elif self.finish_info_mode == "always":
+            if not self.visible:
+                self.pack(fill="x", padx=20, pady=(0, 20))
+                self.visible = True
+        elif self.finish_info_mode == "after":
+            if self.results_ready:
+                if not self.visible:
+                    self.pack(fill="x", padx=20, pady=(0, 20))
+                    self.visible = True
+            else:
+                self.hide()
