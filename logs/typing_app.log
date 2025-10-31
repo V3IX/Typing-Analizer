@@ -1,330 +1,477 @@
-2025-10-30 22:20:19,908 | INFO | Logging initialized. Log file: logs\typing_app.log
-2025-10-30 22:20:27,777 | INFO | Ending test
-2025-10-30 22:20:27,783 | DEBUG | WPM chart reset
-2025-10-30 22:20:27,783 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 22:20:27,784 | DEBUG | User input and key times cleared
-2025-10-30 22:20:27,784 | INFO | Generating new text for next test
-2025-10-30 22:20:27,786 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 22:20:27,786 | DEBUG | Finish info hidden due to mode 'after'
-2025-10-30 22:20:27,787 | INFO | Test ready for user input
-2025-10-30 22:20:28,892 | DEBUG | Key pressed: 's', delta=0.0000, index=0
-2025-10-30 22:20:28,893 | DEBUG | Test started at 1761859228.893058
-2025-10-30 22:20:28,998 | DEBUG | Key pressed: 'o', delta=0.1058, index=1
-2025-10-30 22:20:29,185 | DEBUG | Key pressed: 'l', delta=0.1873, index=2
-2025-10-30 22:20:29,345 | DEBUG | Key pressed: 'u', delta=0.1600, index=3
-2025-10-30 22:20:29,677 | DEBUG | Key pressed: 't', delta=0.3321, index=4
-2025-10-30 22:20:29,790 | DEBUG | Key pressed: 'i', delta=0.1130, index=5
-2025-10-30 22:20:29,873 | DEBUG | Key pressed: 'o', delta=0.0826, index=6
-2025-10-30 22:20:29,991 | DEBUG | Key pressed: 'n', delta=0.1179, index=7
-2025-10-30 22:20:30,114 | DEBUG | Key pressed: 's', delta=0.1231, index=8
-2025-10-30 22:20:30,214 | DEBUG | Key pressed: ' ', delta=0.1003, index=9
-2025-10-30 22:20:30,528 | DEBUG | Key pressed: 'w', delta=0.3135, index=10
-2025-10-30 22:20:30,615 | DEBUG | Key pressed: 'i', delta=0.0871, index=11
-2025-10-30 22:20:30,823 | DEBUG | Key pressed: 's', delta=0.2081, index=12
-2025-10-30 22:20:30,965 | DEBUG | Key pressed: 'e', delta=0.1421, index=13
-2025-10-30 22:20:31,057 | DEBUG | Key pressed: ' ', delta=0.0915, index=14
-2025-10-30 22:20:31,266 | DEBUG | Key pressed: 'g', delta=0.2091, index=15
-2025-10-30 22:20:31,356 | DEBUG | Key pressed: 'e', delta=0.0906, index=16
-2025-10-30 22:20:31,589 | DEBUG | Key pressed: 'n', delta=0.2325, index=17
-2025-10-30 22:20:32,072 | DEBUG | Key pressed: 'u', delta=0.4833, index=18
-2025-10-30 22:20:32,481 | DEBUG | Key pressed: 'i', delta=0.4087, index=19
-2025-10-30 22:20:32,831 | DEBUG | Key pressed: 'n', delta=0.3500, index=20
-2025-10-30 22:20:32,932 | DEBUG | Key pressed: 'e', delta=0.1014, index=21
-2025-10-30 22:20:33,017 | DEBUG | Key pressed: ' ', delta=0.0853, index=22
-2025-10-30 22:20:33,247 | DEBUG | Key pressed: 'j', delta=0.2293, index=23
-2025-10-30 22:20:33,350 | DEBUG | Key pressed: 'o', delta=0.1033, index=24
-2025-10-30 22:20:33,626 | DEBUG | Key pressed: 'b', delta=0.2760, index=25
-2025-10-30 22:20:33,774 | DEBUG | Key pressed: ' ', delta=0.1481, index=26
-2025-10-30 22:20:34,034 | DEBUG | Key pressed: 'n', delta=0.2598, index=27
-2025-10-30 22:20:34,615 | DEBUG | Key pressed: 'j', delta=0.5811, index=28
-2025-10-30 22:20:34,629 | INFO | Test finished automatically
-2025-10-30 22:20:34,629 | INFO | Test finished
-2025-10-30 22:20:34,630 | DEBUG | Elapsed time: 5.74 seconds
-2025-10-30 22:20:34,630 | DEBUG | Num chars: 29, Num words: 5.80
-2025-10-30 22:20:34,630 | DEBUG | Base WPM: 60.66, Accuracy: 100.00%
-2025-10-30 22:20:34,630 | DEBUG | Final WPM (monkeytype style): 60.66
-2025-10-30 22:20:34,630 | DEBUG | Errors: 0, Wrong streak: 0
-2025-10-30 22:20:34,631 | DEBUG | User input length: 29, Key times length: 29
-2025-10-30 22:20:34,631 | DEBUG | WPM chart shown due to mode 'after'
-2025-10-30 22:20:34,632 | DEBUG | Finish info shown due to mode 'after'
-2025-10-30 22:20:36,155 | DEBUG | Key pressed: '', delta=1.5397, index=29
-2025-10-30 22:20:36,157 | INFO | Ending test
-2025-10-30 22:20:36,164 | DEBUG | WPM chart reset
-2025-10-30 22:20:36,164 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 22:20:36,165 | DEBUG | User input and key times cleared
-2025-10-30 22:20:36,165 | INFO | Generating new text for next test
-2025-10-30 22:20:36,167 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 22:20:36,167 | DEBUG | Finish info hidden due to mode 'after'
-2025-10-30 22:20:36,167 | INFO | Test ready for user input
-2025-10-30 22:20:37,001 | DEBUG | Key pressed: 'f', delta=0.0000, index=0
-2025-10-30 22:20:37,002 | DEBUG | Test started at 1761859237.002156
-2025-10-30 22:20:37,247 | DEBUG | Key pressed: 'l', delta=0.2462, index=1
-2025-10-30 22:20:37,375 | DEBUG | Key pressed: 'a', delta=0.1279, index=2
-2025-10-30 22:20:37,601 | DEBUG | Key pressed: 's', delta=0.2259, index=3
-2025-10-30 22:20:37,747 | DEBUG | Key pressed: 'h', delta=0.1461, index=4
-2025-10-30 22:20:37,893 | DEBUG | Key pressed: ' ', delta=0.1456, index=5
-2025-10-30 22:20:38,102 | DEBUG | Key pressed: 'w', delta=0.2093, index=6
-2025-10-30 22:20:38,167 | DEBUG | Key pressed: 'i', delta=0.0649, index=7
-2025-10-30 22:20:38,348 | DEBUG | Key pressed: 'd', delta=0.1807, index=8
-2025-10-30 22:20:38,535 | DEBUG | Key pressed: 'e', delta=0.1877, index=9
-2025-10-30 22:20:38,617 | DEBUG | Key pressed: ' ', delta=0.0818, index=10
-2025-10-30 22:20:38,812 | DEBUG | Key pressed: 'p', delta=0.1948, index=11
-2025-10-30 22:20:38,881 | DEBUG | Key pressed: 'a', delta=0.0689, index=12
-2025-10-30 22:20:39,035 | DEBUG | Key pressed: 'r', delta=0.1539, index=13
-2025-10-30 22:20:39,195 | DEBUG | Key pressed: 'a', delta=0.1604, index=14
-2025-10-30 22:20:39,782 | DEBUG | Key pressed: 'i', delta=0.5866, index=15
-2025-10-30 22:20:40,138 | DEBUG | Key pressed: '', delta=0.3559, index=16
-2025-10-30 22:20:40,138 | DEBUG | Backspace pressed, index=15
-2025-10-30 22:20:40,265 | DEBUG | Key pressed: 'd', delta=0.1273, index=15
-2025-10-30 22:20:40,328 | DEBUG | Key pressed: 'i', delta=0.0628, index=16
-2025-10-30 22:20:40,492 | DEBUG | Key pressed: 's', delta=0.1643, index=17
-2025-10-30 22:20:40,719 | DEBUG | Key pressed: 'c', delta=0.2268, index=18
-2025-10-30 22:20:40,897 | DEBUG | Key pressed: ' ', delta=0.1780, index=19
-2025-10-30 22:20:41,235 | DEBUG | Key pressed: '', delta=0.3384, index=20
-2025-10-30 22:20:41,236 | DEBUG | Backspace pressed, index=19
-2025-10-30 22:20:41,366 | DEBUG | Key pressed: '', delta=0.1308, index=19
-2025-10-30 22:20:41,367 | DEBUG | Backspace pressed, index=18
-2025-10-30 22:20:41,543 | DEBUG | Key pressed: 'e', delta=0.1773, index=18
-2025-10-30 22:20:41,644 | DEBUG | Key pressed: ' ', delta=0.1011, index=19
-2025-10-30 22:20:41,894 | DEBUG | Key pressed: 'p', delta=0.2495, index=20
-2025-10-30 22:20:41,968 | DEBUG | Key pressed: 'o', delta=0.0743, index=21
-2025-10-30 22:20:42,190 | DEBUG | Key pressed: 's', delta=0.2220, index=22
-2025-10-30 22:20:42,374 | DEBUG | Key pressed: 's', delta=0.1841, index=23
-2025-10-30 22:20:42,636 | DEBUG | Key pressed: '', delta=0.2623, index=24
-2025-10-30 22:20:42,637 | DEBUG | Backspace pressed, index=23
-2025-10-30 22:20:42,778 | DEBUG | Key pressed: '', delta=0.1411, index=23
-2025-10-30 22:20:42,778 | DEBUG | Backspace pressed, index=22
-2025-10-30 22:20:43,018 | DEBUG | Key pressed: 'l', delta=0.2408, index=22
-2025-10-30 22:20:43,183 | DEBUG | Key pressed: 'l', delta=0.1649, index=23
-2025-10-30 22:20:43,355 | DEBUG | Key pressed: 's', delta=0.1720, index=24
-2025-10-30 22:20:43,479 | DEBUG | Key pressed: ' ', delta=0.1237, index=25
-2025-10-30 22:20:43,769 | DEBUG | Key pressed: 's', delta=0.2899, index=26
-2025-10-30 22:20:43,851 | DEBUG | Key pressed: 'o', delta=0.0819, index=27
-2025-10-30 22:20:44,006 | DEBUG | Key pressed: 'm', delta=0.1550, index=28
-2025-10-30 22:20:44,366 | DEBUG | Key pressed: 'w', delta=0.3603, index=29
-2025-10-30 22:20:44,746 | DEBUG | Key pressed: 'h', delta=0.3796, index=30
-2025-10-30 22:20:44,949 | DEBUG | Key pressed: '', delta=0.2033, index=31
-2025-10-30 22:20:44,949 | DEBUG | Backspace pressed, index=30
-2025-10-30 22:20:45,077 | DEBUG | Key pressed: '', delta=0.1285, index=30
-2025-10-30 22:20:45,078 | DEBUG | Backspace pressed, index=29
-2025-10-30 22:20:45,226 | DEBUG | Key pressed: 'e', delta=0.1483, index=29
-2025-10-30 22:20:45,360 | DEBUG | Key pressed: 'h', delta=0.1337, index=30
-2025-10-30 22:20:45,481 | DEBUG | Key pressed: 'e', delta=0.1214, index=31
-2025-10-30 22:20:45,572 | DEBUG | Key pressed: 'r', delta=0.0909, index=32
-2025-10-30 22:20:45,718 | DEBUG | Key pressed: 'e', delta=0.1460, index=33
-2025-10-30 22:20:45,863 | DEBUG | Key pressed: '', delta=0.1451, index=34
-2025-10-30 22:20:45,864 | DEBUG | Backspace pressed, index=33
-2025-10-30 22:20:46,036 | DEBUG | Key pressed: '', delta=0.1729, index=33
-2025-10-30 22:20:46,036 | DEBUG | Backspace pressed, index=32
-2025-10-30 22:20:46,173 | DEBUG | Key pressed: '', delta=0.1370, index=32
-2025-10-30 22:20:46,173 | DEBUG | Backspace pressed, index=31
-2025-10-30 22:20:46,305 | DEBUG | Key pressed: '', delta=0.1321, index=31
-2025-10-30 22:20:46,305 | DEBUG | Backspace pressed, index=30
-2025-10-30 22:20:46,692 | DEBUG | Key pressed: 'w', delta=0.3872, index=30
-2025-10-30 22:20:46,807 | DEBUG | Key pressed: 'h', delta=0.1146, index=31
-2025-10-30 22:20:46,938 | DEBUG | Key pressed: 'e', delta=0.1309, index=32
-2025-10-30 22:20:47,006 | DEBUG | Key pressed: 'r', delta=0.0686, index=33
-2025-10-30 22:20:47,147 | DEBUG | Key pressed: 'e', delta=0.1410, index=34
-2025-10-30 22:20:47,161 | INFO | Test finished automatically
-2025-10-30 22:20:47,162 | INFO | Test finished
-2025-10-30 22:20:47,162 | DEBUG | Elapsed time: 10.16 seconds
-2025-10-30 22:20:47,162 | DEBUG | Num chars: 35, Num words: 7.00
-2025-10-30 22:20:47,162 | DEBUG | Base WPM: 41.34, Accuracy: 71.43%
-2025-10-30 22:20:47,162 | DEBUG | Final WPM (monkeytype style): 29.53
-2025-10-30 22:20:47,163 | DEBUG | Errors: 10, Wrong streak: 0
-2025-10-30 22:20:47,163 | DEBUG | User input length: 57, Key times length: 57
-2025-10-30 22:20:47,163 | DEBUG | WPM chart shown due to mode 'after'
-2025-10-30 22:20:47,164 | DEBUG | Finish info shown due to mode 'after'
-2025-10-30 22:20:48,521 | DEBUG | Key pressed: '', delta=1.3738, index=35
-2025-10-30 22:20:48,524 | INFO | Ending test
-2025-10-30 22:20:48,532 | DEBUG | WPM chart reset
-2025-10-30 22:20:48,533 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 22:20:48,533 | DEBUG | User input and key times cleared
-2025-10-30 22:20:48,533 | INFO | Generating new text for next test
-2025-10-30 22:20:48,536 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 22:20:48,536 | DEBUG | Finish info hidden due to mode 'after'
-2025-10-30 22:20:48,536 | INFO | Test ready for user input
-2025-10-30 22:20:49,482 | DEBUG | Key pressed: 'l', delta=0.0000, index=0
-2025-10-30 22:20:49,482 | DEBUG | Test started at 1761859249.482643
-2025-10-30 22:20:49,660 | DEBUG | Key pressed: 'o', delta=0.1781, index=1
-2025-10-30 22:20:49,809 | DEBUG | Key pressed: 'a', delta=0.1493, index=2
-2025-10-30 22:20:50,015 | DEBUG | Key pressed: 'n', delta=0.2061, index=3
-2025-10-30 22:20:50,175 | DEBUG | Key pressed: ' ', delta=0.1596, index=4
-2025-10-30 22:20:50,442 | DEBUG | Key pressed: 'v', delta=0.2674, index=5
-2025-10-30 22:20:50,588 | DEBUG | Key pressed: 'a', delta=0.1456, index=6
-2025-10-30 22:20:50,749 | DEBUG | Key pressed: 'r', delta=0.1613, index=7
-2025-10-30 22:20:50,889 | DEBUG | Key pressed: 'i', delta=0.1400, index=8
-2025-10-30 22:20:51,226 | DEBUG | Key pressed: 'a', delta=0.3373, index=9
-2025-10-30 22:20:51,842 | DEBUG | Key pressed: 'b', delta=0.6153, index=10
-2025-10-30 22:20:52,046 | DEBUG | Key pressed: 'l', delta=0.2044, index=11
-2025-10-30 22:20:52,142 | DEBUG | Key pressed: 'e', delta=0.0959, index=12
-2025-10-30 22:20:52,378 | DEBUG | Key pressed: 's', delta=0.2362, index=13
-2025-10-30 22:20:52,470 | DEBUG | Key pressed: ' ', delta=0.0915, index=14
-2025-10-30 22:20:52,816 | DEBUG | Key pressed: 'e', delta=0.3465, index=15
-2025-10-30 22:20:53,313 | DEBUG | Key pressed: '', delta=0.4967, index=16
-2025-10-30 22:20:53,313 | DEBUG | Backspace pressed, index=15
-2025-10-30 22:20:53,586 | DEBUG | Key pressed: 'd', delta=0.2730, index=15
-2025-10-30 22:20:53,746 | DEBUG | Key pressed: 'e', delta=0.1604, index=16
-2025-10-30 22:20:53,851 | DEBUG | Key pressed: 'n', delta=0.1048, index=17
-2025-10-30 22:20:54,137 | DEBUG | Key pressed: 'm', delta=0.2859, index=18
-2025-10-30 22:20:54,228 | DEBUG | Key pressed: 'a', delta=0.0909, index=19
-2025-10-30 22:20:54,374 | DEBUG | Key pressed: 'r', delta=0.1461, index=20
-2025-10-30 22:20:54,866 | DEBUG | Key pressed: 'k', delta=0.4920, index=21
-2025-10-30 22:20:54,998 | DEBUG | Key pressed: ' ', delta=0.1317, index=22
-2025-10-30 22:20:55,385 | DEBUG | Key pressed: 't', delta=0.3873, index=23
-2025-10-30 22:20:55,486 | DEBUG | Key pressed: 'o', delta=0.1009, index=24
-2025-10-30 22:20:55,618 | DEBUG | Key pressed: 'n', delta=0.1319, index=25
-2025-10-30 22:20:56,347 | DEBUG | Key pressed: 'i', delta=0.7292, index=26
-2025-10-30 22:20:56,625 | DEBUG | Key pressed: 'g', delta=0.2780, index=27
-2025-10-30 22:20:56,707 | DEBUG | Key pressed: 'h', delta=0.0824, index=28
-2025-10-30 22:20:56,825 | DEBUG | Key pressed: 't', delta=0.1175, index=29
-2025-10-30 22:20:57,139 | DEBUG | Key pressed: ' ', delta=0.3142, index=30
-2025-10-30 22:20:57,349 | DEBUG | Key pressed: 's', delta=0.2100, index=31
-2025-10-30 22:20:57,554 | DEBUG | Key pressed: 'i', delta=0.2056, index=32
-2025-10-30 22:20:57,568 | INFO | Test finished automatically
-2025-10-30 22:20:57,568 | INFO | Test finished
-2025-10-30 22:20:57,568 | DEBUG | Elapsed time: 8.09 seconds
-2025-10-30 22:20:57,568 | DEBUG | Num chars: 33, Num words: 6.60
-2025-10-30 22:20:57,569 | DEBUG | Base WPM: 48.97, Accuracy: 96.97%
-2025-10-30 22:20:57,569 | DEBUG | Final WPM (monkeytype style): 47.49
-2025-10-30 22:20:57,569 | DEBUG | Errors: 1, Wrong streak: 0
-2025-10-30 22:20:57,569 | DEBUG | User input length: 35, Key times length: 35
-2025-10-30 22:20:57,570 | DEBUG | WPM chart shown due to mode 'after'
-2025-10-30 22:20:57,571 | DEBUG | Finish info shown due to mode 'after'
-2025-10-30 22:20:58,361 | DEBUG | Key pressed: '', delta=0.8065, index=33
-2025-10-30 22:20:58,363 | INFO | Ending test
-2025-10-30 22:20:58,370 | DEBUG | WPM chart reset
-2025-10-30 22:20:58,371 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 22:20:58,371 | DEBUG | User input and key times cleared
-2025-10-30 22:20:58,371 | INFO | Generating new text for next test
-2025-10-30 22:20:58,373 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 22:20:58,374 | DEBUG | Finish info hidden due to mode 'after'
-2025-10-30 22:20:58,374 | INFO | Test ready for user input
-2025-10-30 22:20:59,115 | DEBUG | Key pressed: 'd', delta=0.0000, index=0
-2025-10-30 22:20:59,116 | DEBUG | Test started at 1761859259.115857
-2025-10-30 22:20:59,192 | DEBUG | Key pressed: 'i', delta=0.0771, index=1
-2025-10-30 22:20:59,379 | DEBUG | Key pressed: 'r', delta=0.1868, index=2
-2025-10-30 22:20:59,452 | DEBUG | Key pressed: 'e', delta=0.0732, index=3
-2025-10-30 22:20:59,866 | DEBUG | Key pressed: 'c', delta=0.4137, index=4
-2025-10-30 22:21:00,130 | DEBUG | Key pressed: 't', delta=0.2643, index=5
-2025-10-30 22:21:00,244 | DEBUG | Key pressed: 'o', delta=0.1139, index=6
-2025-10-30 22:21:00,357 | DEBUG | Key pressed: 'r', delta=0.1128, index=7
-2025-10-30 22:21:00,494 | DEBUG | Key pressed: ' ', delta=0.1377, index=8
-2025-10-30 22:21:00,713 | DEBUG | Key pressed: 'b', delta=0.2184, index=9
-2025-10-30 22:21:00,785 | DEBUG | Key pressed: 'a', delta=0.0720, index=10
-2025-10-30 22:21:01,004 | DEBUG | Key pressed: 'r', delta=0.2189, index=11
-2025-10-30 22:21:01,354 | DEBUG | Key pressed: 'b', delta=0.3500, index=12
-2025-10-30 22:21:01,454 | DEBUG | Key pressed: 'a', delta=0.1000, index=13
-2025-10-30 22:21:01,682 | DEBUG | Key pressed: 'r', delta=0.2285, index=14
-2025-10-30 22:21:01,805 | DEBUG | Key pressed: 'a', delta=0.1225, index=15
-2025-10-30 22:21:01,960 | DEBUG | Key pressed: ' ', delta=0.1550, index=16
-2025-10-30 22:21:02,192 | DEBUG | Key pressed: 'r', delta=0.2321, index=17
-2025-10-30 22:21:02,256 | DEBUG | Key pressed: 'e', delta=0.0639, index=18
-2025-10-30 22:21:02,497 | DEBUG | Key pressed: 's', delta=0.2416, index=19
-2025-10-30 22:21:02,597 | DEBUG | Key pressed: 'u', delta=0.0994, index=20
-2025-10-30 22:21:02,789 | DEBUG | Key pressed: 'l', delta=0.1921, index=21
-2025-10-30 22:21:02,962 | DEBUG | Key pressed: 'i', delta=0.1733, index=22
-2025-10-30 22:21:03,089 | DEBUG | Key pressed: 'n', delta=0.1267, index=23
-2025-10-30 22:21:03,208 | DEBUG | Key pressed: 'g', delta=0.1188, index=24
-2025-10-30 22:21:03,331 | DEBUG | Key pressed: ' ', delta=0.1232, index=25
-2025-10-30 22:21:03,499 | DEBUG | Key pressed: '', delta=0.1677, index=26
-2025-10-30 22:21:03,499 | DEBUG | Backspace pressed, index=25
-2025-10-30 22:21:03,655 | DEBUG | Key pressed: '', delta=0.1565, index=25
-2025-10-30 22:21:03,656 | DEBUG | Backspace pressed, index=24
-2025-10-30 22:21:03,804 | DEBUG | Key pressed: '', delta=0.1491, index=24
-2025-10-30 22:21:03,805 | DEBUG | Backspace pressed, index=23
-2025-10-30 22:21:03,950 | DEBUG | Key pressed: '', delta=0.1457, index=23
-2025-10-30 22:21:03,950 | DEBUG | Backspace pressed, index=22
-2025-10-30 22:21:04,141 | DEBUG | Key pressed: 't', delta=0.1909, index=22
-2025-10-30 22:21:04,200 | DEBUG | Key pressed: 'i', delta=0.0591, index=23
-2025-10-30 22:21:04,297 | DEBUG | Key pressed: 'n', delta=0.0967, index=24
-2025-10-30 22:21:04,451 | DEBUG | Key pressed: 'g', delta=0.1548, index=25
-2025-10-30 22:21:04,526 | DEBUG | Key pressed: ' ', delta=0.0745, index=26
-2025-10-30 22:21:04,769 | DEBUG | Key pressed: 'c', delta=0.2429, index=27
-2025-10-30 22:21:04,843 | DEBUG | Key pressed: 'o', delta=0.0740, index=28
-2025-10-30 22:21:04,929 | DEBUG | Key pressed: 'm', delta=0.0860, index=29
-2025-10-30 22:21:05,120 | DEBUG | Key pressed: 'p', delta=0.1912, index=30
-2025-10-30 22:21:05,220 | DEBUG | Key pressed: 'a', delta=0.0999, index=31
-2025-10-30 22:21:05,526 | DEBUG | Key pressed: 'c', delta=0.3062, index=32
-2025-10-30 22:21:05,709 | DEBUG | Key pressed: 't', delta=0.1827, index=33
-2025-10-30 22:21:05,818 | DEBUG | Key pressed: ' ', delta=0.1096, index=34
-2025-10-30 22:21:05,944 | DEBUG | Key pressed: 'a', delta=0.1257, index=35
-2025-10-30 22:21:06,169 | DEBUG | Key pressed: 'c', delta=0.2251, index=36
-2025-10-30 22:21:06,341 | DEBUG | Key pressed: 't', delta=0.1720, index=37
-2025-10-30 22:21:06,441 | DEBUG | Key pressed: 'i', delta=0.1000, index=38
-2025-10-30 22:21:06,625 | DEBUG | Key pressed: 'v', delta=0.1835, index=39
-2025-10-30 22:21:06,760 | DEBUG | Key pressed: 'e', delta=0.1352, index=40
-2025-10-30 22:21:06,774 | INFO | Test finished automatically
-2025-10-30 22:21:06,774 | INFO | Test finished
-2025-10-30 22:21:06,774 | DEBUG | Elapsed time: 7.66 seconds
-2025-10-30 22:21:06,774 | DEBUG | Num chars: 41, Num words: 8.20
-2025-10-30 22:21:06,775 | DEBUG | Base WPM: 64.24, Accuracy: 90.24%
-2025-10-30 22:21:06,775 | DEBUG | Final WPM (monkeytype style): 57.97
-2025-10-30 22:21:06,775 | DEBUG | Errors: 4, Wrong streak: 0
-2025-10-30 22:21:06,775 | DEBUG | User input length: 49, Key times length: 49
-2025-10-30 22:21:06,776 | DEBUG | WPM chart shown due to mode 'after'
-2025-10-30 22:21:06,776 | DEBUG | Finish info shown due to mode 'after'
-2025-10-30 22:21:07,511 | DEBUG | Key pressed: '', delta=0.7511, index=41
-2025-10-30 22:21:07,512 | INFO | Ending test
-2025-10-30 22:21:07,521 | DEBUG | WPM chart reset
-2025-10-30 22:21:07,522 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
-2025-10-30 22:21:07,522 | DEBUG | User input and key times cleared
-2025-10-30 22:21:07,522 | INFO | Generating new text for next test
-2025-10-30 22:21:07,525 | DEBUG | WPM chart hidden due to mode 'after'
-2025-10-30 22:21:07,525 | DEBUG | Finish info hidden due to mode 'after'
-2025-10-30 22:21:07,526 | INFO | Test ready for user input
-2025-10-30 22:21:08,355 | DEBUG | Key pressed: 'm', delta=0.0000, index=0
-2025-10-30 22:21:08,355 | DEBUG | Test started at 1761859268.355496
-2025-10-30 22:21:08,459 | DEBUG | Key pressed: 'o', delta=0.1043, index=1
-2025-10-30 22:21:09,001 | DEBUG | Key pressed: 'b', delta=0.5424, index=2
-2025-10-30 22:21:09,169 | DEBUG | Key pressed: 'l', delta=0.1679, index=3
-2025-10-30 22:21:09,356 | DEBUG | Key pressed: 'i', delta=0.1873, index=4
-2025-10-30 22:21:09,739 | DEBUG | Key pressed: '', delta=0.3824, index=5
-2025-10-30 22:21:09,739 | DEBUG | Backspace pressed, index=4
-2025-10-30 22:21:09,866 | DEBUG | Key pressed: '', delta=0.1274, index=4
-2025-10-30 22:21:09,867 | DEBUG | Backspace pressed, index=3
-2025-10-30 22:21:10,513 | DEBUG | Key pressed: 'i', delta=0.6468, index=3
-2025-10-30 22:21:10,686 | DEBUG | Key pressed: 'l', delta=0.1733, index=4
-2025-10-30 22:21:10,781 | DEBUG | Key pressed: 'e', delta=0.0947, index=5
-2025-10-30 22:21:10,865 | DEBUG | Key pressed: ' ', delta=0.0838, index=6
-2025-10-30 22:21:11,041 | DEBUG | Key pressed: 's', delta=0.1766, index=7
-2025-10-30 22:21:11,123 | DEBUG | Key pressed: 'e', delta=0.0817, index=8
-2025-10-30 22:21:11,283 | DEBUG | Key pressed: 'l', delta=0.1604, index=9
-2025-10-30 22:21:11,401 | DEBUG | Key pressed: 'e', delta=0.1174, index=10
-2025-10-30 22:21:11,660 | DEBUG | Key pressed: 'c', delta=0.2590, index=11
-2025-10-30 22:21:11,857 | DEBUG | Key pressed: 't', delta=0.1972, index=12
-2025-10-30 22:21:11,929 | DEBUG | Key pressed: 'i', delta=0.0716, index=13
-2025-10-30 22:21:11,993 | DEBUG | Key pressed: 'o', delta=0.0642, index=14
-2025-10-30 22:21:12,097 | DEBUG | Key pressed: 'n', delta=0.1039, index=15
-2025-10-30 22:21:12,220 | DEBUG | Key pressed: ' ', delta=0.1233, index=16
-2025-10-30 22:21:12,654 | DEBUG | Key pressed: 't', delta=0.4341, index=17
-2025-10-30 22:21:12,731 | DEBUG | Key pressed: 'h', delta=0.0770, index=18
-2025-10-30 22:21:12,926 | DEBUG | Key pressed: ' ', delta=0.1945, index=19
-2025-10-30 22:21:13,050 | DEBUG | Key pressed: 'a', delta=0.1241, index=20
-2025-10-30 22:21:13,140 | DEBUG | Key pressed: 'b', delta=0.0902, index=21
-2025-10-30 22:21:13,359 | DEBUG | Key pressed: 's', delta=0.2188, index=22
-2025-10-30 22:21:13,569 | DEBUG | Key pressed: 'e', delta=0.2107, index=23
-2025-10-30 22:21:13,719 | DEBUG | Key pressed: 'n', delta=0.1499, index=24
-2025-10-30 22:21:13,964 | DEBUG | Key pressed: 'c', delta=0.2447, index=25
-2025-10-30 22:21:14,146 | DEBUG | Key pressed: 'e', delta=0.1817, index=26
-2025-10-30 22:21:14,269 | DEBUG | Key pressed: ' ', delta=0.1230, index=27
-2025-10-30 22:21:14,411 | DEBUG | Key pressed: 'h', delta=0.1424, index=28
-2025-10-30 22:21:14,525 | DEBUG | Key pressed: 'e', delta=0.1136, index=29
-2025-10-30 22:21:14,643 | DEBUG | Key pressed: 'a', delta=0.1180, index=30
-2025-10-30 22:21:14,893 | DEBUG | Key pressed: 'd', delta=0.2501, index=31
-2025-10-30 22:21:14,971 | DEBUG | Key pressed: 'l', delta=0.0779, index=32
-2025-10-30 22:21:15,132 | DEBUG | Key pressed: 'i', delta=0.1611, index=33
-2025-10-30 22:21:15,303 | DEBUG | Key pressed: 'n', delta=0.1712, index=34
-2025-10-30 22:21:15,426 | DEBUG | Key pressed: 'e', delta=0.1233, index=35
-2025-10-30 22:21:15,733 | DEBUG | Key pressed: 's', delta=0.3066, index=36
-2025-10-30 22:21:15,745 | INFO | Test finished automatically
-2025-10-30 22:21:15,746 | INFO | Test finished
-2025-10-30 22:21:15,746 | DEBUG | Elapsed time: 7.39 seconds
-2025-10-30 22:21:15,746 | DEBUG | Num chars: 37, Num words: 7.40
-2025-10-30 22:21:15,746 | DEBUG | Base WPM: 60.08, Accuracy: 94.59%
-2025-10-30 22:21:15,746 | DEBUG | Final WPM (monkeytype style): 56.83
-2025-10-30 22:21:15,747 | DEBUG | Errors: 2, Wrong streak: 0
-2025-10-30 22:21:15,747 | DEBUG | User input length: 41, Key times length: 41
-2025-10-30 22:21:15,747 | DEBUG | WPM chart shown due to mode 'after'
-2025-10-30 22:21:15,748 | DEBUG | Finish info shown due to mode 'after'
-2025-10-30 22:21:16,179 | DEBUG | Key pressed: 's', delta=0.4457, index=37
+2025-10-31 01:03:25,866 | INFO | Logging initialized. Log file: logs\typing_app.log
+2025-10-31 01:03:39,390 | DEBUG | Key pressed: 'v', delta=0.0000, index=0
+2025-10-31 01:03:39,496 | DEBUG | Key pressed: 'i', delta=0.1061, index=0
+2025-10-31 01:03:39,496 | DEBUG | Test started at 1761869019.496711
+2025-10-31 01:03:39,763 | DEBUG | Key pressed: 'r', delta=0.2673, index=1
+2025-10-31 01:03:40,186 | DEBUG | Key pressed: '', delta=0.4230, index=2
+2025-10-31 01:03:40,332 | DEBUG | Key pressed: '', delta=0.1460, index=1
+2025-10-31 01:03:41,111 | DEBUG | Key pressed: 'v', delta=0.7787, index=0
+2025-10-31 01:03:41,202 | DEBUG | Key pressed: 'i', delta=0.0913, index=1
+2025-10-31 01:03:41,434 | DEBUG | Key pressed: 'r', delta=0.2318, index=2
+2025-10-31 01:03:41,795 | DEBUG | Key pressed: 's', delta=0.3605, index=3
+2025-10-31 01:03:42,122 | DEBUG | Key pressed: '', delta=0.3275, index=4
+2025-10-31 01:03:42,267 | DEBUG | Key pressed: 'u', delta=0.1448, index=3
+2025-10-31 01:03:42,368 | DEBUG | Key pressed: 's', delta=0.1010, index=4
+2025-10-31 01:03:42,472 | DEBUG | Key pressed: ' ', delta=0.1044, index=5
+2025-10-31 01:03:42,709 | DEBUG | Key pressed: 'h', delta=0.2368, index=6
+2025-10-31 01:03:42,800 | DEBUG | Key pressed: 'i', delta=0.0909, index=7
+2025-10-31 01:03:43,111 | DEBUG | Key pressed: 's', delta=0.3106, index=8
+2025-10-31 01:03:43,224 | DEBUG | Key pressed: 't', delta=0.1134, index=9
+2025-10-31 01:03:43,342 | DEBUG | Key pressed: ' ', delta=0.1183, index=10
+2025-10-31 01:03:43,580 | DEBUG | Key pressed: 'i', delta=0.2381, index=11
+2025-10-31 01:03:43,845 | DEBUG | Key pressed: 'd', delta=0.2647, index=12
+2025-10-31 01:03:44,030 | DEBUG | Key pressed: 'e', delta=0.1852, index=13
+2025-10-31 01:03:44,108 | DEBUG | Key pressed: 'n', delta=0.0780, index=14
+2025-10-31 01:03:44,263 | DEBUG | Key pressed: 't', delta=0.1548, index=15
+2025-10-31 01:03:44,381 | DEBUG | Key pressed: 'i', delta=0.1182, index=16
+2025-10-31 01:03:44,632 | DEBUG | Key pressed: 't', delta=0.2508, index=17
+2025-10-31 01:03:44,736 | DEBUG | Key pressed: 'y', delta=0.1041, index=18
+2025-10-31 01:03:44,887 | DEBUG | Key pressed: ' ', delta=0.1508, index=19
+2025-10-31 01:03:45,116 | DEBUG | Key pressed: 'b', delta=0.2285, index=20
+2025-10-31 01:03:45,178 | DEBUG | Key pressed: 'e', delta=0.0626, index=21
+2025-10-31 01:03:45,303 | DEBUG | Key pressed: 'a', delta=0.1246, index=22
+2025-10-31 01:03:45,438 | DEBUG | Key pressed: 'r', delta=0.1352, index=23
+2025-10-31 01:03:45,652 | DEBUG | Key pressed: 's', delta=0.2140, index=24
+2025-10-31 01:03:45,739 | DEBUG | Key pressed: ' ', delta=0.0873, index=25
+2025-10-31 01:03:45,980 | DEBUG | Key pressed: 'e', delta=0.2411, index=26
+2025-10-31 01:03:46,071 | DEBUG | Key pressed: 'm', delta=0.0910, index=27
+2025-10-31 01:03:46,259 | DEBUG | Key pressed: 'p', delta=0.1878, index=28
+2025-10-31 01:03:46,463 | DEBUG | Key pressed: 'l', delta=0.2042, index=29
+2025-10-31 01:03:47,333 | DEBUG | Key pressed: 'o', delta=0.8699, index=30
+2025-10-31 01:03:47,633 | DEBUG | Key pressed: 'e', delta=0.3000, index=31
+2025-10-31 01:03:47,916 | DEBUG | Key pressed: 'e', delta=0.2828, index=32
+2025-10-31 01:03:48,116 | DEBUG | Key pressed: '', delta=0.2000, index=33
+2025-10-31 01:03:48,249 | DEBUG | Key pressed: '', delta=0.1332, index=32
+2025-10-31 01:03:48,508 | DEBUG | Key pressed: 'y', delta=0.2592, index=31
+2025-10-31 01:03:48,677 | DEBUG | Key pressed: 'e', delta=0.1685, index=32
+2025-10-31 01:03:48,845 | DEBUG | Key pressed: 'e', delta=0.1679, index=33
+2025-10-31 01:03:48,936 | DEBUG | Key pressed: ' ', delta=0.0913, index=34
+2025-10-31 01:03:49,164 | DEBUG | Key pressed: 'r', delta=0.2282, index=35
+2025-10-31 01:03:49,510 | DEBUG | Key pressed: 'e', delta=0.3459, index=36
+2025-10-31 01:03:49,648 | DEBUG | Key pressed: 'a', delta=0.1373, index=37
+2025-10-31 01:03:49,857 | DEBUG | Key pressed: 'd', delta=0.2098, index=38
+2025-10-31 01:03:50,021 | DEBUG | Key pressed: 'e', delta=0.1636, index=39
+2025-10-31 01:03:50,121 | DEBUG | Key pressed: 'r', delta=0.1001, index=40
+2025-10-31 01:03:50,417 | DEBUG | Key pressed: 's', delta=0.2958, index=41
+2025-10-31 01:03:50,526 | DEBUG | Key pressed: ' ', delta=0.1091, index=42
+2025-10-31 01:03:50,982 | DEBUG | Key pressed: '', delta=0.4564, index=43
+2025-10-31 01:03:51,151 | DEBUG | Key pressed: '', delta=0.1688, index=42
+2025-10-31 01:03:51,318 | DEBUG | Key pressed: '', delta=0.1668, index=41
+2025-10-31 01:03:51,506 | DEBUG | Key pressed: '', delta=0.1880, index=40
+2025-10-31 01:03:51,655 | DEBUG | Key pressed: '', delta=0.1491, index=39
+2025-10-31 01:03:51,817 | DEBUG | Key pressed: '', delta=0.1614, index=38
+2025-10-31 01:03:52,535 | DEBUG | Key pressed: 'e', delta=0.7188, index=37
+2025-10-31 01:03:52,931 | DEBUG | Key pressed: '', delta=0.3957, index=38
+2025-10-31 01:03:53,058 | DEBUG | Key pressed: 'a', delta=0.1270, index=37
+2025-10-31 01:03:53,750 | DEBUG | Key pressed: 'd', delta=0.6924, index=38
+2025-10-31 01:03:53,937 | DEBUG | Key pressed: 'e', delta=0.1867, index=39
+2025-10-31 01:03:54,033 | DEBUG | Key pressed: 'r', delta=0.0957, index=40
+2025-10-31 01:03:54,311 | DEBUG | Key pressed: 's', delta=0.2780, index=41
+2025-10-31 01:03:54,394 | DEBUG | Key pressed: ' ', delta=0.0826, index=42
+2025-10-31 01:03:54,702 | DEBUG | Key pressed: 'w', delta=0.3089, index=43
+2025-10-31 01:03:54,789 | DEBUG | Key pressed: 'o', delta=0.0867, index=44
+2025-10-31 01:03:54,930 | DEBUG | Key pressed: 'r', delta=0.1410, index=45
+2025-10-31 01:03:55,254 | DEBUG | Key pressed: 'k', delta=0.3241, index=46
+2025-10-31 01:03:55,808 | DEBUG | Key pressed: 's', delta=0.5541, index=47
+2025-10-31 01:03:55,886 | DEBUG | Key pressed: 'h', delta=0.0777, index=48
+2025-10-31 01:03:55,950 | DEBUG | Key pressed: 'o', delta=0.0639, index=49
+2025-10-31 01:03:56,206 | DEBUG | Key pressed: 'p', delta=0.2560, index=50
+2025-10-31 01:03:56,328 | DEBUG | Key pressed: ' ', delta=0.1224, index=51
+2025-10-31 01:03:56,519 | DEBUG | Key pressed: 'p', delta=0.1911, index=52
+2025-10-31 01:03:56,628 | DEBUG | Key pressed: 'o', delta=0.1088, index=53
+2025-10-31 01:03:56,939 | DEBUG | Key pressed: 'k', delta=0.3102, index=54
+2025-10-31 01:03:57,029 | DEBUG | Key pressed: 'e', delta=0.0905, index=55
+2025-10-31 01:03:57,130 | DEBUG | Key pressed: 'r', delta=0.1010, index=56
+2025-10-31 01:03:57,284 | DEBUG | Key pressed: ' ', delta=0.1541, index=57
+2025-10-31 01:03:57,584 | DEBUG | Key pressed: 'y', delta=0.2999, index=58
+2025-10-31 01:03:57,644 | DEBUG | Key pressed: 'o', delta=0.0599, index=59
+2025-10-31 01:03:57,772 | DEBUG | Key pressed: 'u', delta=0.1281, index=60
+2025-10-31 01:03:57,970 | DEBUG | Key pressed: 't', delta=0.1978, index=61
+2025-10-31 01:03:58,140 | DEBUG | Key pressed: ' ', delta=0.1702, index=62
+2025-10-31 01:03:58,582 | DEBUG | Key pressed: '', delta=0.4422, index=63
+2025-10-31 01:03:58,925 | DEBUG | Key pressed: '', delta=0.3425, index=62
+2025-10-31 01:03:59,115 | DEBUG | Key pressed: '', delta=0.1903, index=61
+2025-10-31 01:03:59,194 | DEBUG | Key pressed: 'a', delta=0.0789, index=60
+2025-10-31 01:03:59,279 | DEBUG | Key pressed: 's', delta=0.0853, index=61
+2025-10-31 01:03:59,322 | DEBUG | Key pressed: 'd', delta=0.0426, index=62
+2025-10-31 01:03:59,781 | DEBUG | Key pressed: '', delta=0.4587, index=63
+2025-10-31 01:03:59,934 | DEBUG | Key pressed: '', delta=0.1537, index=62
+2025-10-31 01:04:00,094 | DEBUG | Key pressed: '', delta=0.1599, index=61
+2025-10-31 01:04:00,809 | DEBUG | Key pressed: 'u', delta=0.7152, index=60
+2025-10-31 01:04:00,977 | DEBUG | Key pressed: 't', delta=0.1676, index=61
+2025-10-31 01:04:01,082 | DEBUG | Key pressed: 'h', delta=0.1050, index=62
+2025-10-31 01:04:01,246 | DEBUG | Key pressed: ' ', delta=0.1639, index=63
+2025-10-31 01:04:02,416 | DEBUG | Key pressed: 'u', delta=1.1705, index=64
+2025-10-31 01:04:02,959 | DEBUG | Key pressed: '', delta=0.5432, index=65
+2025-10-31 01:04:04,094 | DEBUG | Key pressed: 'f', delta=1.1347, index=64
+2025-10-31 01:04:04,646 | DEBUG | Key pressed: 'u', delta=0.5514, index=65
+2025-10-31 01:04:07,391 | DEBUG | Key pressed: 'n', delta=2.7454, index=66
+2025-10-31 01:04:07,932 | DEBUG | Key pressed: 'c', delta=0.5413, index=67
+2025-10-31 01:04:08,266 | DEBUG | Key pressed: 't', delta=0.3335, index=68
+2025-10-31 01:04:08,347 | DEBUG | Key pressed: 'i', delta=0.0817, index=69
+2025-10-31 01:04:08,391 | DEBUG | Key pressed: 'o', delta=0.0432, index=70
+2025-10-31 01:04:08,506 | DEBUG | Key pressed: 'n', delta=0.1158, index=71
+2025-10-31 01:04:08,693 | DEBUG | Key pressed: 'a', delta=0.1868, index=72
+2025-10-31 01:04:08,806 | DEBUG | Key pressed: 'l', delta=0.1131, index=73
+2025-10-31 01:04:08,948 | DEBUG | Key pressed: ' ', delta=0.1417, index=74
+2025-10-31 01:04:09,236 | DEBUG | Key pressed: 't', delta=0.2879, index=75
+2025-10-31 01:04:09,335 | DEBUG | Key pressed: 'e', delta=0.0990, index=76
+2025-10-31 01:04:09,480 | DEBUG | Key pressed: 'l', delta=0.1449, index=77
+2025-10-31 01:04:09,631 | DEBUG | Key pressed: 'l', delta=0.1511, index=78
+2025-10-31 01:04:09,773 | DEBUG | Key pressed: ' ', delta=0.1421, index=79
+2025-10-31 01:04:09,977 | DEBUG | Key pressed: 'f', delta=0.2039, index=80
+2025-10-31 01:04:10,082 | DEBUG | Key pressed: 'o', delta=0.1056, index=81
+2025-10-31 01:04:10,211 | DEBUG | Key pressed: 'o', delta=0.1284, index=82
+2025-10-31 01:04:10,373 | DEBUG | Key pressed: 'd', delta=0.1622, index=83
+2025-10-31 01:04:10,483 | DEBUG | Key pressed: ' ', delta=0.1100, index=84
+2025-10-31 01:04:10,661 | DEBUG | Key pressed: 'j', delta=0.1775, index=85
+2025-10-31 01:04:10,838 | DEBUG | Key pressed: 'u', delta=0.1773, index=86
+2025-10-31 01:04:10,929 | DEBUG | Key pressed: 's', delta=0.0914, index=87
+2025-10-31 01:04:11,084 | DEBUG | Key pressed: 't', delta=0.1546, index=88
+2025-10-31 01:04:11,197 | DEBUG | Key pressed: ' ', delta=0.1130, index=89
+2025-10-31 01:04:11,881 | DEBUG | Key pressed: 'h', delta=0.6846, index=90
+2025-10-31 01:04:12,109 | DEBUG | Key pressed: 'u', delta=0.2276, index=91
+2025-10-31 01:04:12,409 | DEBUG | Key pressed: '', delta=0.3001, index=92
+2025-10-31 01:04:12,536 | DEBUG | Key pressed: '', delta=0.1268, index=91
+2025-10-31 01:04:12,787 | DEBUG | Key pressed: 'f', delta=0.2510, index=90
+2025-10-31 01:04:12,883 | DEBUG | Key pressed: 'u', delta=0.0959, index=91
+2025-10-31 01:04:13,156 | DEBUG | Key pressed: 'n', delta=0.2731, index=92
+2025-10-31 01:04:13,535 | DEBUG | Key pressed: 'c', delta=0.3790, index=93
+2025-10-31 01:04:13,831 | DEBUG | Key pressed: 't', delta=0.2963, index=94
+2025-10-31 01:04:13,958 | DEBUG | Key pressed: 'i', delta=0.1267, index=95
+2025-10-31 01:04:14,018 | DEBUG | Key pressed: 'o', delta=0.0594, index=96
+2025-10-31 01:04:14,176 | DEBUG | Key pressed: 'n', delta=0.1586, index=97
+2025-10-31 01:04:14,300 | DEBUG | Key pressed: 'a', delta=0.1243, index=98
+2025-10-31 01:04:14,418 | DEBUG | Key pressed: 'l', delta=0.1176, index=99
+2025-10-31 01:04:14,965 | DEBUG | Key pressed: 'i', delta=0.5471, index=100
+2025-10-31 01:04:15,079 | DEBUG | Key pressed: 't', delta=0.1142, index=101
+2025-10-31 01:04:15,180 | DEBUG | Key pressed: 'y', delta=0.1004, index=102
+2025-10-31 01:04:15,316 | DEBUG | Key pressed: ' ', delta=0.1358, index=103
+2025-10-31 01:04:15,602 | DEBUG | Key pressed: 'h', delta=0.2868, index=104
+2025-10-31 01:04:15,807 | DEBUG | Key pressed: 'u', delta=0.2046, index=105
+2025-10-31 01:04:16,023 | DEBUG | Key pressed: 'r', delta=0.2161, index=106
+2025-10-31 01:04:16,181 | DEBUG | Key pressed: 'r', delta=0.1580, index=107
+2025-10-31 01:04:16,285 | DEBUG | Key pressed: 'i', delta=0.1043, index=108
+2025-10-31 01:04:16,454 | DEBUG | Key pressed: 'c', delta=0.1685, index=109
+2025-10-31 01:04:16,522 | DEBUG | Key pressed: 'a', delta=0.0680, index=110
+2025-10-31 01:04:16,705 | DEBUG | Key pressed: 'n', delta=0.1827, index=111
+2025-10-31 01:04:16,795 | DEBUG | Key pressed: 'e', delta=0.0908, index=112
+2025-10-31 01:04:16,910 | DEBUG | Key pressed: ' ', delta=0.1143, index=113
+2025-10-31 01:04:17,319 | DEBUG | Key pressed: 'r', delta=0.4095, index=114
+2025-10-31 01:04:17,419 | DEBUG | Key pressed: 'e', delta=0.1000, index=115
+2025-10-31 01:04:17,726 | DEBUG | Key pressed: 's', delta=0.3064, index=116
+2025-10-31 01:04:17,967 | DEBUG | Key pressed: 'p', delta=0.2413, index=117
+2025-10-31 01:04:18,071 | DEBUG | Key pressed: 'o', delta=0.1045, index=118
+2025-10-31 01:04:18,394 | DEBUG | Key pressed: 'n', delta=0.3226, index=119
+2025-10-31 01:04:18,790 | DEBUG | Key pressed: 's', delta=0.3959, index=120
+2025-10-31 01:04:18,877 | DEBUG | Key pressed: 'e', delta=0.0872, index=121
+2025-10-31 01:04:19,064 | DEBUG | Key pressed: ' ', delta=0.1869, index=122
+2025-10-31 01:04:19,396 | DEBUG | Key pressed: 't', delta=0.3324, index=123
+2025-10-31 01:04:19,606 | DEBUG | Key pressed: 'r', delta=0.2094, index=124
+2025-10-31 01:04:19,739 | DEBUG | Key pressed: 'a', delta=0.1328, index=125
+2025-10-31 01:04:19,925 | DEBUG | Key pressed: 'n', delta=0.1868, index=126
+2025-10-31 01:04:20,153 | DEBUG | Key pressed: 's', delta=0.2276, index=127
+2025-10-31 01:04:20,321 | DEBUG | Key pressed: 'l', delta=0.1679, index=128
+2025-10-31 01:04:20,408 | DEBUG | Key pressed: 'a', delta=0.0869, index=129
+2025-10-31 01:04:20,590 | DEBUG | Key pressed: 't', delta=0.1822, index=130
+2025-10-31 01:04:20,704 | DEBUG | Key pressed: 'i', delta=0.1136, index=131
+2025-10-31 01:04:20,747 | DEBUG | Key pressed: 'o', delta=0.0430, index=132
+2025-10-31 01:04:20,864 | DEBUG | Key pressed: 'n', delta=0.1174, index=133
+2025-10-31 01:04:21,077 | DEBUG | Key pressed: ' ', delta=0.2128, index=134
+2025-10-31 01:04:21,241 | DEBUG | Key pressed: 'w', delta=0.1646, index=135
+2025-10-31 01:04:21,346 | DEBUG | Key pressed: 'h', delta=0.1044, index=136
+2025-10-31 01:04:21,405 | DEBUG | Key pressed: 'i', delta=0.0589, index=137
+2025-10-31 01:04:21,651 | DEBUG | Key pressed: '.', delta=0.2462, index=138
+2025-10-31 01:04:21,719 | DEBUG | Key pressed: 'e', delta=0.0679, index=139
+2025-10-31 01:04:22,011 | DEBUG | Key pressed: '', delta=0.2923, index=140
+2025-10-31 01:04:22,166 | DEBUG | Key pressed: '', delta=0.1550, index=139
+2025-10-31 01:04:22,372 | DEBUG | Key pressed: 'l', delta=0.2054, index=138
+2025-10-31 01:04:22,466 | DEBUG | Key pressed: 'e', delta=0.0945, index=139
+2025-10-31 01:04:22,562 | DEBUG | Key pressed: ' ', delta=0.0962, index=140
+2025-10-31 01:04:22,795 | DEBUG | Key pressed: 'c', delta=0.2324, index=141
+2025-10-31 01:04:22,882 | DEBUG | Key pressed: 'h', delta=0.0869, index=142
+2025-10-31 01:04:23,236 | DEBUG | Key pressed: 'r', delta=0.3545, index=143
+2025-10-31 01:04:23,332 | DEBUG | Key pressed: 'i', delta=0.0956, index=144
+2025-10-31 01:04:23,600 | DEBUG | Key pressed: 's', delta=0.2685, index=145
+2025-10-31 01:04:23,746 | DEBUG | Key pressed: 't', delta=0.1460, index=146
+2025-10-31 01:04:23,824 | DEBUG | Key pressed: 'i', delta=0.0776, index=147
+2025-10-31 01:04:23,896 | DEBUG | Key pressed: 'o', delta=0.0726, index=148
+2025-10-31 01:04:24,006 | DEBUG | Key pressed: 'a', delta=0.1094, index=149
+2025-10-31 01:04:24,078 | DEBUG | Key pressed: 'n', delta=0.0726, index=150
+2025-10-31 01:04:24,311 | DEBUG | Key pressed: ' ', delta=0.2329, index=151
+2025-10-31 01:04:24,434 | DEBUG | Key pressed: '', delta=0.1227, index=152
+2025-10-31 01:04:24,566 | DEBUG | Key pressed: '', delta=0.1321, index=151
+2025-10-31 01:04:24,703 | DEBUG | Key pressed: '', delta=0.1375, index=150
+2025-10-31 01:04:24,854 | DEBUG | Key pressed: '', delta=0.1503, index=149
+2025-10-31 01:04:25,099 | DEBUG | Key pressed: 'a', delta=0.2455, index=148
+2025-10-31 01:04:25,190 | DEBUG | Key pressed: 'n', delta=0.0910, index=149
+2025-10-31 01:04:25,345 | DEBUG | Key pressed: ' ', delta=0.1545, index=150
+2025-10-31 01:04:25,532 | DEBUG | Key pressed: 'p', delta=0.1875, index=151
+2025-10-31 01:04:25,691 | DEBUG | Key pressed: 'l', delta=0.1587, index=152
+2025-10-31 01:04:25,778 | DEBUG | Key pressed: 'a', delta=0.0871, index=153
+2025-10-31 01:04:25,937 | DEBUG | Key pressed: 'c', delta=0.1591, index=154
+2025-10-31 01:04:26,147 | DEBUG | Key pressed: 'e', delta=0.2098, index=155
+2025-10-31 01:04:26,279 | DEBUG | Key pressed: ' ', delta=0.1321, index=156
+2025-10-31 01:04:26,917 | DEBUG | Key pressed: '', delta=0.6382, index=157
+2025-10-31 01:04:27,062 | DEBUG | Key pressed: '', delta=0.1450, index=156
+2025-10-31 01:04:27,259 | DEBUG | Key pressed: 's', delta=0.1966, index=155
+2025-10-31 01:04:27,481 | DEBUG | Key pressed: '', delta=0.2223, index=156
+2025-10-31 01:04:27,609 | DEBUG | Key pressed: '', delta=0.1282, index=155
+2025-10-31 01:04:27,946 | DEBUG | Key pressed: 'e', delta=0.3365, index=154
+2025-10-31 01:04:28,169 | DEBUG | Key pressed: '', delta=0.2234, index=155
+2025-10-31 01:04:28,388 | DEBUG | Key pressed: 'c', delta=0.2188, index=154
+2025-10-31 01:04:28,598 | DEBUG | Key pressed: 'e', delta=0.2102, index=155
+2025-10-31 01:04:28,789 | DEBUG | Key pressed: 's', delta=0.1910, index=156
+2025-10-31 01:04:28,862 | DEBUG | Key pressed: ' ', delta=0.0730, index=157
+2025-10-31 01:04:29,049 | DEBUG | Key pressed: 'e', delta=0.1867, index=158
+2025-10-31 01:04:29,162 | DEBUG | Key pressed: 'a', delta=0.1131, index=159
+2025-10-31 01:04:29,704 | DEBUG | Key pressed: 's', delta=0.5419, index=160
+2025-10-31 01:04:30,155 | DEBUG | Key pressed: 'i', delta=0.4515, index=161
+2025-10-31 01:04:30,387 | DEBUG | Key pressed: 'l', delta=0.2314, index=162
+2025-10-31 01:04:30,560 | DEBUG | Key pressed: 'y', delta=0.1730, index=163
+2025-10-31 01:04:30,696 | DEBUG | Key pressed: ' ', delta=0.1360, index=164
+2025-10-31 01:04:30,819 | DEBUG | Key pressed: 'n', delta=0.1234, index=165
+2025-10-31 01:04:31,121 | DEBUG | Key pressed: 's', delta=0.3012, index=166
+2025-10-31 01:04:31,416 | DEBUG | Key pressed: '', delta=0.2955, index=167
+2025-10-31 01:04:31,549 | DEBUG | Key pressed: 'd', delta=0.1328, index=166
+2025-10-31 01:04:31,626 | DEBUG | Key pressed: ' ', delta=0.0771, index=167
+2025-10-31 01:04:31,930 | DEBUG | Key pressed: 's', delta=0.3043, index=168
+2025-10-31 01:04:32,099 | DEBUG | Key pressed: 't', delta=0.1687, index=169
+2025-10-31 01:04:32,231 | DEBUG | Key pressed: 'a', delta=0.1319, index=170
+2025-10-31 01:04:32,436 | DEBUG | Key pressed: 'f', delta=0.2048, index=171
+2025-10-31 01:04:32,609 | DEBUG | Key pressed: 'f', delta=0.1733, index=172
+2025-10-31 01:04:32,719 | DEBUG | Key pressed: ' ', delta=0.1105, index=173
+2025-10-31 01:04:32,969 | DEBUG | Key pressed: 'h', delta=0.2494, index=174
+2025-10-31 01:04:33,052 | DEBUG | Key pressed: 'o', delta=0.0826, index=175
+2025-10-31 01:04:33,378 | DEBUG | Key pressed: '', delta=0.3266, index=176
+2025-10-31 01:04:33,506 | DEBUG | Key pressed: '', delta=0.1277, index=175
+2025-10-31 01:04:33,702 | DEBUG | Key pressed: 'c', delta=0.1965, index=174
+2025-10-31 01:04:33,765 | DEBUG | Key pressed: 'h', delta=0.0631, index=175
+2025-10-31 01:04:33,838 | DEBUG | Key pressed: 'o', delta=0.0724, index=176
+2025-10-31 01:04:34,248 | DEBUG | Key pressed: 'c', delta=0.4105, index=177
+2025-10-31 01:04:34,571 | DEBUG | Key pressed: 'o', delta=0.3226, index=178
+2025-10-31 01:04:34,740 | DEBUG | Key pressed: 'l', delta=0.1693, index=179
+2025-10-31 01:04:34,849 | DEBUG | Key pressed: 'a', delta=0.1087, index=180
+2025-10-31 01:04:35,004 | DEBUG | Key pressed: 't', delta=0.1551, index=181
+2025-10-31 01:04:35,141 | DEBUG | Key pressed: 'e', delta=0.1371, index=182
+2025-10-31 01:04:35,359 | DEBUG | Key pressed: ' ', delta=0.2180, index=183
+2025-10-31 01:04:36,015 | DEBUG | Key pressed: 'r', delta=0.6564, index=184
+2025-10-31 01:04:36,092 | DEBUG | Key pressed: 'e', delta=0.0763, index=185
+2025-10-31 01:04:36,312 | DEBUG | Key pressed: 's', delta=0.2206, index=186
+2025-10-31 01:04:36,572 | DEBUG | Key pressed: 'p', delta=0.2601, index=187
+2025-10-31 01:04:36,689 | DEBUG | Key pressed: 'o', delta=0.1168, index=188
+2025-10-31 01:04:36,926 | DEBUG | Key pressed: 'n', delta=0.2370, index=189
+2025-10-31 01:04:37,304 | DEBUG | Key pressed: 's', delta=0.3781, index=190
+2025-10-31 01:04:37,391 | DEBUG | Key pressed: 'e', delta=0.0865, index=191
+2025-10-31 01:04:37,535 | DEBUG | Key pressed: ' ', delta=0.1447, index=192
+2025-10-31 01:04:37,698 | DEBUG | Key pressed: 'd', delta=0.1612, index=193
+2025-10-31 01:04:37,773 | DEBUG | Key pressed: 'i', delta=0.0763, index=194
+2025-10-31 01:04:38,000 | DEBUG | Key pressed: 'v', delta=0.2276, index=195
+2025-10-31 01:04:38,128 | DEBUG | Key pressed: 'i', delta=0.1279, index=196
+2025-10-31 01:04:38,291 | DEBUG | Key pressed: 'd', delta=0.1629, index=197
+2025-10-31 01:04:38,483 | DEBUG | Key pressed: 'e', delta=0.1921, index=198
+2025-10-31 01:04:38,674 | DEBUG | Key pressed: 'd', delta=0.1909, index=199
+2025-10-31 01:04:38,784 | DEBUG | Key pressed: ' ', delta=0.1096, index=200
+2025-10-31 01:04:38,997 | DEBUG | Key pressed: 'c', delta=0.2132, index=201
+2025-10-31 01:04:39,075 | DEBUG | Key pressed: 'o', delta=0.0784, index=202
+2025-10-31 01:04:39,662 | DEBUG | Key pressed: 'l', delta=0.5870, index=203
+2025-10-31 01:04:39,835 | DEBUG | Key pressed: 'u', delta=0.1724, index=204
+2025-10-31 01:04:40,050 | DEBUG | Key pressed: 'm', delta=0.2154, index=205
+2025-10-31 01:04:40,464 | DEBUG | Key pressed: 'b', delta=0.4137, index=206
+2025-10-31 01:04:40,659 | DEBUG | Key pressed: 'i', delta=0.1953, index=207
+2025-10-31 01:04:40,810 | DEBUG | Key pressed: 'a', delta=0.1506, index=208
+2025-10-31 01:04:40,887 | DEBUG | Key pressed: ' ', delta=0.0770, index=209
+2025-10-31 01:04:41,197 | DEBUG | Key pressed: 's', delta=0.3100, index=210
+2025-10-31 01:04:41,275 | DEBUG | Key pressed: 'u', delta=0.0784, index=211
+2025-10-31 01:04:41,548 | DEBUG | Key pressed: 'p', delta=0.2727, index=212
+2025-10-31 01:04:41,600 | DEBUG | Key pressed: 'e', delta=0.0517, index=213
+2025-10-31 01:04:41,659 | DEBUG | Key pressed: 'r', delta=0.0589, index=214
+2025-10-31 01:04:41,830 | DEBUG | Key pressed: ' ', delta=0.1719, index=215
+2025-10-31 01:04:42,044 | DEBUG | Key pressed: 'c', delta=0.2136, index=216
+2025-10-31 01:04:42,126 | DEBUG | Key pressed: 'l', delta=0.0818, index=217
+2025-10-31 01:04:42,299 | DEBUG | Key pressed: 'i', delta=0.1733, index=218
+2025-10-31 01:04:42,664 | DEBUG | Key pressed: 'n', delta=0.3648, index=219
+2025-10-31 01:04:42,795 | DEBUG | Key pressed: 'i', delta=0.1311, index=220
+2025-10-31 01:04:42,964 | DEBUG | Key pressed: 'c', delta=0.1688, index=221
+2025-10-31 01:04:43,024 | DEBUG | Key pressed: ' ', delta=0.0600, index=222
+2025-10-31 01:04:43,228 | DEBUG | Key pressed: 'c', delta=0.2042, index=223
+2025-10-31 01:04:43,338 | DEBUG | Key pressed: 'a', delta=0.1100, index=224
+2025-10-31 01:04:43,542 | DEBUG | Key pressed: 'n', delta=0.2041, index=225
+2025-10-31 01:04:43,689 | DEBUG | Key pressed: 'd', delta=0.1463, index=226
+2025-10-31 01:04:43,825 | DEBUG | Key pressed: 'y', delta=0.1364, index=227
+2025-10-31 01:04:43,948 | DEBUG | Key pressed: ' ', delta=0.1231, index=228
+2025-10-31 01:04:44,193 | DEBUG | Key pressed: 'r', delta=0.2448, index=229
+2025-10-31 01:04:44,531 | DEBUG | Key pressed: '', delta=0.3386, index=230
+2025-10-31 01:04:45,123 | DEBUG | Key pressed: 'r', delta=0.5916, index=229
+2025-10-31 01:04:45,232 | DEBUG | Key pressed: 'o', delta=0.1087, index=230
+2025-10-31 01:04:45,378 | DEBUG | Key pressed: 'w', delta=0.1461, index=231
+2025-10-31 01:04:45,560 | DEBUG | Key pressed: ' ', delta=0.1821, index=232
+2025-10-31 01:04:45,733 | DEBUG | Key pressed: 'a', delta=0.1730, index=233
+2025-10-31 01:04:45,902 | DEBUG | Key pressed: 'c', delta=0.1691, index=234
+2025-10-31 01:04:46,116 | DEBUG | Key pressed: 't', delta=0.2140, index=235
+2025-10-31 01:04:46,270 | DEBUG | Key pressed: 'i', delta=0.1540, index=236
+2025-10-31 01:04:46,421 | DEBUG | Key pressed: 'n', delta=0.1512, index=237
+2025-10-31 01:04:46,586 | DEBUG | Key pressed: 'g', delta=0.1645, index=238
+2025-10-31 01:04:46,699 | DEBUG | Key pressed: ' ', delta=0.1132, index=239
+2025-10-31 01:04:46,886 | DEBUG | Key pressed: 'm', delta=0.1867, index=240
+2025-10-31 01:04:46,967 | DEBUG | Key pressed: 'i', delta=0.0814, index=241
+2025-10-31 01:04:47,159 | DEBUG | Key pressed: 'd', delta=0.1922, index=242
+2025-10-31 01:04:47,341 | DEBUG | Key pressed: 'd', delta=0.1822, index=243
+2025-10-31 01:04:47,455 | DEBUG | Key pressed: 'l', delta=0.1138, index=244
+2025-10-31 01:04:47,550 | DEBUG | Key pressed: 'e', delta=0.0952, index=245
+2025-10-31 01:04:47,660 | DEBUG | Key pressed: ' ', delta=0.1096, index=246
+2025-10-31 01:04:47,842 | DEBUG | Key pressed: 'v', delta=0.1818, index=247
+2025-10-31 01:04:47,992 | DEBUG | Key pressed: 'e', delta=0.1505, index=248
+2025-10-31 01:04:48,243 | DEBUG | Key pressed: 'n', delta=0.2506, index=249
+2025-10-31 01:04:48,516 | DEBUG | Key pressed: 't', delta=0.2729, index=250
+2025-10-31 01:04:48,648 | DEBUG | Key pressed: 'u', delta=0.1324, index=251
+2025-10-31 01:04:48,748 | DEBUG | Key pressed: 'r', delta=0.1001, index=252
+2025-10-31 01:04:48,826 | DEBUG | Key pressed: 'e', delta=0.0774, index=253
+2025-10-31 01:04:48,994 | DEBUG | Key pressed: ' ', delta=0.1681, index=254
+2025-10-31 01:04:49,322 | DEBUG | Key pressed: 'c', delta=0.3280, index=255
+2025-10-31 01:04:49,408 | DEBUG | Key pressed: 'h', delta=0.0862, index=256
+2025-10-31 01:04:49,646 | DEBUG | Key pressed: 'r', delta=0.2377, index=257
+2025-10-31 01:04:49,741 | DEBUG | Key pressed: 'i', delta=0.0950, index=258
+2025-10-31 01:04:49,956 | DEBUG | Key pressed: 's', delta=0.2149, index=259
+2025-10-31 01:04:50,110 | DEBUG | Key pressed: 't', delta=0.1548, index=260
+2025-10-31 01:04:50,233 | DEBUG | Key pressed: 'i', delta=0.1226, index=261
+2025-10-31 01:04:50,287 | DEBUG | Key pressed: 'o', delta=0.0543, index=262
+2025-10-31 01:04:50,506 | DEBUG | Key pressed: 'a', delta=0.2188, index=263
+2025-10-31 01:04:50,802 | DEBUG | Key pressed: '', delta=0.2960, index=264
+2025-10-31 01:04:50,944 | DEBUG | Key pressed: '', delta=0.1417, index=263
+2025-10-31 01:04:51,166 | DEBUG | Key pressed: 'a', delta=0.2222, index=262
+2025-10-31 01:04:51,398 | DEBUG | Key pressed: 'n', delta=0.2319, index=263
+2025-10-31 01:04:51,612 | DEBUG | Key pressed: ' ', delta=0.2140, index=264
+2025-10-31 01:04:51,940 | DEBUG | Key pressed: 'b', delta=0.3281, index=265
+2025-10-31 01:04:52,123 | DEBUG | Key pressed: 'o', delta=0.1829, index=266
+2025-10-31 01:04:52,478 | DEBUG | Key pressed: 'x', delta=0.3548, index=267
+2025-10-31 01:04:52,578 | DEBUG | Key pressed: ' ', delta=0.1003, index=268
+2025-10-31 01:04:52,783 | DEBUG | Key pressed: 'm', delta=0.2052, index=269
+2025-10-31 01:04:52,883 | DEBUG | Key pressed: 'a', delta=0.0998, index=270
+2025-10-31 01:04:53,043 | DEBUG | Key pressed: 'r', delta=0.1598, index=271
+2025-10-31 01:04:53,216 | DEBUG | Key pressed: 'r', delta=0.1730, index=272
+2025-10-31 01:04:53,343 | DEBUG | Key pressed: 'i', delta=0.1272, index=273
+2025-10-31 01:04:53,475 | DEBUG | Key pressed: 'e', delta=0.1317, index=274
+2025-10-31 01:04:53,736 | DEBUG | Key pressed: 'd', delta=0.2612, index=275
+2025-10-31 01:04:53,885 | DEBUG | Key pressed: ' ', delta=0.1495, index=276
+2025-10-31 01:04:54,572 | DEBUG | Key pressed: 'p', delta=0.6868, index=277
+2025-10-31 01:04:54,777 | DEBUG | Key pressed: 'o', delta=0.2049, index=278
+2025-10-31 01:04:54,932 | DEBUG | Key pressed: 'r', delta=0.1548, index=279
+2025-10-31 01:04:55,128 | DEBUG | Key pressed: 'i', delta=0.1963, index=280
+2025-10-31 01:04:55,323 | DEBUG | Key pressed: '', delta=0.1949, index=281
+2025-10-31 01:04:55,469 | DEBUG | Key pressed: '', delta=0.1461, index=280
+2025-10-31 01:04:55,592 | DEBUG | Key pressed: '', delta=0.1227, index=279
+2025-10-31 01:04:55,815 | DEBUG | Key pressed: 'r', delta=0.2230, index=278
+2025-10-31 01:04:55,906 | DEBUG | Key pressed: 'i', delta=0.0913, index=279
+2025-10-31 01:04:56,230 | DEBUG | Key pressed: 'n', delta=0.3239, index=280
+2025-10-31 01:04:56,366 | DEBUG | Key pressed: 't', delta=0.1358, index=281
+2025-10-31 01:04:56,521 | DEBUG | Key pressed: 'e', delta=0.1549, index=282
+2025-10-31 01:04:56,584 | DEBUG | Key pressed: 'r', delta=0.0636, index=283
+2025-10-31 01:04:56,721 | DEBUG | Key pressed: ' ', delta=0.1366, index=284
+2025-10-31 01:04:56,995 | DEBUG | Key pressed: 't', delta=0.2742, index=285
+2025-10-31 01:04:57,195 | DEBUG | Key pressed: 'r', delta=0.1999, index=286
+2025-10-31 01:04:57,286 | DEBUG | Key pressed: 'i', delta=0.0908, index=287
+2025-10-31 01:04:57,527 | DEBUG | Key pressed: 'p', delta=0.2410, index=288
+2025-10-31 01:04:57,664 | DEBUG | Key pressed: ' ', delta=0.1368, index=289
+2025-10-31 01:04:57,873 | DEBUG | Key pressed: 'h', delta=0.2091, index=290
+2025-10-31 01:04:57,992 | DEBUG | Key pressed: 'a', delta=0.1190, index=291
+2025-10-31 01:04:58,128 | DEBUG | Key pressed: 'p', delta=0.1365, index=292
+2025-10-31 01:04:58,276 | DEBUG | Key pressed: 'p', delta=0.1472, index=293
+2025-10-31 01:04:58,379 | DEBUG | Key pressed: 'e', delta=0.1037, index=294
+2025-10-31 01:04:58,474 | DEBUG | Key pressed: 'n', delta=0.0948, index=295
+2025-10-31 01:04:58,693 | DEBUG | Key pressed: 's', delta=0.2189, index=296
+2025-10-31 01:04:58,839 | DEBUG | Key pressed: ' ', delta=0.1463, index=297
+2025-10-31 01:04:59,240 | DEBUG | Key pressed: 'd', delta=0.4012, index=298
+2025-10-31 01:04:59,586 | DEBUG | Key pressed: 'r', delta=0.3454, index=299
+2025-10-31 01:04:59,809 | DEBUG | Key pressed: 'w', delta=0.2233, index=300
+2025-10-31 01:05:00,338 | DEBUG | Key pressed: '', delta=0.5289, index=301
+2025-10-31 01:05:00,470 | DEBUG | Key pressed: 'a', delta=0.1321, index=300
+2025-10-31 01:05:00,847 | DEBUG | Key pressed: 'w', delta=0.3772, index=301
+2025-10-31 01:05:01,002 | DEBUG | Key pressed: 'n', delta=0.1547, index=302
+2025-10-31 01:05:01,130 | DEBUG | Key pressed: ' ', delta=0.1281, index=303
+2025-10-31 01:05:01,357 | DEBUG | Key pressed: 'm', delta=0.2268, index=304
+2025-10-31 01:05:01,458 | DEBUG | Key pressed: 'e', delta=0.1010, index=305
+2025-10-31 01:05:01,612 | DEBUG | Key pressed: 'e', delta=0.1542, index=306
+2025-10-31 01:05:01,749 | DEBUG | Key pressed: 't', delta=0.1367, index=307
+2025-10-31 01:05:01,972 | DEBUG | Key pressed: 's', delta=0.2232, index=308
+2025-10-31 01:05:02,077 | DEBUG | Key pressed: ' ', delta=0.1050, index=309
+2025-10-31 01:05:02,223 | DEBUG | Key pressed: 'o', delta=0.1459, index=310
+2025-10-31 01:05:02,978 | DEBUG | Key pressed: 'l', delta=0.7553, index=311
+2025-10-31 01:05:03,269 | DEBUG | Key pressed: 'd', delta=0.2908, index=312
+2025-10-31 01:05:03,366 | DEBUG | Key pressed: ' ', delta=0.0967, index=313
+2025-10-31 01:05:03,616 | DEBUG | Key pressed: 'f', delta=0.2501, index=314
+2025-10-31 01:05:03,697 | DEBUG | Key pressed: 'i', delta=0.0809, index=315
+2025-10-31 01:05:03,870 | DEBUG | Key pressed: 'n', delta=0.1731, index=316
+2025-10-31 01:05:03,995 | DEBUG | Key pressed: 'a', delta=0.1247, index=317
+2025-10-31 01:05:04,098 | DEBUG | Key pressed: 'l', delta=0.1032, index=318
+2025-10-31 01:05:04,226 | DEBUG | Key pressed: ' ', delta=0.1280, index=319
+2025-10-31 01:05:04,399 | DEBUG | Key pressed: 'j', delta=0.1730, index=320
+2025-10-31 01:05:04,508 | DEBUG | Key pressed: 'a', delta=0.1091, index=321
+2025-10-31 01:05:04,923 | DEBUG | Key pressed: 's', delta=0.4151, index=322
+2025-10-31 01:05:05,136 | DEBUG | Key pressed: 'o', delta=0.2129, index=323
+2025-10-31 01:05:05,260 | DEBUG | Key pressed: 'n', delta=0.1243, index=324
+2025-10-31 01:05:05,396 | DEBUG | Key pressed: ' ', delta=0.1357, index=325
+2025-10-31 01:05:05,633 | DEBUG | Key pressed: 'a', delta=0.2369, index=326
+2025-10-31 01:05:05,929 | DEBUG | Key pressed: 'v', delta=0.2963, index=327
+2025-10-31 01:05:06,448 | DEBUG | Key pressed: 'g', delta=0.5188, index=328
+2025-10-31 01:05:06,571 | DEBUG | Key pressed: ' ', delta=0.1229, index=329
+2025-10-31 01:05:06,867 | DEBUG | Key pressed: 'c', delta=0.2964, index=330
+2025-10-31 01:05:06,981 | DEBUG | Key pressed: 'h', delta=0.1136, index=331
+2025-10-31 01:05:07,140 | DEBUG | Key pressed: 'e', delta=0.1593, index=332
+2025-10-31 01:05:07,368 | DEBUG | Key pressed: 'c', delta=0.2278, index=333
+2025-10-31 01:05:07,513 | DEBUG | Key pressed: 'k', delta=0.1455, index=334
+2025-10-31 01:05:07,750 | DEBUG | Key pressed: 's', delta=0.2369, index=335
+2025-10-31 01:05:07,900 | DEBUG | Key pressed: ' ', delta=0.1496, index=336
+2025-10-31 01:05:08,210 | DEBUG | Key pressed: 'p', delta=0.3104, index=337
+2025-10-31 01:05:08,296 | DEBUG | Key pressed: 'o', delta=0.0857, index=338
+2025-10-31 01:05:08,549 | DEBUG | Key pressed: 'p', delta=0.2528, index=339
+2025-10-31 01:05:08,706 | DEBUG | Key pressed: 'u', delta=0.1571, index=340
+2025-10-31 01:05:08,925 | DEBUG | Key pressed: 'l', delta=0.2190, index=341
+2025-10-31 01:05:09,011 | DEBUG | Key pressed: 'a', delta=0.0860, index=342
+2025-10-31 01:05:09,139 | DEBUG | Key pressed: 't', delta=0.1279, index=343
+2025-10-31 01:05:09,230 | DEBUG | Key pressed: 'i', delta=0.0913, index=344
+2025-10-31 01:05:09,287 | DEBUG | Key pressed: 'o', delta=0.0564, index=345
+2025-10-31 01:05:09,444 | DEBUG | Key pressed: 'n', delta=0.1575, index=346
+2025-10-31 01:05:09,717 | DEBUG | Key pressed: ' ', delta=0.2730, index=347
+2025-10-31 01:05:09,931 | DEBUG | Key pressed: 'b', delta=0.2139, index=348
+2025-10-31 01:05:10,159 | DEBUG | Key pressed: 'l', delta=0.2280, index=349
+2025-10-31 01:05:10,273 | DEBUG | Key pressed: 'a', delta=0.1140, index=350
+2025-10-31 01:05:10,500 | DEBUG | Key pressed: 'c', delta=0.2274, index=351
+2025-10-31 01:05:10,615 | DEBUG | Key pressed: 'k', delta=0.1145, index=352
+2025-10-31 01:05:10,723 | DEBUG | Key pressed: ' ', delta=0.1082, index=353
+2025-10-31 01:05:10,928 | DEBUG | Key pressed: 's', delta=0.2051, index=354
+2025-10-31 01:05:11,384 | DEBUG | Key pressed: 'c', delta=0.4558, index=355
+2025-10-31 01:05:12,140 | DEBUG | Key pressed: 'r', delta=0.7560, index=356
+2025-10-31 01:05:12,226 | DEBUG | Key pressed: 'i', delta=0.0857, index=357
+2025-10-31 01:05:12,491 | DEBUG | Key pressed: 'p', delta=0.2653, index=358
+2025-10-31 01:05:12,695 | DEBUG | Key pressed: 't', delta=0.2042, index=359
+2025-10-31 01:05:13,214 | DEBUG | Key pressed: 's', delta=0.5190, index=360
+2025-10-31 01:05:13,233 | INFO | Test finished automatically
+2025-10-31 01:05:13,233 | INFO | Test finished
+2025-10-31 01:05:13,234 | DEBUG | Elapsed time: 93.74 seconds
+2025-10-31 01:05:13,234 | DEBUG | Num chars: 361, Num words: 72.20
+2025-10-31 01:05:13,234 | DEBUG | Base WPM: 46.21, Accuracy: 92.24%
+2025-10-31 01:05:13,234 | DEBUG | Final WPM (monkeytype style): 42.63
+2025-10-31 01:05:13,234 | DEBUG | Errors: 28, Wrong streak: 0
+2025-10-31 01:05:13,234 | DEBUG | User input length: 446, Key times length: 446
+2025-10-31 01:05:13,665 | DEBUG | Key pressed: 'v', delta=0.4509, index=361
+2025-10-31 01:05:14,284 | DEBUG | Key pressed: 'v', delta=0.6190, index=361
+2025-10-31 01:05:15,055 | DEBUG | Key pressed: 'v', delta=0.7711, index=361
+2025-10-31 01:05:15,350 | DEBUG | Key pressed: 'v', delta=0.2949, index=361
+2025-10-31 01:05:15,628 | DEBUG | Key pressed: 'v', delta=0.2780, index=361
+2025-10-31 01:05:16,498 | DEBUG | Key pressed: 'v', delta=0.8699, index=361
+2025-10-31 01:05:16,871 | DEBUG | Key pressed: 'v', delta=0.3729, index=361
+2025-10-31 01:05:17,149 | DEBUG | Key pressed: 'a', delta=0.2781, index=361
+2025-10-31 01:05:17,750 | DEBUG | Key pressed: 'a', delta=0.6009, index=361
+2025-10-31 01:05:17,782 | DEBUG | Key pressed: 's', delta=0.0320, index=361
+2025-10-31 01:05:17,900 | DEBUG | Key pressed: 'd', delta=0.1180, index=361
+2025-10-31 01:05:17,932 | DEBUG | Key pressed: 'f', delta=0.0322, index=361
+2025-10-31 01:05:18,137 | DEBUG | Key pressed: 'a', delta=0.2051, index=361
+2025-10-31 01:05:18,187 | DEBUG | Key pressed: 's', delta=0.0502, index=361
+2025-10-31 01:05:25,722 | DEBUG | Key pressed: '', delta=7.5347, index=361
+2025-10-31 01:05:25,723 | INFO | Ending test
+2025-10-31 01:05:25,730 | DEBUG | WPM chart reset
+2025-10-31 01:05:25,730 | DEBUG | Test state reset: index=0, wrong=0, wrong_streak=0
+2025-10-31 01:05:25,731 | DEBUG | User input and key times cleared
+2025-10-31 01:05:25,731 | INFO | Generating new text for next test
+2025-10-31 01:05:25,732 | INFO | Test ready for user input

@@ -7,6 +7,7 @@ from settings_window import SettingsWindow
 from wpm_chart import WPMChart
 from settings_strip import SettingsStrip
 from finish_info import FinishInfo
+from typing_analyzer import DigraphTable
 
 import logging
 import os
@@ -56,14 +57,16 @@ typing_frame = TypingWindow(root, CLICK_SOUND)
 settings_strip = SettingsStrip(root, typing_frame)
 wpm_chart = WPMChart(root, typing_frame)
 finish_info = FinishInfo(root)
+table_info = DigraphTable(root)
 
 settings_strip.pack(fill="x", padx=20, pady=(10,5))
 typing_frame.pack(fill="x", padx=20, pady=(0,10))
 wpm_chart.pack(fill="both", padx=20, pady=(0,10))
 finish_info.pack(fill="x", padx=20, pady=(0,20))
-finish_info.hide()
+table_info.pack(fill="x", padx=20, pady=(0,20))
 
 typing_frame.wpm_chart = wpm_chart
 typing_frame.finish_info = finish_info
+typing_frame.table_info = table_info
 
 root.mainloop()

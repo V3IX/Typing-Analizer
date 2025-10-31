@@ -2,6 +2,7 @@ from word_loader import load_words, generate_random_text, detect_word_files
 from settings_window import SettingsWindow
 from finish_info import FinishInfo
 from user_window import UserWindow
+from typing_analyzer import analyze_slowest_letters, analyze_slowest_combos
 
 import tkinter as tk
 import database
@@ -16,7 +17,8 @@ class TypingWindow(tk.Frame):
         super().__init__(master, **kwargs)
         self.configure(bg="#2e2e2e")
         self.finish_info = FinishInfo(master=self)
-        
+        self.table_info = None
+
         self.click_sound = click_sound
 
         self.word_list_choice = ""
@@ -32,6 +34,7 @@ class TypingWindow(tk.Frame):
         self.user_input = []
         self.key_times = []
         self.last_key_time = None
+        self.correct_letters = []
 
         self.replay_mode = False
 
@@ -116,6 +119,22 @@ class TypingWindow(tk.Frame):
 
             self.type(letter)
             
+    def calculate_digraph_times(self):
+        """
+        Return dict of (char1, char2) -> average time in ms
+        based on current input
+        """
+        times = {}
+        counts = {}
+        for i in range(len(self.user_input)-1):
+            pair = (self.user_input[i], self.user_input[i+1])
+            t = (self.key_times[i] + self.key_times[i+1]) * 1000  # ms
+            times[pair] = times.get(pair, 0) + t
+            counts[pair] = counts.get(pair, 0) + 1
+
+        avg_times = {pair: times[pair]/counts[pair] for pair in times}
+        return avg_times
+
     def type(self, letter):
         if self.finished:
             return
@@ -123,34 +142,42 @@ class TypingWindow(tk.Frame):
         current_time = time.time()
         self.text_widget.config(state=tk.NORMAL)
 
-        # Handle backspace
         if letter == "\b":
             if self.index > 0:
                 self.index -= 1
                 self.text_widget.delete(f"1.{self.index}")
                 self.text_widget.insert(f"1.{self.index}", self.text[self.index])
                 self.text_widget.tag_add("gray", f"1.{self.index}", f"1.{self.index+1}")
-                logger.debug("Backspace pressed, index=%d", self.index)
-                if self.last_wrong:
-                    # Remove last wrong count if we backspace
-                    self.wrong_streak = max(0, self.wrong_streak - 1)
+                
+                if self.last_correct:
+                    self.last_correct.pop()  # remove last correct letter if backspace
+
         else:
             if self.index < len(self.text):
                 expected_char = self.text[self.index]
                 self.text_widget.delete(f"1.{self.index}")
-
                 self.click_sound.play()
+
                 if letter == expected_char:
                     self.text_widget.insert(f"1.{self.index}", letter)
                     self.text_widget.tag_add("white", f"1.{self.index}", f"1.{self.index+1}")
-                    self.last_wrong = False
+
+                    # Track last 2 correct letters
+                    self.last_correct.append(letter)
+                    if len(self.last_correct) > 2:
+                        self.last_correct.pop(0)
+
+                    # Update digraph table if we have 2 correct letters
+                    if len(self.last_correct) == 2 and hasattr(self, "table_info") and self.table_info:
+                        pair = tuple(self.last_correct)
+                        last_time = self.key_times[-1] * 1000  # ms
+                        self.table_info.update_digraph_time(pair, last_time)
                 else:
                     self.text_widget.insert(f"1.{self.index}", letter)
                     self.text_widget.tag_add("red", f"1.{self.index}", f"1.{self.index+1}")
                     self.wrong += 1
-                    if not self.last_wrong:
-                        self.wrong_streak += 1
-                    self.last_wrong = True
+                    self.last_correct = []  # reset sequence on mistake
+
                 self.index += 1
 
         if self.start_time is None:
@@ -274,6 +301,12 @@ class TypingWindow(tk.Frame):
                 on_replay=self.replay
             )
             logger.debug("Finish info shown due to mode 'after'")
+
+        slow_letters = analyze_slowest_letters(limit=2)
+        self.table_info.show_table(slow_letters, title="Slowest Letters")
+
+        slow_combos = analyze_slowest_combos(limit=2)
+        self.table_info.show_table(slow_combos, title="Slowest Combos")
 
         if not getattr(self, "replay_mode", False):
             # --- Save results to database ---
