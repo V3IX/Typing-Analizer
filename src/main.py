@@ -63,7 +63,6 @@ settings_strip.pack(fill="x", padx=20, pady=(10,5))
 typing_frame.pack(fill="x", padx=20, pady=(0,10))
 wpm_chart.pack(fill="both", padx=20, pady=(0,10))
 finish_info.pack(fill="x", padx=20, pady=(0,20))
-table_info.pack(fill="x", padx=20, pady=(0,20))
 
 typing_frame.wpm_chart = wpm_chart
 typing_frame.finish_info = finish_info

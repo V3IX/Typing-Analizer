@@ -2,7 +2,7 @@ from word_loader import load_words, generate_random_text, detect_word_files
 from settings_window import SettingsWindow
 from finish_info import FinishInfo
 from user_window import UserWindow
-from typing_analyzer import analyze_slowest_letters, analyze_slowest_combos
+from typing_analyzer import DigraphTable
 
 import tkinter as tk
 import database
@@ -195,15 +195,14 @@ class TypingWindow(tk.Frame):
         wpm = (num_words_typed / (elapsed_time / 60)) * accuracy if elapsed_time > 0 else 0
 
         # --- Update FinishInfo dynamically ---
-        if getattr(self, "finish_info_mode", "always") == "always":
-            if hasattr(self, "finish_info"):
-                self.finish_info.show(
-                    wpm=wpm,
-                    accuracy=accuracy * 100,
-                    errors=self.wrong_streak,
-                    on_restart=self.end_test,
-                    on_replay=self.replay
-                )
+        if hasattr(self, "finish_info"):
+            self.finish_info.show(
+                wpm=wpm,
+                accuracy=accuracy * 100,
+                errors=self.wrong_streak,
+                on_restart=self.end_test,
+                on_replay=self.replay
+            )
 
         # --- Update WPM chart if exists ---
         if hasattr(self, "wpm_chart"):
@@ -301,12 +300,6 @@ class TypingWindow(tk.Frame):
                 on_replay=self.replay
             )
             logger.debug("Finish info shown due to mode 'after'")
-
-        slow_letters = analyze_slowest_letters(limit=2)
-        self.table_info.show_table(slow_letters, title="Slowest Letters")
-
-        slow_combos = analyze_slowest_combos(limit=2)
-        self.table_info.show_table(slow_combos, title="Slowest Combos")
 
         if not getattr(self, "replay_mode", False):
             # --- Save results to database ---

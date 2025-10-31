@@ -7,12 +7,14 @@ class SettingsWindow:
         self.typing_window = typing_window
         self.wpm_chart = typing_window.wpm_chart
         self.finish_info = typing_window.finish_info
+        self.table = typing_window.table_info
 
         self.word_files = detect_word_files()
         self.word_var = tk.StringVar(value=self.typing_window.word_list_choice)
 
         self.show_chart_var = tk.StringVar(value=self.wpm_chart.wpm_chart_mode)
         self.show_finish_var = tk.StringVar(value=self.finish_info.finish_info_mode)
+        self.show_table_bool = tk.BooleanVar(value=self.table.visible)
 
         self.open_settings()
 
@@ -74,12 +76,48 @@ class SettingsWindow:
                 command=self.toggle_finish_info
             ).pack(anchor="w", padx=60)
 
+        # --- Digraph Table Visibility Toggle ---
+        tk.Label(settings_win, text="Digraph Table:", bg="#3e3e3e", fg="white").pack(pady=(20, 5))
+        tk.Checkbutton(
+            settings_win,
+            text="Show Table",
+            variable=self.show_table_bool,
+            bg="#3e3e3e",
+            fg="white",
+            selectcolor="#2e2e2e",
+            command=self.toggle_table
+        ).pack(anchor="w", padx=60)
+
     def toggle_chart(self):
         mode = self.show_chart_var.get()
         self.typing_window.wpm_chart_mode = mode
         self.typing_window.wpm_chart.set_mode(mode)
 
+        if mode != "hidden" and self.typing_window.table_info.visible:
+            self.show_table_bool.set(False)
+            self.typing_window.table_info.visible = False
+            self.typing_window.table_info.set_mode(False)
+
     def toggle_finish_info(self):
         mode = self.show_finish_var.get()
         self.typing_window.finish_info_mode = mode
         self.typing_window.finish_info.set_mode(mode)
+
+        if mode != "hidden" and self.typing_window.table_info.visible:
+            self.show_table_bool.set(False)
+            self.typing_window.table_info.visible = False
+            self.typing_window.table_info.set_mode(False)
+
+    def toggle_table(self):
+        visible = self.show_table_bool.get()
+        self.typing_window.table_info.visible = visible
+        self.typing_window.table_info.set_mode(visible)
+
+        if visible:
+            self.show_chart_var.set("hidden")
+            self.show_finish_var.set("hidden")
+
+            self.typing_window.wpm_chart_mode = "hidden"
+            self.typing_window.finish_info_mode = "hidden"
+            self.typing_window.wpm_chart.set_mode("hidden")
+            self.typing_window.finish_info.set_mode("hidden")
