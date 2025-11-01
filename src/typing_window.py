@@ -17,6 +17,9 @@ class TypingWindow(tk.Frame):
         super().__init__(master, **kwargs)
         self.configure(bg="#2e2e2e")
         self.finish_info = FinishInfo(master=self)
+        self.wpm_chart_mode = "always"
+        self.finish_info_mode = "always"
+        self.last_correct = []
         self.table_info = None
 
         self.click_sound = click_sound
@@ -138,7 +141,7 @@ class TypingWindow(tk.Frame):
     def type(self, letter):
         if self.finished:
             return
-
+        
         current_time = time.time()
         self.text_widget.config(state=tk.NORMAL)
 
@@ -206,7 +209,10 @@ class TypingWindow(tk.Frame):
 
         # --- Update WPM chart if exists ---
         if hasattr(self, "wpm_chart"):
-            self.wpm_chart.update_chart()
+            self.wpm_chart.reset_chart()
+            # also reset internal indices
+            self.wpm_chart.last_index = 0
+            self.wpm_chart.last_wrong = 0
 
         # Finish test automatically
         if self.index >= len(self.text) and not self.last_wrong:

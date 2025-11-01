@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
+import logging
 
+logger = logging.getLogger(__name__)
 class FinishInfo(tk.Frame):
     def __init__(self, master):
         super().__init__(master, bg="#2e2e2e")
@@ -59,12 +61,14 @@ class FinishInfo(tk.Frame):
         self.replay_button.pack(side="left", padx=10)
 
         master.bind("<Return>", self._handle_enter)
+        logger.info("FinishInfo initialized")
 
     # ------------------- Button handlers -------------------
     def _handle_restart(self):
         if self.on_restart:
             self._clear_display()
             self.on_restart()
+        logger.info("Restart button pressed")
 
     def _handle_replay(self):
         if self.replay:
@@ -72,11 +76,13 @@ class FinishInfo(tk.Frame):
         if self.on_replay:
             self.replay = True
             self.on_replay()
+        logger.info("Replay button pressed")
 
     def _handle_enter(self, event):
         if self.on_restart:
             self._clear_display()
             self.on_restart()
+        logger.info("Enter key pressed for restart")
 
     # ------------------- Core logic -------------------
     def _clear_display(self):
@@ -87,6 +93,7 @@ class FinishInfo(tk.Frame):
         self.accuracy_bar["value"] = 0
         self.results_ready = False
         self._update_visibility()
+        logger.info("FinishInfo display cleared")
 
     def show(self, wpm=None, accuracy=None, errors=None, on_restart=None, on_replay=None):
         """Update and optionally show results depending on mode."""
@@ -107,6 +114,7 @@ class FinishInfo(tk.Frame):
             self.accuracy_bar["value"] = scaled_accuracy
 
         self._update_visibility()
+        logger.info("FinishInfo shown with WPM: %.1f, Accuracy: %.1f%%, Errors: %d", wpm, accuracy, errors)
 
     def hide(self):
         """Force hide, regardless of mode."""
@@ -133,3 +141,4 @@ class FinishInfo(tk.Frame):
                     self.visible = True
             else:
                 self.hide()
+        logger.info("FinishInfo visibility updated: mode=%s, visible=%s", self.finish_info_mode, self.visible)

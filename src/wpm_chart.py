@@ -6,8 +6,7 @@ import numpy as np
 import logging
 import time
 
-logger = logging.getLogger("typing_app")
-
+logger = logging.getLogger(__name__)
 class WPMChart(tk.Frame):
     def __init__(self, master, typing_window, **kwargs):
         super().__init__(master, **kwargs)
@@ -34,6 +33,7 @@ class WPMChart(tk.Frame):
 
         # Start live updates
         self.update_chart()
+        logger.info("WPMChart initialized")
 
     def setup_chart(self):
         """Call this once when initializing the chart."""
@@ -54,6 +54,7 @@ class WPMChart(tk.Frame):
 
         # Layout
         self.fig.subplots_adjust(left=0.08, right=0.92, top=0.95, bottom=0.05)
+        logger.info("WPMChart setup complete")
 
     def update_chart(self):
         typing_window = self.typing_window
@@ -71,7 +72,7 @@ class WPMChart(tk.Frame):
             self.error_recorded_for_index = False
 
         # --- Calculate changes ---
-        typed_new = typing_window.index - self.last_index
+        typed_new = max(0, typing_window.index - self.last_index)
         new_errors = typing_window.wrong - self.last_wrong
         elapsed_time = typing_window.get_time_live()
 
@@ -188,12 +189,14 @@ class WPMChart(tk.Frame):
 
         self.fig.subplots_adjust(left=0.08, right=0.92, top=0.95, bottom=0.05)
         self.canvas.draw_idle()
+        logger.info("WPMChart reset")
 
     def set_mode(self, mode):
         if mode == "always":
             self.show()
         elif mode == "hidden":
             self.hide()
+        logger.info("WPMChart mode set to %s", mode)
 
     def show(self):
         """Display the chart and start updating."""

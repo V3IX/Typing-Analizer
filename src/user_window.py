@@ -5,7 +5,9 @@ from database import get_all_test_results
 from collections import defaultdict
 from database import generate_full_digraph_table_recent
 from stats_window import StatsWindow
+import logging
 
+logger = logging.getLogger(__name__)
 class UserWindow(tk.Toplevel):
     def __init__(self, master=None):
         super().__init__(master)
@@ -99,6 +101,7 @@ class UserWindow(tk.Toplevel):
         self.load_profile()
         self.load_history_data()
         self.show_page(0)
+        logger.info("UserWindow initialized")
 
     def load_profile(self):
         for widget in self.profile_frame.winfo_children():
@@ -120,10 +123,12 @@ class UserWindow(tk.Toplevel):
             card.pack(fill="x", padx=20, pady=10)
             tk.Label(card, text=stat, bg="#2c2c2c", fg="#cccccc", font=("Arial", 10, "bold")).pack(anchor="w")
             tk.Label(card, text=value, bg="#2c2c2c", fg="white", font=("Arial", 14, "bold")).pack(anchor="w", pady=(5, 0))
+        logger.info("Profile data loaded")
 
     def load_history_data(self):
         """Load all data once from the database."""
         self.all_rows = get_all_test_results()
+        logger.info("History data loaded with %d records", len(self.all_rows))
 
     def show_page(self, page_num):
         """Display a specific page of history."""
@@ -151,6 +156,7 @@ class UserWindow(tk.Toplevel):
         # Enable/disable buttons
         self.prev_btn.config(state="normal" if page_num > 0 else "disabled")
         self.next_btn.config(state="normal" if page_num < total_pages - 1 else "disabled")
+        logger.info("Displayed page %d of history", page_num + 1)
 
     def next_page(self):
         self.show_page(self.current_page + 1)
@@ -178,6 +184,7 @@ class UserWindow(tk.Toplevel):
             self.master.replay(data)
         else:
             print("⚠️ Master window has no replay() method.")
+        logger.info("Replaying test ID %d", test_id)
 
     def load_analysis_table(self):
         return

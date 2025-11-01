@@ -2,8 +2,9 @@ import tkinter as tk
 from settings_window import SettingsWindow
 from typing_window import TypingWindow
 from user_window import UserWindow
+import logging
 
-
+logger = logging.getLogger(__name__)
 class SettingsStrip(tk.Frame):
     def __init__(self, master, typing_frame, **kwargs):
         super().__init__(master, bg="#3a3a3a", **kwargs)
@@ -54,6 +55,7 @@ class SettingsStrip(tk.Frame):
             command=self.open_settings
         )
         settings_btn.pack(side="left")
+        logger.info("SettingsStrip initialized")
 
 
     # ---------------- Update word count ----------------
@@ -65,6 +67,7 @@ class SettingsStrip(tk.Frame):
         # Highlight active preset button, deselect custom
         self.highlight_button(button_value)
         self.typing_frame.end_test()
+        logger.info("Words to type updated to %d", value)
 
     # ---------------- Highlight preset button ----------------
     def highlight_button(self, value):
@@ -82,6 +85,8 @@ class SettingsStrip(tk.Frame):
     # ---------------- Open Settings ----------------
     def open_settings(self):
         SettingsWindow(self.master, self.typing_frame)
+        logger.info("Settings window opened")
 
     def open_user_window(self):
         UserWindow(master=self.typing_frame)
+        logger.info("User window opened")

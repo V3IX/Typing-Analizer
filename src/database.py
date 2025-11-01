@@ -2,7 +2,9 @@ import sqlite3
 import json
 import time
 from collections import defaultdict
+import logging
 
+logger = logging.getLogger(__name__)
 DB_PATH = "output/typing_results.db"
 
 def init_db():
@@ -25,6 +27,7 @@ def init_db():
     # cursor.execute("DELETE FROM test_results")
     conn.commit()
     conn.close()
+    logger.info("Database initialized at %s", DB_PATH)
 
 def save_test_result(wpm, accuracy, num_words, expected_text, user_input, key_times):
     """Save test results into database and return the new row ID."""
@@ -46,6 +49,7 @@ def save_test_result(wpm, accuracy, num_words, expected_text, user_input, key_ti
     new_id = cursor.lastrowid
     conn.commit()
     conn.close()
+    logger.info("Test result saved with ID %d", new_id)
     return new_id
 
 def get_latest_test_result():
@@ -64,6 +68,7 @@ def get_latest_test_result():
     if not row:
         return None
 
+    logger.info("Latest test result fetched")
     expected_text, user_input_json, key_times_json = row
     return {
         "text": expected_text,
@@ -82,6 +87,7 @@ def get_all_test_results():
     """)
     rows = cursor.fetchall()
     conn.close()
+    logger.info("All test results fetched, total %d entries", len(rows))
     return rows
 
 
@@ -102,6 +108,7 @@ def get_test_by_id(test_id):
         return None
 
     expected_text, user_input_json, key_times_json = row
+    logger.info("Test result fetched for ID %d", test_id)
     return {
         "text": expected_text,
         "user_input": json.loads(user_input_json),

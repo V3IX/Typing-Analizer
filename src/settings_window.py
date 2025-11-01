@@ -1,6 +1,8 @@
 import tkinter as tk
 from word_loader import detect_word_files
+import logging
 
+logger = logging.getLogger(__name__)
 class SettingsWindow:
     def __init__(self, master, typing_window):
         self.master = master
@@ -17,6 +19,7 @@ class SettingsWindow:
         self.show_table_bool = tk.BooleanVar(value=self.table.visible)
 
         self.open_settings()
+        logger.info("SettingsWindow initialized")
 
     def open_settings(self):
         settings_win = tk.Toplevel(self.master)
@@ -87,6 +90,7 @@ class SettingsWindow:
             selectcolor="#2e2e2e",
             command=self.toggle_table
         ).pack(anchor="w", padx=60)
+        logger.info("Settings window opened")
 
     def toggle_chart(self):
         mode = self.show_chart_var.get()
@@ -97,6 +101,7 @@ class SettingsWindow:
             self.show_table_bool.set(False)
             self.typing_window.table_info.visible = False
             self.typing_window.table_info.set_mode(False)
+        logger.info("WPM Chart mode set to %s", mode)
 
     def toggle_finish_info(self):
         mode = self.show_finish_var.get()
@@ -107,6 +112,7 @@ class SettingsWindow:
             self.show_table_bool.set(False)
             self.typing_window.table_info.visible = False
             self.typing_window.table_info.set_mode(False)
+        logger.info("Finish Info mode set to %s", mode)
 
     def toggle_table(self):
         visible = self.show_table_bool.get()
@@ -121,3 +127,4 @@ class SettingsWindow:
             self.typing_window.finish_info_mode = "hidden"
             self.typing_window.wpm_chart.set_mode("hidden")
             self.typing_window.finish_info.set_mode("hidden")
+        logger.info("Digraph Table visibility set to %s", visible)

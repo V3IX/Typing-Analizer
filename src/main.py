@@ -12,6 +12,8 @@ from typing_analyzer import DigraphTable
 import logging
 import os
 import pygame
+import sys
+import linecache
 
 # --- Initialize Pygame mixer for sound effects ---
 pygame.mixer.init()
@@ -31,11 +33,11 @@ if os.path.exists(LOG_FILE):
 
 # Configure logging to file + console
 logging.basicConfig(
-    level=logging.DEBUG,  # log everything you want
-    format="%(asctime)s | %(levelname)s | %(message)s",
+    level=logging.DEBUG,  # capture everything
+    format="%(asctime)s | %(levelname)s | %(name)s (%(filename)s:%(lineno)d) | %(message)s",
     handlers=[
         logging.FileHandler(LOG_FILE, mode='w', encoding='utf-8'),
-        logging.StreamHandler()  # also log to console
+        logging.StreamHandler()
     ]
 )
 
@@ -47,6 +49,22 @@ logging.getLogger("tkinter").setLevel(logging.WARNING)
 logger = logging.getLogger("typing_app")
 
 logger.info("Logging initialized. Log file: %s", LOG_FILE)
+
+SRC_FOLDER = os.path.abspath("src")  # full path to src folder
+history_file = open("logs/history.txt", "w", encoding="utf-8")
+
+def trace(frame, event, arg):
+    if event == "line":
+        filename = os.path.abspath(frame.f_code.co_filename)
+        # Only trace files inside src folder
+        if filename.startswith(SRC_FOLDER):
+            lineno = frame.f_lineno
+            func_name = frame.f_code.co_name
+            code_line = linecache.getline(filename, lineno).strip()
+            history_file.write(f"{filename}:{func_name}:{lineno} | {code_line}\n")
+    return trace
+
+sys.settrace(trace)
 
 root = tk.Tk()
 root.title("Typing Trainer")
